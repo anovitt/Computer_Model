@@ -1,0 +1,799 @@
+
+
+DFieldsAboutProgram
+                                                  01
+         Direction Fields of Differential         02
+                   Equations                      03
+                      And                         04
+       A Comparison of the Euler's and the        05
+            Improved Euler's Methods              06
+                                                  07
+                 J.M.Anthony Danby                08
+          North Carolina State University         09
+                Copyright (c) 1997                10
+                                                  11
+       You will be able to enter a first-order    12
+    differential equation of the form:            13
+                 dy/dx = f(x,y).                  14
+    You will be able to see solutions plotted     15
+    over this field, to verify that they follow   16
+    its flow.                                     17
+                                                  18
+       You will also be able to compare Euler's   19
+    method and the Improved Euler's method for    20
+    different stepsizes.                          21
+                                                  22
+                                                  23
+   Press any key or click the mouse to continue.  24
+                                                  25
+
+
+DFieldsDFieldHelp1
+                                                  01
+                Direction Fields                  02
+                                                  03
+      The program constructs a direction field    04
+   diagram for the differential equation          05
+              dy/dx  =  f(x,y).                   06
+   For each of a grid of values of x and y,       07
+   lines are drawn in the direction of the slope  08
+   dy/dx which is tangent to the solution of the  09
+   differential equation that originates at that  10
+   point.                                         11
+                                                  12
+       To start the program select <Solutions>    13
+   and then <Enter f(x,y) and graph parameters>   14
+   from the menu.  You will be prompted to enter  15
+   the function f(x,y). (See the HELP file in the 16
+   input screen for help with the syntax.)        17
+                                                  18
+      You will be asked for extreme values of x   19
+   and y for the figure. It is your responsibiity 20
+   to ensure that the function, f(x,y),  is de-   21
+   fined within these limits.                     22
+                                                  23
+   Press any key or click the mouse to continue.  24
+                                                  25
+
+
+DFieldsDFieldHelp2
+                                                  01
+                Direction Fields                  02
+                                                  03
+      You will also be prompted to enter the      04
+   number of grid points along the x- and y-axes. 05
+   The will divide the x-y plane into a number of 06
+   rectangles. The slope at a point at the center 07
+   of a rectangle will be found, and an arrow     08
+   drawn with this point as its center.           09
+                                                  10
+      To plot solutions over this diagram you can 11
+   enter initial conditions from the keyboard, or 12
+   by clicking on a starting point with the       13
+   mouse. Make your selection on this input       14
+   screen.                                        15
+                                                  16
+      To see a solution select <Solutions> and    17
+   <Enter initial conditions> from the menu. If   18
+   you want to clear the screen and plot further  19
+   solutions, select <Clean up the screen>. The   20
+   direction field will reappear without any      21
+   solutions plotted.                             22
+                                                  23
+   Press any key or click the mouse to continue.  24
+                                                  25
+
+
+
+DFieldsDFieldHelp3
+                                                  01
+                Direction Fields                  02
+                                                  03
+        The pattern of the solutions should       03
+     conform with that of the direction field.    04
+     See if, before making a selection for an     05
+     initial point, you can estimate what the     06
+     solution will look like.                     07
+                                                  08
+        The concept behind Euler's method         09
+     builds on the property.                      10
+                                                  11
+                                                  12
+                                                  13
+                                                  14
+   Press any key or click the mouse to continue.  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+DFieldsEulerHelp1
+                                                  01
+                   Euler's Method                 02
+                                                  03
+       For the differential equation              04
+                  dy/dx  =  f(x,y)                05
+    one step in Euler's method from (x0, y0)      06
+    to (x1, y1), with stepsize h, is given by     07
+         x1 = x0 + h, y1 = y0 + hf(x0,y0).        08
+    Mathematically, this assumes that over the    09
+    step the solution is linear, approximated by  10
+    the tangent to the solution at (x0, y0).      11
+                                                  12
+       The method is of first-order. So the       13
+    local truncation error of one step is pro-    14
+    portional to h squared. Suppose that many     15
+    steps are taken to cover a given interval     16
+    of x. If the stepsize is halved, then         17
+    although the error of a single step is        18
+    divided by four, the number of steps is       19
+    doubled, so that overall, the error is,       20
+    roughly, halved.                              21
+                                                  22
+                                                  23
+   Press any key or click the mouse to continue.  24
+                                                  25
+
+
+DFieldsEulerHelp2
+                                                  01
+                   Euler's Method                 02
+                                                  03
+       This property is qualitative. With some    04
+    equations it may be clear and with others     05
+    it may not be easy to see.                    06
+                                                  07
+       To run the method select <Euler> and       08
+    <Regular Euler's method> from the menu.       09
+    Choose initial conditions based on those      10
+    chosen previously, when seeing solutions.     11
+    Pick conditions that lead to a good sweep     12
+    across the diagram, and avoid conditions      13
+    that lead to a large initial slope.           14
+                                                  15
+       To start, try the sequence of stepsizes:   16
+                  h = 0.1, 0.2, 0.4.              17
+                                                  18
+       Experiment with different initial con-     19
+    ditions. To choose new conditions, press      20
+    <ESC> in the imput screen for h. Then select  21
+    <Solutions> or <Regular Euler's method>.      22
+                                                  23
+  Press any key or click the mouse to continue.   24
+                                                  25
+
+DFieldsImpEulerHelp1
+                                                  01
+             The Improved Euler's Method          02
+                                                  03
+       For the differential equation              04
+                   dy/dx  =  f(x,y)               05
+    one step in the Improved Euler's method       06
+    from (x0, y0) to (x1, y1), with stepsize h,   07
+    is given by:                                  08
+                 f1 = f(x0, y0),                  09
+                 yE = y0 + hf1,                   10
+                 x1 = x0 + h,                     11
+                 f2 = f(x1, yE),                  12
+                 y1 = y0 + 0.5h(f1 + f2).         13
+    Mathematically, if y(x) is the solution, the  14
+    difference y(x1) - y(x2) can be expressed as  15
+    and integral. This is approximated by the     16
+    rectangular rule for Euler's method and the   17
+    trapezoidal rule for the improved method.     18
+                                                  19
+       The method is of second-order. So the      20
+    local truncation error of one step is pro-    21
+    portional to h cubed.                         22
+                                                  23
+   Press any key or click the mouse to continue.  24
+                                                  25
+
+
+DFieldsImpEulerHelp2
+                                                  01
+             The Improved Euler's Method          02
+                                                  03
+       In the program, once you have chosen a     04
+    stepsize, points generated by Euler's meth-   05
+    od and the improved method are plotted.       06
+    Compare these to see the superiority of the   07
+    improved method.                              08
+                                                  09
+       Now double or halve the stepsize. Note     10
+    the RELATIVE effects on the two methods.      11
+    One purpose of this program is to show the    12
+    superiority of methods of higher order when   13
+    stepsize changes are involved.                14
+                                                  15
+       The return to the menu, press <ESC> in     16
+    the input screen for h.                       17
+                                                  18
+                                                  19
+   Press any key or click the mouse to continue.  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+DFieldsInputScreenHelp
+               Input Screen Help                  01
+                                                  02
+       When entering f(x,y) ou must use x and y   03
+    as the variables. All other quantities must   04
+    be numerical.                                 05
+       Possible functions are:                    06
+    sin, cos, tan, cot, sec, csc, arctan          07
+    abs (absolute value), exp (exponential),      08
+    sqrt (square root), log, ln.                  09
+       Constants pi and e are recognized.         10
+       Arguments must be in parentheses. Powers   11
+    are found with ^; i.e., x^4. Multiplication   12
+    symbols (*) are essential.  I.e.,             13
+        2*x*Sqrt(Abs(Cos(y^3))) - 4*Exp(-x)       14
+                                                  15
+       Watch out for functions that may have      16
+    singularities in the region to be plotted.    17
+    It may be OK; but there is not guarantee      18
+    that the program may not run into a division  19
+    by zero.                                      20
+                                                  21
+       Start with moderate numbers for the sub-   22
+    divisions for the grids on the axes.          23
+                                                  24
+   Press any key or click the mouse to continue.  25
+
+
+
+RKFTestsAboutProgram
+          Testing Runge-Kutta-Fehlberg            01
+                                                  02
+              J.M.Anthony Danby                   03
+       North Carolina State University            04
+             Copyright (c) 1997                   05
+                                                  06
+      The version of Fehlberg''s modification of  07
+   Runge-Kutta method used here gives results of  08
+   the fifth order. If varies the stepsize so     09
+   that the local truncation error of any step    10
+   is less than a number that is input by the     11
+   operator. This number is called the ''great-   12
+   est tolerable local trucation error.''         13
+                                                  14
+      The first three tests apply to the          15
+   differential equation:                         16
+                dy/dx = f(x,y),                   17
+   where you can enter your own function. (If     18
+   you do not enter a function, the default is    19
+                f(x,y) = x + y.)                  20
+                                                  21
+      The final test is applied to the system     22
+        dy(1)/dx = y(2), dy(2)/dx = - y(1).       23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+RKFTestsHelpDirectionField
+                                                  01
+          Testing Runge-Kutta-Fehlberg            02
+               Direction Fields                   03
+                                                  04
+       This utility is applied to the single      05
+    first-order differentioal equation            06
+                 dy/dx = f(x,y).                  07
+                                                  08
+       A grid of points is chosen in the x-y      09
+    plane. From each point an arrow is drawn      10
+    in the direction of the slope f(x,y). This    11
+    makes it possible to visualize all solu-      12
+    tions, without plotting them.                 13
+                                                  14
+       This can be helpful when picking good      15
+    initial conditions, since a solution should   16
+    be ''curvy,'' but not too steep, and it       17
+    should continue for all values of x for       18
+    which you need to calculate it.               19
+                                                  20
+       You will be prompted to enter the          21
+    numbers of grid points along the axes.        22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+
+
+RKFTestsHelp1
+                                                  01
+          Testing Runge-Kutta-Fehlberg            02
+                    Test One                      03
+                                                  04
+      The object of the first test is to confirm  05
+   that the output of just one step is in the     06
+   "right ballpark" and that the actual error of  07
+   the step is consistent with the order five.    08
+                                                  09
+      A method of order five has local trun-      10
+   cation error that is proportional to the sixth 11
+   power of the stepsize. If the stepzise is 0.1, 12
+   then the error should be 10^(-6) or less.      13
+                                                  14
+      Choose starting conditions so that the      15
+   initial slope is between -1 and 1. (Use the    16
+   direction-field utility for ideas.) Do not     17
+   choose conditions that would lead to a         18
+   straight line solution.                        19
+                                                  20
+                                                  21
+    Click the mouse or hit any key to continue.   22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+RKFTestsHelp2A
+                                                  01
+          Testing Runge-Kutta-Fehlberg            02
+                    Test Two                      03
+                                                  04
+       This test is designed to demonstrate how   05
+    effectively the program controls the step-    06
+    size. When you enter a value for the great-   07
+    est tolerable local truncation error, Tol,    08
+    there will be an optimal stepsize (which      09
+    will also depend on the initial conditions).  10
+                                                  11
+       In order to start the program you will     12
+    have to enter an initial stepsize. If this    13
+    is too large or too small, you want to be     14
+    sure that the program will adapt efficiently  15
+    to a good stepsize. A stepsize is good if     16
+    the local truncation error is less than the   17
+    number Tol that you will have entered.        18
+                                                  19
+       First, enter values for the initial cond-  20
+    itions a stepsize (too large or too small),   21
+    call it H1, and a value for Tol, say 10^(-6). 22
+    You might start with H1 = 1.                  23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+
+RKFTestsHelp2B
+                                                  01
+          Testing Runge-Kutta-Fehlberg            02
+                    Test Two                      03
+                                                  04
+                                                  05
+      The program takes a step with stepsize H1,  06
+   and calculates the local truncation  error,    07
+   TeMax. It then:                                08
+   (a) calculates a new stepsize, H2, and         09
+   (b) tests to see if TeMax is greater than, or  10
+   less than Tol.                                 11
+                                                  12
+      If TeMax < Tol, the step was successful,    13
+   the stepsize H1 was a GOOD stepsize and H2     14
+   will be the NEXT stepsize.                     15
+                                                  16
+      If TeMax > Tol, the step was not success-   17
+   ful, H1 was a BAD stepsize, and  H2 (smaller   18
+   than H1) will be used to repeat the step.      19
+                                                  20
+      The process is repeated until a good        21
+   stepsize is found.                             22
+                                                  23
+   Click the mouse or hit any key to continue.    24
+                                                  25
+
+
+RKFTestsHelp3
+          Testing Runge-Kutta-Fehlberg            01
+                   Test Four                      02
+                                                  03
+      These tests are designed so that you can    04
+   experiment with different ways to stop a       05
+   program. For the tests you should keep the     06
+   same initial conditions, and greatest tol-     07
+   erable truncation error, Tol.                  08
+   A:  Take a specified number of steps, and      09
+   then stop. This logic is often useful as a     10
+   backup, in case another stopping test mal-     11
+   functions. Note carefully the way the error    12
+   evolves as the steps proceed. This illust-     13
+   rates the comparison between the local trunc-  14
+   ation error of one step and the global error   15
+   after many steps.                              16
+   B:  Stop when x (the independent variable)     17
+   exceeds a given value. This is likely to be a  18
+   common application, and is useful as a backup. 19                                                        ',
+   C:  Stop when x is precisely equal to a given  20
+   value. This logic can be used also if, in      21
+   spite of having a variable stepsize, you want  22
+   output at regular intervals.                   23
+                                                  24
+   Click the mouse or hit any key to continue.    25
+
+
+
+
+RKFTestsHelp4
+                                                  01
+         Testing Runge-Kutta-Fehlberg             02
+                  Test Five                       03
+                                                  04
+      This test is to confirm that the method     05
+   can be used with a system of equations.        06
+                                                  07
+      The second order equation for the harmonic  08
+  oscillator:                                     09
+                   y" + y = 0                     10
+                                                  11
+   can be written as two equations:               12
+                                                  13
+        dy1/dx = y2   and   dy2/dx = - y1.        14
+                                                  15
+   Here y1 = y and y2 = y'.                       16
+                                                  17
+      The program solves these simultaneously.    18
+   It will stop precisely at the final time.      19
+   Note the history of the errors. Since the      20
+   solutions are sines and cosines, the errors    21
+   fluctuate and remain small.                    22
+                                                  23
+   Click the mouse or hit any key to continue.    24
+                                                  25
+
+
+RKFTestsHelp5A
+                                                  01
+         Testing Runge-Kutta-Fehlberg             02
+                  Test Three                      03
+                                                  04
+      In Fehlberg''s method two Runge-Kutta       05
+   calculations are essentially performed in      06
+   tandem. The first, of fourth-order, has local  07
+   truncation error less than the prescribed      08
+   value of Tol, the greatest tolerable local     09
+   truncation error. The estimated value of this  10
+   error is called TeMax in the program. So, if   11
+   the stepsize is h, then TeMax is approxim-     12
+   ately proportional to the fifth power of h,    13
+   or, approximately,                             14
+                 TeMax = A*h^5                    15
+   so                                             16
+          Log(TeMax) = Log(A) + 5*Log(h).         17
+                                                  18
+      The second calculation is of fifth order.   19
+   Its error satisfies, approximately,            20
+                 Error = B*h^6                    21
+   so                                             22
+          Log(Error) = Log(B) + 6*Log(h).         23
+                                                  24
+   Click the mouse or hit any key to continue.    25
+
+
+RKFTestsHelp5B
+                                                  01
+         Testing Runge-Kutta-Fehlberg             02
+                  Test Three                      03
+                                                  04
+      The crucial numbers are ''5,'' which is     05
+   used in the stepsize calculations, and ''6,''  06
+   which defines the overall order of the method. 07
+   The object of this project is to verify the    08
+   correctness of these numbers.                  09
+                                                  10
+      The program takes ten steps, each starting  11
+   from the same initial conditions, with ten     12
+   different stepsizes. In each case, it finds    13
+        Log(h), Log(TeMax) and Log(Error).        14
+   Then points (Log(h), Log(TeMax)) are plotted   15
+   in one screen and (Log(h), Log(Error)) are     16
+   plotted in another. The first set should lie   17
+   approximately on a straight line with slope    18
+   5, and the scond on a line with slope 6.       19
+                                                  20
+      A least square linear approximation is      21
+   made, and the slope is recorded.               22
+                                                  23
+   Click the mouse or hit any key to continue.    24
+                                                  25
+
+
+RKFTestsHelp5C
+                                                  01
+         Testing Runge-Kutta-Fehlberg             02
+                  Test Three                      03
+                                                  04
+      The stepsizes, will take values:            05
+                                                  06
+           h = h0 + I*dh, I = 0,..,9,             07
+                                                  08
+   where you will enter values for h0 and dh.     09
+   The approximation may be invalidated by        10
+   round-off error if these are too small, and    11
+   by truncation error if they are too large.     12
+   So you may have to choose carefully to get     13
+   good results.                                  14
+                                                  15
+      Also be careful that your starting values   16
+   do not result in a steep initial slope. Also,  17
+   they should not generate a solution that is    18
+   linear or almost linear.                       19
+                                                  20
+                                                  21
+   Click the mouse or hit any key to continue.    22                                                   21
+                                                  23
+                                                  24
+                                                  25
+
+ArmsRaceAboutProgram
+                                                  01
+         Richardson's Model for an Arms Race      02
+                                                  03
+                  J.M.Anthony Danby               04
+           North Carolina State University        05
+                 Copyright (c) 1997               06
+                                                  07
+       Richardson has invented two countries,     08
+    Jedesland and Andersland. These are "at       09
+    peace" with each other, but at any time       10
+    they may be arming or disarming to increase   11
+    or decrease their "war preparedness."         12
+                                                  13
+       Arming depends on the war preparedness of  14
+    the other country. Disarming depends on the   15
+    financial burden of arming. Richardson also   16
+    includes in his model constant terms that     17
+    can represent latent hostility, if positive,  18
+    or goodwill if negative.                      19
+                                                  20
+       You can change the parameters for these    21
+    states, and follow progress to an equilib-    22
+    rium, to disarmament or, maybe to war.        23
+                                                  24
+   Click the mouse or hit any key to continue.    25
+
+
+ArmsRaceAboutModel1
+                                                  01
+         Richardson's Model for an Arms Race      02
+                                                  03
+      Richardson assumes that a quantity "war     04
+   preparedness," can be quantified, and that     05
+   this quantity takes values x and y, respec-    06
+   tively for two countries, Jedersland and       07
+   Andersland.                                    08
+                                                  09
+      The time is t. Consider the rate of change  10
+   dx/dt. This increases in proportion to y, as   11
+   a reaction to the war preparedness of Anders-  12
+   land. It decreases in proportion to x, be-     13
+   cause of the expense. So                       14
+                 dx/dt = ay - mx,                 15
+   with a similar equation                        16
+                 dy/dt = bx - ay                  17
+   for Andersland.                                18
+                                                  19
+      These are modified to                       20
+   dx/dt = ay - mx + g  and  dy/dt = bx - ny + h. 21
+   g and h are constants.                         22
+                                                  23
+   Click the mouse or hit any key to continue.    24                                                   21
+                                                  25
+
+
+ArmsRaceAboutModel2
+                                                  01
+         Richardson's Model for an Arms Race      02
+                                                  03
+      In summary, a and b measure the desire to   04
+    rearm, as a consequence of the arms of the    05
+    other country. m and n measure the economic   06
+    difficulties of building arms. a, b, m and n  07
+    are positive. g and h can be positive of      08
+    negative. They are a measure of inherent      09
+    hostility, if positive or friendliness, if    10
+    negative.                                     11
+                                                  12
+       Units are of no consequence here. Inter-   13
+    pretation should be applied to changes in the 14
+    numerical values.                             15
+                                                  16
+       Default values for the parameters in this  17
+    program are: a=1, m=2, g=3. b=4, n=5, h=6.    18
+                                                  19
+                                                  20
+                                                  21
+    Click the mouse or hit any key to continue.   22
+                                                  23
+                                                  24
+                                                  25
+
+
+ArmsRaceRunningModel1
+                                                  01
+         Richardson's Model for an Arms Race      02
+                                                  03
+      The equations for the model are             04
+                                                  05
+   dx/dt = ay - mx + g  and  dy/dt = bx - ny + h. 06
+                                                  07
+   a, m, b and n are positive; g and h can be     08
+   positive or negative.                          09
+                                                  10
+      There is an equilibrium (a solution where   11
+   nothing changes, so the time derivatives are   12
+   zero) if the equations                         13
+                                                  14
+       0 = ay - mx + g  and  0 = bx - ny + h      15
+                                                  16
+   have positive solutions for x and y. These     17
+   are equations of lines; one option, when       18
+   running the program is to see these lines      19
+   plotted, so that the equilibrium may be        20
+   observed.                                      21
+                                                  22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+ArmsRaceRunningModel2
+                                                  01
+         Richardson's Model for an Arms Race      02
+                                                  03
+      If there is no equilibrium, then solutions  04
+   will increase without bound (war!) or at       05
+   least one country will disarm completely.      06
+                                                  07
+      An equilibrium can be stable, when all      08
+   solutions will approach it. Or it may be un-   09
+   stable, when solutions starting close to it    10
+   will recede away, resulting either in war of   11
+   disarmament.                                   12
+                                                  13
+      Look for situations where a small change    14
+   in some parameter, resulting from an election, 15
+   say, or a change in a ministerial post, can    16
+   make a difference between stability and in-    17
+   stability.                                     18
+                                                  19
+      The help screen for the input of paramet-   20
+   ers will provide sample numerical values for   21
+   some varying situations.                       22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+ArmsRaceDirectionFields
+         Richardson's Model for an Arms Race      01
+                 Direction fields                 02
+                                                  03
+      The equations of the model are              04
+                                                  05
+   dx/dt = ay - mx + g  and  dy/dt = bx - ny + h. 06
+                                                  07
+   If the first is divided into the second, then  08
+   the time, t, is eliminated, and                09
+                                                  10
+        dy/dx = (bx - ny + h)/(ay - mx + g).      11
+                                                  12
+      To construct a direction field, a grid of   13
+   points in chosen in the x-y plane, and from    14
+   each point an arrow is drawn, pointing in the  15
+   direction of the slope dy/dx. This enables an  16
+   overall picture of all possible solutions to   17
+   be observed, from the flow shown by the        18
+   arrows.                                        19
+                                                  20
+      Before constructing the field, you will be  21
+   prompted to enter the numbers of grid points   22
+   along the axes.                                23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+ArmsRaceEquilibrium1
+         Richardson's Model for an Arms Race      01
+                    Equilibrium                   02
+                                                  03
+      The equations of the model are              04
+                                                  05
+   dx/dt = ay - mx + g  and  dy/dt = bx - ny + h. 06
+                                                  07
+   At an equilibrium nothing changes, so the der- 08
+   ivatives, dx/dt and dy/dt are both zero. This  09
+   will be the case if                            10
+       0 = ay - mx + g  and  0 = bx - ny + h.     11
+   These are equations of two lines in the x-y    12
+   plane. If these lines intersect at a point     13
+   having positive x and y, then that point will  14
+   be an equilibrium of the model.                15
+                                                  16
+      When running the model the equilibrium, if  17
+   it exists, will be marked in the x-y plane.    18
+   You have the option of seeing the lines that   19
+   intersect at the equilibrium. These lines have 20
+   no special significance; but if you do not see 21
+   the equilibrium on the screen, they will tell  22
+   you the location of the intersection.          23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+ArmsRaceEquilibrium2
+         Richardson's Model for an Arms Race      01
+                    Equilibrium                   02
+                                                  03
+      On the screen for plotting solutions you    04
+   can change the values of the six parameters    05
+   of the model using the sliders. It is best to  06
+   halt the animation of a solution, and then     07
+   experiment with the parameters, seeing how     08
+   the equilibrium is affected.                   09
+                                                  10
+      An equilibrium may be stable, when sol-     11
+   starting nearby all approach it, or unstable,  12
+   when at least some solutions starting nearby   13
+   will recede from it. Both types of equilibrium 14
+   are to be found in this model. In some cases   15
+   solutions may approach the origin -- total     16
+   disarmament, or may increase indefinitely      17
+   -- WAR!                                        18
+                                                  19
+      For some numerical suggestions, see the     20
+   HELP screen in the main input screen for the   21
+   Parameters.                                    22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+ArmsRaceInputHelp
+        Richardson''s Model for an Arms Race      01
+                                                  02
+       The default parameters,                    03
+                                                  04
+      a = 1, m = 2, g = 3, b = 4, n = 5, h = 6    05
+                                                  06
+    lead to a stable equilibrium.                 07
+                                                  08
+     a = 2, m = 1, g = -1, b = 5, n = 4, h = -1   09
+                                                  10
+    lead to an unstable equilibrium that can      11
+    result is disarmament or war, depending on    12
+    the initial conditions.                       13
+                                                  14
+      a = 2, m = 1, g = 1, b = 5, n = 4, h = 1    15
+                                                  16
+    lead to all solutions becoming unbounded,     17
+    with no equilibrium.                          18
+                                                  19
+     a = 1, m = 2, g = -1, b = 4, n = 5, h = -1   20
+                                                  21
+    lead to disarmament for all starting cond-    22
+    itions, with no equilibrium.                  23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+
+
+
+

@@ -1,0 +1,580 @@
+
+
+
+PrPrOverview
+                                                    01
+          Predator-Prey Models. Overview.           02
+                                                    03
+       One object of this program is to present     04
+    a set of models in which details are succes-    05
+    sively modified. It is notable that as          06
+    apparent 'improvements' are made, the model     07
+    can turn out to have been made worse. To        08
+    start, it is recommended that you run the       09
+    models in the given order. A feature of the     10
+    first and fifth is that they include cycli-     11
+    cal solutions; this type of behavior is found   12
+    in practice.                                    13
+                                                    14
+       The population numbers x and y are assumed   15
+    to be scaled. x=1, for instance might stand     16
+    for 1000 units. This enables the programs to    17
+    be run using numbers with small orders of mag-  18
+    nitude.  Most models have equilibrium solu-     19
+    tions, where the derivatives are zero, so no-   20
+    thing changes. These will be marked in the x-y  21
+    plane. Do not try to start at an equilibrium.   22
+                                                    23
+    Click the mouse or hit any key to continue.     24
+                                                    25
+
+
+
+AboutPrPrProgram
+                Predator-Prey Models                01
+                   J.M.A.Danby                      02
+         North Carolina State University            03
+                Copyright (c) 1997                  04
+                                                    05
+       The program follows several models:          06
+    1. Volterra.                                    07
+    2. Volterra with fishing.                       08
+    3. Logistic growth for the prey.                09
+    4. Logistic growth for the predators.           10
+    5. May's model with limit cycles.               11
+    6. Make up your own model.                      12
+                                                    13
+       x and y are the prey and predator popu-      14
+    lations, respectively, and t is the time.       15
+    You will have the option of seeing solutions    16
+    plotted as x and y with respect to t, or in     17
+    the x-y plane. You can also see plots in the    18
+    three-dimensional space x-y-t. You can also     19
+    see direction field diagrams in the x-y plane.  20
+    (For 2, you can only plot in the x-y plane.)    21
+                                                    22
+       Start by selecting one of the models.        23
+                                                    24
+    Click the mouse or hit any key to continue.     25
+
+
+DataHelp1
+                                                  01
+          Volterra's Predator-Prey Model          02
+                                                  03
+    x and y are populations of prey and pred-     04
+    ators. They can be scaled, so, for instance,  05
+    y = 1 might stand for 1000 predators.         06
+                                                  07
+    a represents the reproductive capacity of     08
+    the prey.                                     09
+    b represents the death rate of the predators. 10
+    c represents the hunting ability of the       11
+    predators or, inversely, the ability of       12
+    the prey to hide.                             13
+    d represents the nutritional value of the     14
+    prey, as it affects the ability of the        15
+    predators to breed.                           16
+                                                  17
+    The model has an equilibrium at (b/d, a/c).   18
+                                                  19
+    When plotting in the x-y plane, initial con-  20
+    ditions can be entered from the keyboard or   21
+    by clicking at the starting point with the    22
+    mouse.                                        23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+DataHelp2
+    Volterra's Predator-Prey Model with Fishing   01
+                                                  02
+    x and y are populations of prey and pred-     03
+    ators. They can be scaled, so, for instance,  04
+    y = 1 might stand for 1000 predators.         05
+                                                  06
+    a represents the reproductive capacity of     07
+    the prey.                                     08
+    b represents the death rate of the predators. 09
+    c represents the hunting ability of the       10
+    predators or, inversely, the ability of       11
+    the prey to hide.                             12
+    d represents the nutritional value of the     13
+    prey, as it affects the ability of the        14
+    predators to breed.                           15
+    f represents the fishing 'effort.'            16
+    The model has an equilibrium at               17
+               ((b+f)/d, (a-f)/c).                18
+                                                  19
+    For this model only plots in the x-y plane    20
+    are possible. A plot will start with f = 0;   21
+    then when the 'fish' hotkey is pressed,       22
+    fishing will start.                           23
+                                                  24
+     Click the mouse or hit any key to continue.  25
+
+
+DataHelp3A
+                   Predator-prey                  01
+         with logistic growth for the prey        02
+                                                  03
+       x and y are populations of prey and pred-  04
+    ators. They can be scaled, so, for instance,  05
+    y = 1 might stand for 1000 predators.         06
+                                                  07
+       x is to grow logistically, where there is  08
+    a maximum population, xMax, that can be sus-  09
+    tained, because of limited space and food     10
+    supply. Then, with no predation, x would      11
+    grow as                                       12
+               dx/dt = ax(1 - x/xMax)             13
+                     = ax - ex^2,                 14
+    in the notation of the program.               15
+                                                  16
+       The full equations of the model are        17
+                                                  18
+              dx/dt = ax - ex^2 - cxy,            19
+              dy/dt = -by + dxy.                  20
+                                                  21
+       See the following screen for further       22
+    details.                                      23
+                                                  24
+     Click the mouse or hit any key to continue.  25
+
+
+DataHelp3B
+                   Predator-prey                  01
+         with logistic growth for the prey        02
+                                                  03
+    a represents the reproductive capacity of     04
+    the prey.                                     05
+    b represents the death rate of the predators. 06
+    c represents the hunting ability of the       07
+    predators or, inversely, the ability of the   08
+    prey to hide.                                 09
+    d represents the nutritional value of the     10
+    prey, as it affects the ability of the        11
+    predators to breed.                           12
+    a/e is the maximum prey population with no    13
+    predation.                                    14
+    For this program, a, b, c, d must lie between 15
+    0.1 and 10. e can lie between 0 and 10.       16                                       19
+                                                  17
+       It is recommended that you start with e    18
+    small. For example, if a = b = c = d = 1,     19
+    then compare e = 0 with e = 0.01.             20
+                                                  21
+       There is an equilibrium at                 22
+            x = b/d, y = a/c - (eb)/(cd).         23
+                                                  24
+     Click the mouse or hit any key to continue.  25
+
+
+DataHelp4A
+        Predator-prey with logistic growth        01
+              for predators and prey              02
+                                                  03
+       The equation for the growth of the prey    04
+    is the same as that of the third model:       05
+              dx/dt = ax - ex^2 - bxy.            06
+    (The notation is changed.)                    07
+                                                  08
+       The maximum sustainable predator popu-     09
+    lation depends on the food supply, so is       10
+    proportional to x. The model used here is     11
+    due to Leslie:                                12
+                dy/dt = cy(1 - dy/x).             13
+    The maximum predator population is, then,     14
+    yMax = x/d. If the prey population is large,  15
+    then the predators enjoy Malthusian growth    16
+    with exponent c.                              17
+                                                  18
+       There is an equilibrium for this model     19
+    at                                            20
+                                                  21
+          x = ad/(b + ed), y = a/(b + ed).        22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+DataHelp4B
+                                                  01
+        Predator-prey with logistic growth        02
+              for predators and prey              03
+                                                  04
+    a represents the reproductive capacity of     05
+    the prey.                                     06
+                                                  07
+    b represents the hunting ability of the       08
+    hunting ability of the predators or,          09
+    inversely, the ability of the prey to hide.   10
+                                                  11
+    a/e is the maximum prey population with no    12
+    predation.                                    13
+                                                  14
+    c represents the exponent for the exponential 15
+    rate of growth of the predators, given a      16
+    large prey population.                        17
+                                                  18
+    x/d is the maximum sustainable predator       19
+    population.                                   20
+    For this program, a, b, c, d must lie between 21
+    0.1 and 10. e can lie between 0 and 10.       22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+DataHelp5A
+        Predator-prey with logistic growth        01
+        and Holling's model for predation         02
+                                                  03
+       The rate of change of prey due to preda-   04
+    tion is proportional to xy in the other       05
+    models. This is unrealistic since it assumes  06
+    that every encounter involves a kill. For     07
+    high prey populations, the rate of loss by    08
+    predation might be better modelled by a term  09
+    proportional to the predator population, y.   10
+    Holling's model is - bxy/(x+f), which is      11
+    realistic for small and large x. May's        12
+    model combines this with logistic growth to   13
+    give:                                         14
+           dx/dt = ax - ex^2 - bxy/(x + f),       15
+           dy/dt = c(1 - dy/x).                   16
+    May lets                                      17
+            X = x/f, Y = dy/f, T = at,            18
+            A = ef/a, B = b/d, C = c/a.           19
+    Then                                          20
+          dX/dT = X - AX^2 - BXY/(X + 1),         21
+          dY/dT = CY(1 - Y/X).                    22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+DataHelp5B
+                    May's model.                  01
+        Predator-prey with logistic growth        02
+        and Holling''s model for predation        03
+                                                  04
+       The equations are                          05
+            dX/dT = X - AX^2 - BXY/(X + 1),       06
+            dY/dT = CY(1 - Y/X).                  07
+                                                  08
+    X and Y can be taken to be the Prey and       09
+    Predator populations, and T the time.         10
+    1/A is the maximum prey population with no    11
+    predation.                                    12
+    B represents the hunting ability of the       13
+    predators or, inversely, the ability of the   14
+    prey to hide.                                 15
+    C represents the exponent for the exponential 16
+    rate of growth of the predators, given a      17
+    large prey population.                        18
+                                                  19
+    For this program, A must lie between 0 and 1. 20
+    B and C can lie between 0.1 and 10.           21
+    The nature and numbers of equilibria depend   22
+    on the values of A, B and C.                  23
+                                                  24
+     Click the mouse or hit any key to continue.  25
+
+
+
+DataHelp5C
+                    May's model.                  01
+        Predator-prey with logistic growth        02
+        and Holling''s model for predation        03
+                                                  04
+       The equations are                          05
+            dX/dT = X - AX^2 - BXY/(X + 1),       06
+            dY/dT = CY(1 - Y/X).                  07
+                                                  08
+       If you select <Cyclical growth rate>,      09
+    then the first term, X, in the first equ-     10
+    ation is replaced by                          11
+                                                  12
+                (A0 + A1*Sin(p*t))X.              13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+     Click the mouse or hit any key to continue.  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+
+
+ChaosA
+                                                  01
+       Periodic variation in the birth-rate       02
+                of the prey. Chaos.               03
+                                                  04
+       The variable coefficient for the birth-    05
+    rate of the prey is                           06
+                 A0 + A1*Sin(p*t),                07
+    where A0 and A1 are positive constants, with  08
+    A0 > A1. p, the frequency is positive, and    09
+    the period of variation is P = 2*Pi/p.        10
+                                                  11
+       With this forcing term, the model has      12
+    become chaotic. This utility offers you two   13
+    ways to investigate and view this chaos:      14
+    Plotting populations as a function of the     15
+    time, or seeing plots in the phase-plane.     16
+    These can be continuous curves, which, after  17
+    a bit look like something that the cat has    18
+    been playing with, or they may be isolated    19
+    points for times equal to P, 2P, 3P,... In    20
+    this last case we see what is called a Poin-  21
+    care map.                                     22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+
+ChaosB
+                                                  01
+       Periodic variation in the birth-rate       02
+                of the prey. Chaos.               03
+                                                  04
+       The periodicity can be applied to any of   05
+    the models used here. You can also introduce  06
+    periodicity more generally in the <Do it      07
+    yourself> utility. (See <Help> for details.)  08
+    For a start, I suggest that you work first    09
+    with Volterra's model.                        10
+                                                  11
+       For a start, take A0 = 1 For A1 = 0, we    12
+    have the usual cycles around an equilibrium.  13
+    So start with A1 relatively small, A1 = 0.1,  14
+    say. There is now no equilibrium, but, close  15
+    to the position of the old one, the motion,   16
+    although more complicated, looks periodic.    17
+    You can see this best through the Poincare    18
+    maps. They show "island systems."             19
+                                                  20
+       As initial conditions are moved further    21
+    away from the old equilibrium, these systems  22
+    break up, and the motion becomes chaotic.     23
+                                                  24
+     Click the mouse or hit any key to continue.  25
+
+
+
+ChaosC
+                                                  01
+       Periodic variation in the birth-rate       02
+                of the prey. Chaos.               03
+                                                  04
+       As A1 is increased, the non-chaotic        05
+    region shrinks, and eventually disappears.    06
+                                                  07
+       You can also experiment with the effects   08
+    of changes in the other parameters of the     09
+    model on the onset of chaos.                  10
+                                                  11
+       Note that when plotting in the phase-      12
+    plane, calculations cease if a coordinate     13
+    becomes larger than twice the maximum co-     14
+    ordinate that you selected. It may be help-   15
+    ful first to see plots as functions of the    16
+    time (when the vertical scale is found by     17
+    the program) before picking scales for the    18
+    phase-plane.                                  18
+                                                  20
+       NOTE: <Cyclical growth rate> must be       21
+    selected EACH TIME after a model is chosen.   22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+DataHelp6A
+                                                  01
+         Make your own Predator-prey model        02
+                                                  03
+       You are invited to make up your own model. 04
+    This need not be predator-prey, but might     05
+    be one of the models involving cooperation    06
+    betwen species.                               07
+                                                  08
+       You must use x and y as the dependent      09
+    variables; the time, t, is permitted as a     10
+    variable.                                     11
+                                                  12
+       Possible functions are:                    13
+    sin, cos, tan, cot, sec, csc, arctan          14
+    abs (absolute value), exp (exponential),      15
+    sqrt (square root), log, ln.                  16
+    Constants pi and e are recognized.            17
+                                                  18
+       Arguments must be in parentheses. Powers   19
+    are found with ^; i.e., x^4. Multiplication   20
+    symbols (*) are essential.  I.e.,             21
+      2*x*Sqrt(Abs(Cos(y^3))) - 4*Exp(-x)         22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+DataHelp6B
+                                                  01
+         Make your own Predator-prey model        02
+                                                  03
+       If you include the time as a variable      04
+    in periodic functions with frequency p (or    05
+    period 2*Pi/p) and you want to see Poincare   06
+    maps, then, AFTER entering the functions in   07
+    the <Do it yourself> input screen, select     08
+    <Cyclical growth rate> and enter a value      09
+    for p equal to the one you have already       10
+    selected. (The values for a0 and a1 will be   11
+    ignored.)                                     12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+     Click the mouse or hit any key to continue.  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+
+
+DFieldHelp
+           The Direction Field Diagram            01
+                                                  02
+       The differential equations of the models   03
+    are, typically,                               04
+                                                  05
+      dx/dt = ax - bxy and dy/dt = -cy + dxy.     06
+                                                  07
+       If the second equation is divided by the   08
+    first, then the time, t, is eliminated  and   09
+                                                  10
+           dy/dx = (ax - bxy)/(-cy + dxy).        11
+                                                  12
+       The option D-Field draws a direction       13
+    field diagram for this equation in the x-y    14
+    plane. You can get an idea of all possible    15
+    solutions for the current values of the       16
+    parameters, and equilibrium postions, if      17
+    there are any.                                18
+                                                  19
+       The program plots arrows from a grid of    20
+    points in the x-y plane. You will be prompted 21
+    to enter the numbers of grid points along the 22
+    axes.                                         23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+HelpHK1
+                                                  01
+                    HotKeys Help                  02
+                                                  03
+    F2 is used to start a plot. It can also be    04
+       used to stop it temporarily.               05
+    F3 is used to speed up the plotting; it will  06
+       have no effect once the maximum speed is   07
+       reached.                                   08
+    F4 is used to slow down the plotting.         09
+    F5 is pressed when input for a new solution   10
+       is wanted. You will either see an input    11
+       screen or be prompted to use the mouse.    12
+       This will depend on you choice when enter- 13
+       ing parameters in the main input screen.   14
+    F6 is pressed for a direction field diagram.  15
+    F7 is pressed to clean up the screen for      16
+       further plotting. All existing plots are   17
+       lost.                                      18
+    F8 is pressed for a change of maximum values  19
+       of x and y.                                20
+    F10 returns you to the menu.                  21
+                                                  22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+HelpHK2
+                                                    01
+                    HotKeys Help                    02
+                                                    03
+    F2 is used to start a plot. It can also be      04
+       used to stop it temporarily.                 05
+    F3 is used to speed up the plotting; it will    06
+       have no effect once the maximum speed is     07
+       reached.                                     08
+    F4 is used to slow down the plotting.           09
+    F5 is pressed when input for a new solution     10
+       is wanted. You will either see an input      11
+       screen or be prompted to use the mouse.      12
+       This will depend on you choice when enter-   13
+       ing parameters in the main input screen.     14
+    F6 is pressed for a direction field diagram.    15
+    F7 is pressed to clean up the screen for        16
+       further plotting. All existing plots are     17
+       lost.                                        18
+    F8 is pressed for a change of maximum values    19
+       of x and y.                                  20
+    F10 returns you to the menu.                    21
+                                                    22
+                                                    23
+     Click the mouse or hit any key to continue.    24
+                                                    25
+
+
+HelpThreeD
+                                                    01
+                   Three-D Plot                     02
+                                                    03
+                   HotKeys Help                     04
+                                                    05
+    F2 is used to start a plot. It can also be      06
+       used to stop it temporarily.                 07
+                                                    08
+    F3 is used to speed up the plotting; it will    09
+       have no effect once the maximum speed is     10
+       reached.                                     11
+                                                    12
+    F4 is used to slow down the plotting.           13
+                                                    14
+    F5 is pressed when input for a new solution     15
+       is wanted.                                   16
+                                                    17
+    F10 returns you to the menu.                    18
+                                                    19
+    Use the radio buttons to select those plots     20
+    that you want to see                            21
+                                                    22
+                                                    23
+     Click the mouse or hit any key to continue.    24
+                                                    25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

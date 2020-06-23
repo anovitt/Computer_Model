@@ -1,0 +1,1133 @@
+
+
+PitchAboutProgram
+                                                  01
+                                                  02
+                Pitching a BaseBall               03
+                                                  04
+                 J.M.Anthony Danby                05
+          North Carolina State University         06
+                Copyright (c) 1997                07
+                                                  08
+       With this program you can be a great       09
+    pitcher from the comfort of your computer.    10
+    You can control the initial height and        11
+    velocity of the pitch as well as the spin     12
+    of the ball.                                  13
+                                                  14
+       You can view the action from the side,     15
+    from above or as seen by the batter.          16
+                                                  17
+       One option is to pitch knuckleballs.       18
+                                                  19
+                                                  20
+                    Play Ball!                    21
+                                                  22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+PitchAboutModel
+
+                                                  01
+          Pitching a BaseBall: The Model          02
+                                                  03
+       Units for this program are feet, pounds    04
+    and seconds.                                  05
+                                                  06
+       Three forces are involved in this model:   07
+                                                  08
+       GRAVITY is a constant force acting vert-   09
+    ically downward. It leads to the downward     10
+    acceleration 32 ft/sec*sec.                   11
+                                                  12
+       The DRAG on the baseball is proportional   13
+    to the square of its velocity and has direc-  14
+    tion opposite to that of the velocity.        15
+                                                  16
+        The LIFT is caused by the spin, and is    17
+    proportional to the cross product of the      18
+    spin and velocity vectors.                    19
+                                                  20
+       See additional help files for further      21
+    information.                                  22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+
+PitchAboutDrag
+                                                  01
+                      Drag                        02
+                                                  03
+      The drag on a ball is a force proportion-   04
+   al to the atmospheric density and the cross-   05
+   section of the ball. For the speeds under      06
+   consideration, it is also proportional to      07
+   the square of the velocity relative to the     08
+   air. It points opposite to this velocity.      09
+                                                  10
+      The resulting acceleration is this force    11
+   divided by the mass of the ball.               12
+                                                  13
+      In this program the acceleration is calc-   14
+   ulated by a constant, CD, multiplied by the    15
+   square of the velocity. The default value      16
+   of CD is 0.0025. This applies to a baseball    17
+   at sea level.                                  18
+                                                  19
+      You can vary this for different balls.      20
+   For instance, for a softball, the figure       21
+   would be 0.0035, or 1.4 times greater.         22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+PitchAboutLift
+                                                  01
+                      Lift                        02
+                                                  03
+      The lift on a ball is caused by the spin    04
+   of the ball. It is a force proportional to     05
+   the atmospheric density and the cross-section  06
+   of the ball. For the speeds under consider-    07
+   ation, it is also proportional to product of   08
+   the speed of the ball and its spin. It is in   09
+   the direction of the cross-product of the      10
+   spin and velocity vectors.                     11
+                                                  12
+      The resulting acceleration is this force    13
+   divided by the mass of the ball.               14
+                                                  15
+      In this program the acceleration is calc-   16
+   ulated by a constant, CL, multiplied by the    17
+   spin and the speed. The default value of CL    18
+   is 0.0007, which applies to a baseball at      19
+   sea level. The corresponding value for a       20
+   softball would be 0.0011.                      21
+                                                  22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+PitchDragAndLift
+                                                  01
+           Parameters for Drag and Lift           02
+                                                  03
+       The default parameters:                    04
+                                                  05
+             CD = 0.0025, CL = 0.0007             06
+                                                  07
+    apply to a baseball at sea level. The         08
+    baseball has radius R = 1.45 inches and       09
+    weight W = 5.1 ounces = 0.319 pounds.         10
+                                                  11
+       If you want to use another ball, with      12
+    radius R1 and weight W1, then:                13
+                                                  14
+          multiply the default figures by the     15
+       square of the ratio (R1/R) and             16
+                                                  17
+          divide by the ratio (W1/W).             18
+                                                  19
+                                                  20
+     Click the mouse or hit any key to continue.  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+PitchKnuckleBall
+                                                  01
+             Pitching a Knuckleball               02
+                                                  03
+       A non-spinning baseball experiences a      04
+    small lateral force that depends on its       05
+    orientation. If the seams on the ball would   06
+    appear symmetrical, as seen by the batter,    07
+    the force would be zero. So if the ball is    08
+    rotating about the vertical (z-) axis, the    09
+    ball will experience a lateral force that     10
+    varies sinusoidally, with period equal to     11
+    one quarter of the period of the spin. This   12
+    can cause the ball to change its direction    13
+    of curving during flight, a characteristic    14
+    of the knuckleball.                           15
+                                                  16
+       If the spin is too great, the changing     17
+    curve will have no time to build up, so       18
+    allow at most one revolution in the half      19
+    second flight of the ball. Pitching speeds    20
+    should be 60 to 70 mph, or around 90 ft/sec.  21
+                                                  22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+CricketAboutProgram
+                                                  01
+               Bowling a Cricket Ball             02
+                                                  03
+                 J.M.Anthony Danby                04
+          North Carolina State University         05
+                Copyright (c) 1997                06
+                                                  07
+       With this program you can be a great       08
+    bowler from the comfort of your computer.     09
+    You can control the initial height and        10
+    velocity of the ball as well as its spin.     11
+                                                  12
+       You can see the effects of spin on the     13
+    path through the air and also on the bounce   14
+    of the ball.                                  15
+                                                  16
+       One option is to follow the swing, due     17
+    to the orientation of the seam, on a non-     18
+    spinning ball.                                19
+                                                  20
+       You can view the action from the side,     21
+    from above or as seen by the batsman.         22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+CricketAboutBowlingA
+                                                  01
+               Bowling a Cricket Ball             02
+                                                  03
+       A bowler (whose elbow must not be bent)    04
+    delivers the ball toward a fragile wooden     05
+    structure called the 'wicket,' 66 feet away.  06
+    A batsman stands in front of the wicket; he   07
+    would like to hit the ball so that he can     08
+    score. But if he allows the ball to hit the   09
+    wicket or if he hits the ball into the air    10
+    so that it is caught on the fly, he is 'out'  11
+    and can no longer contribute to the score of  12
+    his side.                                     13
+                                                  14
+       The bowler aims to trick and maybe intim-  15
+    idate the batsman. This may be attampted in   16
+    a variety of ways. Usually the ball is given  17
+    a spin. This may affect the flight while in   18
+    the air. Most deliveries will bounce; the     19
+    spin will affect the direction of flight      20
+    after the bounce. So by varying the spin,     21
+    the bowler tries to trick the batsman.        22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+CricketAboutBowlingB
+               Bowling a Cricket Ball             01
+                                                  02
+       The bowler may try to intimidate the bat-  03
+    sman by sheer speed, sometimes bouncing the   04
+    ball early so that it flies up toward the     05
+    batsman's head.                               06
+                                                  07
+       A ball may be changed several times dur-   08
+    ing a game. When new, the ball is shiny and   09
+    has a protuberant row of stiches around a     10
+    circumference, called the 'seam.' If the ball 11
+    is not spinning, and the seam is correctly    12
+    aligned, then the turbulent wake behind the   13
+    ball can be asymmetric, leading to a lateral  14
+    force (that can be as high as 0.4 times the   15
+    weight of the ball). This causes the ball to  16
+    'swing' while moving through the air. Another 17
+    way in which the batsman can be confused.     18
+                                                  19
+       Be careful. If the ball deviates by more   20
+    than three feet from the line to the wicket,  21
+    the ball is delared to be 'wide' and the      22
+    bowler's side is penalized.                   23
+                                                  24
+     Click the mouse or hit any key to continue.  25
+
+
+CricketAboutModel
+                                                  01
+               Bowling a Cricket Ball             02
+                                                  03
+       Units for this program are feet, pounds    04
+    and seconds.                                  05
+                                                  06
+       Three forces are involved in this model:   07
+                                                  08
+       GRAVITY is a constant force acting ver-    09
+    tically downward. It leads to the downward    10
+    acceleration 32 ft/sec*sec.                   11
+                                                  12
+       The DRAG on a cricket ball is proportion-  13
+    al to the square of its velocity and has      14
+    direction opposite to that of the velocity.   15
+                                                  16
+        The LIFT is caused by the spin, and is    17
+    proportional to the cross product of the      18
+    spin and velocity vectors.                    19
+                                                  20
+       See additional help files for further      21
+    information on these.                         22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+
+CricketAboutDrag
+                                                  01
+                      Drag                        02
+                                                  03
+      The drag on a ball is a force proportion-   04
+   al to the atmospheric density and the cross-   05
+   section of the ball. For the speeds under      06
+   consideration, it is also proportional to      07
+   the square of the velocity relative to the     08
+   air. It points opposite to this velocity.      09
+                                                  10
+      The resulting acceleration is this force    11
+   divided by the mass of the ball.               12
+                                                  13
+      In this program the acceleration is cal-    14
+   culated by a constant, CD, multiplied by the   15
+   square of the velocity. The default value      16
+   of CD is 0.0019. This applies to a cricket     17
+   ball at sea level.                             18
+                                                  19
+      You can vary this for different balls.      20
+   For instance, for a baseball, the figure       21
+   would be 0.0024.                               22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+CricketAboutLift
+                                                  01
+                      Lift                        02
+                                                  03
+      The lift on a ball is caused by the spin    04
+   of the ball. It is a force proportional to     05
+   the atmospheric density and the cross-section  06
+   of the ball. For the speeds under consider-    07
+   ation, it is also proportional to product of   08
+   the speed of the ball and its spin. It is in   09
+   the direction of the cross-product of the      10
+   spin and velocity vectors.                     11
+                                                  12
+      The resulting acceleration is this force    13
+   divided by the mass of the ball.               14
+                                                  15
+      In this program the acceleration is cal-    16
+   culated by a constant, CL, multiplied by the   17
+   spin and the speed. The default value of CL    18
+   is 0.00053, which applies to a cricket ball    19
+   at sea level.                                  20
+                                                  21
+                                                  22
+     Click the mouse or hit any key to continue.  23
+                                                  24
+                                                  25
+
+CricketDragAndLift
+                                                  01
+           Parameters for Drag and Lift           02
+                                                  03
+       The default parameters:                    04
+                                                  05
+             CD = 0.0019, CL = 0.00053            06
+                                                  07
+    apply to a cricket ball at sea level. The     08
+    ball has radius R = 1.4 inches and            09
+    weight W = 5.5 ounces = 0.344 pounds.         10
+                                                  11
+       If you want to use another ball, with      12
+    radius R1 and weight W1, then:                13
+                                                  14
+          multiply the default figures by the     15
+       square of the ratio (R1/R) and             16
+                                                  17
+          divide by the ratio (W1/W).             18
+                                                  19
+                                                  20
+     Click the mouse or hit any key to continue.  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+CricketSwingA
+                                                  01
+           The Swing of a Cricket Ball            02
+                                                  03
+       A cricket ball consists of two hemi-       04
+    spheres of leather joined by six rows of      05
+    stiches that constitute the 'seam.' When      06
+    the ball is new, the lether is shiny and      07
+    the seam is protruberant.                     08
+                                                  09
+       If the ball was not spinning, and the      10
+    seam was perpendicular to the velocity, the   11
+    turbulent wake behind the ball would be sym-  12
+    metric and the batsman would see the ball as  13
+    moving straight. But if the seam is inclined  14
+    to this direction (the best angle being       15
+    around 20 degrees) the wake is asymmetrical   16
+    and there is a lateral force on the ball that 17
+    can be as great as 0.4 times the weight of    18
+    the ball. This force depends on the condi-    19
+    tion of the ball (it must be nearly new),     20
+    the angle of the seam and the speed through   21
+    the air.                                      22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+CricketSwingB
+                                                  01
+           The Swing of a Cricket Ball            02
+                                                  03
+       There is great variation in the measured   04
+    parameters describing the lateral force and   05
+    its dependence on speed. The model used here  06
+    is a compromise.                              07
+                                                  08
+       For low speeds there is no turbulent wake  09
+    and no lateral force. At 30 ft/sec the        10
+    force starts to build, becoming greatest at   11
+    100 ft/sec. At high speeds the turbulence     12
+    increases so that it becomes symmetric, and   13
+    the force diminishes; it becomes zero at      14
+    120 ft/sec.                                   15
+                                                  16
+       The maximum force, at 100 ft/sec, is a     17
+    parameter that you can vary. It is            18
+               F*(weight of the ball)             19
+    where 0 < F < 0.5. Its value depends on the   20
+    age and condition of the ball and the orien-  21
+    tation of the seam.                           22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+
+
+CricketBounce
+                                                  01
+            Bouncing a Spinning Ball              02
+                                                  03
+     Two factors are important:                   04
+                                                  05
+      The coefficient of restitution, which lies  06
+   between zero and one, controls the diminution  07
+   in speed when the ball bounces. If repeated    08
+   bounces rise to heights h1, h2, h3, ..., then  09
+   the constant ratio h2/h1, h3/h2, ..., is the   10
+   coefficient of restitution. So a value of one  11
+   gives a perfect bounce, while zero gives no    12
+   bounce.                                        13
+                                                  14
+      When the ball strikes the ground, it will   15
+   not grip the surface perfectly, but will par-  16
+   tially slide. So only a proportion of the      17
+   spin, at impact, contributes to the deviation  18
+   in the path. The parameter describing this     19
+   should lie between zero and one, where one     20
+   will represent a perfect grip. A value of      21
+   zero would give no grip and no deviation.      22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+BadmintonAboutProgram
+                                                  01
+        Hitting a ShuttleCock in Badminton        02
+                                                  03
+                J.M.Anthony Danby                 04
+         North Carolina State University          05
+               Copyright (c) 1997                 06
+                                                  07
+      A characteristic of a shuttlecock, when     08
+   compared to other missiles in sports, is the   09
+   high drag coefficient. The limiting speed of   10
+   a shuttlecock is about 20 ft/sec, while the    11
+   launching speed of a smash is ten times that   12
+   amount. So most badminton shots show dramatic  13
+   deceleration.                                  14
+                                                  15
+      In this program you are prompted to enter   16
+   values for the drag coefficient, and coordi-   17
+   nates of the launching point, the initial      18
+   speed and the initial angle the trajectory     19
+   makes with the horizontal. All strokes start   20
+   to the left of the net, with horizontal, or    21
+   x-component negative.                          22
+
+
+
+
+BadmintonAboutModel
+                                                  01
+        Hitting a ShuttleCock in Badminton        02
+                                                  03
+      The forces in the model are gravity, acting 04
+   vertically down, and drag. The drag force is   05
+   proportional to the cross-sectional area that  06
+   is perpendicular to the velocity. This area    07
+   is assumed to be constant. The force is also   08
+   proportional to the square of the speed.       09
+                                                  10
+      The terminal speed of a shuttlecock at sea  11
+   level is 22.3 ft/sec. Consistent with this,    12
+   the deceleration due to drag is equal to       13
+   0.0643 times the square of the velocity, in    14
+   the direction opposite to that of the ve-      15
+   locity. You may change this coefficient if     16
+   you wish.                                      17
+                                                  18
+      Units used in the program are feet, sec-    19
+   onds and pounds.                               20
+                                                  21
+                                                  22
+   Click the mouse or hit any key to continue.    23
+                                                  24
+                                                  25
+
+
+BadmintonAboutBadminton
+                                                  01
+        Hitting a ShuttleCock in Badminton        02
+                                                  03
+       The net is 5 feet high. 6.5 feet from the  04
+    net are the short service lines. 19.5 feet    05
+    from the net are the long service lines for   06
+    doubles. At a further distance of 2.5 feet    07
+    are the back boundary lines: also the long    08
+    service lines for singles.                    09
+                                                  10
+       Services must be made in the area between  11
+    the long and short service lines, and must    12
+    land inside the similar area on the other     13
+    side of the net. At the instant of serving    14
+    the shuttlecock must be below the server's    15
+    waist.                                        16
+                                                  17
+       Return shots can be made in a variety of   18
+    ways, from underhand lobs to overhead         19
+    smashes, and they may be designed to land     20
+    near the back boundary lines or just to       21
+    clear the net.                                22
+                                                  23
+   Click the mouse or hit any key to continue.    24
+                                                  25
+
+GolfAboutProgram
+                                                  01
+                Driving a Golf Ball               02
+                                                  03
+                 J.M.Anthony Danby                04
+          North Carolina State University         05
+                Copyright (c) 1997                06
+                                                  07
+       In this program you will be able to        08
+    follow the motion in three dimensions of      09
+    a golf ball. To start the drive you can       10
+    specify the initial velocity, and the spin.   11
+    This will consist of a bottom-spin to give    12
+    the ball added lift and, since nobody is      13
+    perfect, a side-spin for hooking or slic-     14
+    ing.                                          15
+                                                  16
+       The flight of a golf ball demonstrates     17
+    the action of drag and lift forces very       18
+    well. Speeds and spin rates can be high,      19
+    and the flight lasts long enough to see the   20
+    effects of these forces clearly.              21
+                                                  22
+                       FORE!                      23
+                                                  24
+   Click the mouse or hit any key to continue.    25
+
+
+
+GolfAboutModel
+                                                  01
+                Driving a Golf Ball               02
+                                                  03
+       Units for this program are feet, pounds    04
+    and seconds.                                  05
+                                                  06
+       Three forces are involved in this model:   07
+                                                  08
+       GRAVITY is a constant force acting ver-    09
+    tically downward. It leads to the downward    10
+    acceleration 32 ft/sec*sec.                   11
+                                                  12
+       The DRAG on the golf ball is proportional  13
+    to the square of its velocity and has direc-  14
+    tion opposite to that of the velocity.        15
+                                                  16
+        The LIFT is caused by the spin, and is    17
+    proportional to the cross product of the      18
+    spin and velocity vectors.                    19
+                                                  20
+       See additional help files for further      21
+    information.                                  22                                                  03
+                                                  23
+   Click the mouse or hit any key to continue.    24
+                                                  25
+
+
+
+GolfAboutDrag
+                                                  01
+                      Drag                        02
+                                                  03
+      The drag on a ball is a force proportion-   04
+   al to the atmospheric density and the cross-   05
+   section of the ball. For the speeds under      06
+   consideration, it is also proportional to      07
+   the square of the velocity relative to the     08
+   air. It points opposite to this velocity.      09
+   The resulting acceleration is this force       10
+   divided by the mass of the ball.               11
+                                                  12
+      In this program the acceleration is calc-   13
+   ulated by a constant, CD, multiplied by the    14
+   square of the velocity. The default value      15
+   of CD is 0.00231. This applies to a golf       16
+   ball at sea level.                             17
+                                                  18
+      You can vary this for different balls.      19
+   For instance, for a baseball, the figure       20
+   would be 0.0025. With this, you could use      21
+   this program to follow the motion of a         22
+   flyball.                                       23
+                                                  24
+     Click the mouse or hit any key to continue.  25
+
+
+GolfAboutLiftA
+                                                  01
+                      Lift                        02
+                                                  03
+      The lift on a ball is caused by the spin    04
+   of the ball. It is a force proportional to     05
+   the atmospheric density and the cross-section  06
+   of the ball. For the speeds under consider-    07
+   ation, it is also proportional to product of   08
+   the speed of the ball and its spin. It is in   09
+   the direction of the cross-product of the      10
+   spin and velocity vectors.                     11
+                                                  13
+      The resulting acceleration is this force    14
+   divided by the mass of the ball.               15
+                                                  16
+      In this program the acceleration is calc-   17
+   ulated by a constant, CL, multiplied by the    18
+   spin and the speed. The default value of CL    19
+   is 0.00041, which applies to a golf ball at    20
+   sea level. The corresponding value for a       21
+   baseball is 0.0007.                            22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+GolfAboutLiftB
+                                                  01
+                      Lift                        02
+                                                  03
+       The most important use of spin in golf     04
+    is to give added vertical lift to the ball.   05
+    This requires a backspin, or bottom-spin.     06
+    With the x-axis pointing forward and the      07
+    z-axis pointing vertically upward, this       08
+    spin is y-component of spin, wy, and must     09
+    be NEGATIVE. Such spins of the order of       10
+    200 radians per second are possible.          11
+                                                  12
+       A mis-hit golf ball has sidespin, in       13
+    addition to backspin. This involves the       14
+    z-component, wz. It causes the ball to dev-   15
+    iate to the left or right.                    16
+                                                  17
+       (The x-component, wx, does not have a      18
+    significant effect on the path.)              19
+                                                  20
+                                                  21
+                                                  22
+     Click the mouse or hit any key to continue.  23
+                                                  24
+                                                  25
+
+
+GolfDragAndLift
+                                                  01
+           Parameters for Drag and Lift           02
+                                                  03
+       The default parameters:                    04
+                                                  05
+            CD = 0.00231, CL = 0.00041            06
+                                                  07
+    apply to a golf ball at sea level. The        08
+    ball has radius R = 0.846 inches and          09
+    weight W = 1.62 ounces = 0.101 pounds.        10
+                                                  11
+       If you want to use another ball, with      12
+    radius R1 and weight W1, then:                13
+                                                  14
+          multiply the default figures by the     15
+       square of the ratio (R1/R) and             16
+                                                  17
+          divide by the ratio (W1/W).             18
+                                                  19
+                                                  20
+     Click the mouse or hit any key to continue.  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+GolfAboutDemonstration
+                                                  01
+              Driving a Golf Ball                 02
+                                                  03
+       This demonstration is intended to illus-   04
+    trate the effects of drag and lift on the     05
+    flight of a golf ball. It shows motion in     06
+    the x-z plane, so only the y-component of     07
+    spin, wy, is used.                            08
+                                                  09
+       First, you can select parameters for drag  10
+    and spin. Next, you can select the initial    11
+    velocity of the drive, and the value of wy.   12
+    For lift, this should be negative.            13
+                                                  14
+       You will then see three trajectories.      15
+    The first is subject only to gravity, with    16
+    drag and lift forces equal to zero. The       17
+    next combines gravity and drag, to show the   18
+    the dramatic decrease in range caused by      19
+    drag. The third combines all forces, to       20
+    show the effects of lift.                     21
+                                                  22
+     Click the mouse or hit any key to continue.  23
+                                                  24
+                                                  25
+
+
+TennisAboutProgram
+                                                  01
+                 Serving in Tennis                02
+                                                  03
+                 J.M.Anthony Danby                04
+          North Carolina State University         05
+                Copyright (c) 1997                06
+                                                  07
+        In this program you are prompted to       08
+     serve a tennis ball, choosing your           09
+     initial location, height, velocity and       10
+     spin.                                        11
+                                                  12
+        The motion of the ball is followed        13
+     in three dimensions, provided the ball       14
+     does not hit the net or leave the court.     15
+     Bouncing is allowed.                         16
+                                                  17
+        You can also choose starting condit-      18
+     ions to model other tennis strokes.          19
+                                                  20
+        There is no opponent in the model.        21
+                                                  22
+     Click the mouse or hit any key to continue.  23
+                                                  24
+                                                  25
+
+
+TennisAboutModel
+                                                  01
+                 Serving in Tennis                02
+                                                  03
+       Units for this program are feet, pounds    04
+    and seconds.                                  05
+                                                  06
+       Three forces are involved in this model:   07
+                                                  08
+       GRAVITY is a constant force acting ver-    09
+    tically downward. It leads to the downward    10
+    acceleration 32 ft/sec*sec.                   11
+                                                  12
+       The DRAG on the tennis ball is propor-     13
+    tional to the square of its velocity and has  14
+    direction opposite to that of the velocity.   15
+                                                  16
+        The LIFT is caused by the spin, and is    17
+    proportional to the cross product of the      18
+    spin and velocity vectors.                    19
+                                                  20
+       See additional help files for further      21
+    information.                                  22                                                  03
+                                                  23
+   Click the mouse or hit any key to continue.    24
+                                                  25
+
+
+TennisAboutServingA
+                                                  01
+                 Serving in Tennis                02
+                                                  03
+       A server must stand behind the service     04
+    line on one side of the court and serve the   05
+    ball into the service court on the side dia-  06
+    gonally opposite. The service line is 36      07
+    feet from the net, and the back of the ser-   08
+    vice court is 21 feet from the net. The       09
+    height of the net is 3 feet.                  10
+                                                  11
+       A fast serve is projected at a small       12
+    downward angle; the limits for this angle,    13
+    between the ball hitting the net and land-    14
+    ing outside the service court may be          15
+    separated by as little as half a degree.      16
+    This depends on the speed height of the       17
+    serve. If the ball is given a top-spin,       18
+    causing the ball to dip in flight, this       19
+    range between these limits may be increased.  20
+    A purpose of this program is to investigate   21
+    this.                                         22
+                                                  23
+   Click the mouse or hit any key to continue.    24
+                                                  25
+
+
+TennisAboutServingB
+Coordinates 0.0 0.2
+                                                  01
+                 Serving in Tennis                02
+                                                  03
+       This coordinate system used here has the   04
+    origin in the center of the court. The x-     05
+    axis points down the court and the ball is    06
+    hit at a point with negative x. For a server  07
+    the initial value of x is -39. The y-axis     08
+    is along the net, with the positive y-di-     09
+    rection to the server's left.                 10
+                                                  11
+       The initial velocity is specified by the   12
+    speed, in ft/sec, theta, the angle the velo-  13
+    city makes with the horizontal (downward      14
+    being negative) and phi, the angle the velo-  15
+    city makes with the x-axis. A serve toward    16
+    the server's left would correspond to a posi- 17
+    tive angle phi. So a server from the left of  18
+    the court will have y positive and phi neg-   19
+    ative.                                        20
+                                                  21
+       Strokes other than serves are allowed.     22
+                                                  23
+   Click the mouse or hit any key to continue.    24
+                                                  25
+
+
+TennisAboutDrag
+                                                  01
+                      Drag                        02
+                                                  03
+      The drag on a ball is a force proportion-   04
+   al to the atmospheric density and the cross-   05
+   section of the ball. For the speeds under      06
+   consideration, it is also proportional to      07
+   the square of the velocity relative to the     08
+   air. It points opposite to this velocity.      09
+   The resulting acceleration is this force       10
+   divided by the mass of the ball.               11
+                                                  12
+      In this program the acceleration is cal-    13
+   culated by a constant, CD, multiplied by the   14
+   square of the velocity. The default value      15
+   of CD is 0.00412. This applies to a tennis     16
+   ball at sea level.                             17
+                                                  18
+                                                  19
+                                                  20
+     Click the mouse or hit any key to continue.  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+TennisAboutLiftA
+                                                  01
+                      Lift                        02
+                                                  03
+      The lift on a ball is caused by the spin    04
+   of the ball. It is a force proportional to     05
+   the atmospheric density and the cross-section  06
+   of the ball. For the speeds under consider-    07
+   ation, it is also proportional to product of   08
+   the speed of the ball and its spin. It is in   09
+   the direction of the cross-product of the      10
+   spin and velocity vectors.                     11
+                                                  13
+      The resulting acceleration is this force    14
+   divided by the mass of the ball.               15
+                                                  16
+      In this program the acceleration is cal-    17
+   culated by a constant, CL, multiplied by the   18
+   spin and the speed. The default value of CL    19
+   is 0.0011, which applies to a tennis ball      20
+   at sea level.                                  21
+                                                  22
+     Click the mouse or hit any key to continue.  23
+                                                  24
+                                                  25
+
+TennisAboutLiftB
+                                                  01
+                      Lift                        02
+                                                  03
+       Spin can be used in tennis to increase     04
+    the margin of error when serving. A topspin   05
+    (with the y-component of the spin, wy,        06
+    being positive) will produce a downward       07
+    force, allowing the server to hit the ball    08
+    at a greater angle to the horizontal.         09
+    Experiment with this. Also try backspin,      10
+    with wy negative, and see what happens.       11
+                                                  12
+       Another use of spin to to cause the ball   13
+    to move in unexpected ways after bouncing.    14
+    Since bouncing is included in this model,     15
+    you can experiment with this. All three       16
+    components of spin can be tried.              17
+                                                  18
+       Experiment with strikes other than         19
+    serves. Try relatively low initial speeds.    20
+                                                  21
+                                                  22
+     Click the mouse or hit any key to continue.  23
+                                                  24
+                                                  25
+
+
+
+TennisDragAndLift
+                                                  01
+           Parameters for Drag and Lift           02
+                                                  03
+       The default parameters:                    04
+                                                  05
+            CD = 0.00412, CL = 0.0011             06
+                                                  07
+    apply to a tennis ball at sea level. The      08
+    ball has radius R = 0.846 inches and          09
+    weight W = 2 ounces = 0.13 pounds.            10
+                                                  11
+       If you want to use another ball, with      12
+    radius R1 and weight W1, then:                13
+                                                  14
+          multiply the default figures by the     15
+       square of the ratio (R1/R) and             16
+                                                  17
+          divide by the ratio (W1/W).             18
+                                                  19
+                                                  20
+     Click the mouse or hit any key to continue.  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+JavelinAboutProgram
+                                                  01
+             The Motion of a Javelin              02
+                                                  03
+                J.M.Anthony Danby                 04
+         North Carolina State University          05
+               Copyright (c) 1997                 06
+                                                  07
+         This program invites you to throw        08
+      a javelin.                                  09
+                                                  10
+         Holding it at the center of gravity,     11
+      you can select the initial height and       12
+      speed. At the start, the javelin will       13
+      point along the direction of the veloc-     14
+      ity; you can select the angle that this     15
+      direction makes with the horizontal.        16
+      Finally, you can impart an initial rate     17
+      of change of the angle between the          18
+      javelin and the horizontal.                 19
+                                                  20
+                                                  21
+   Click the mouse or hit any key to continue.    22
+                                                  23
+                                                  24
+                                                  25
+
+
+JavelinAboutModel
+                                                  01
+             The Motion of a Javelin              02
+                                                  03
+       Units in this model are meters, kilo-      04
+    grams and seconds.                            05
+                                                  06
+       The forces are gravity, drag and lift.     07
+    Drag and lift act at a point called the       08
+    center of pressure, which is displaced from   09
+    the center of gravity by a distance           10
+                    d = 0.255 m.                  11
+    You may vary this quantity when running the   12
+    program.                                      13
+                                                  14
+       Formulas for the drag and lift forces are  15
+    coded into the program without giving you     16
+    the option to vary them. They depend, in      17
+    complicated ways on the angle between the     18
+    velocity of the center of gravity and the     19
+    line of the javelin -- called the angle of    20
+    attack.                                       21
+                                                  22
+       Motion is followed in just two dimensions. 23
+                                                  24
+   Click the mouse or hit any key to continue.    25
+
+
+
+
+JavelinInputHelp
+                                                  01
+             The Motion of a Javelin              02
+                                                  03
+       Motion is followed in two dimensions.      04
+                                                  05
+       Initially, the javelin will point along    06
+    the velocity vector, so the elevation angle   07
+    defines the orientation of the javelin and    08
+    the direction of the initial velocity.        09
+                                                  10
+       In addition, you can enter an initial      11
+    angular rate at which the javelin is rot-     12
+    ating about its center of mass. To be         13
+    practical, this should be small.              14
+                                                  15
+       In animation, the javelin is too short     16
+    for its orientation to be easily seen. So     17
+    you can anter a factor for the exaggeration   18
+    of its length. Also, you will see the path    19
+    of the center of mass. In addition, the jav-  20
+    lin is plotted at regular intervals of time;  21
+    you can choose this interval.                 22
+                                                  23
+   Click the mouse or hit any key to continue.    24
+                                                  25
+
+
+
+
+DiscusAboutProgram
+                                                  01
+              The Motion of a Discus              02
+                                                  03
+                J.M.Anthony Danby                 04
+         North Carolina State University          05
+               Copyright (c) 1997                 06
+                                                  07
+        This program invites you to throw a       08
+     discus. You can control the initial          09
+     height, speed and direction, and also        10
+     the orientation of the discus.               11
+                                                  12
+        In addition, you can specify a wind       13
+     blowing horizontally either in the direc-    14
+     tion of the motion, or opposing it.          15
+                                                  16
+        A surprising feature of the model is      17
+     that if the wind opposes the motion,         18
+     then the range is increased.                 19
+                                                  20
+                                                  21
+   Click the mouse or hit any key to continue.    22
+                                                  23
+                                                  24
+                                                  25
+
+
+DiscusAboutModel
+                                                  01
+              The Motion of a Discus              02
+                                                  03
+       This is project 9.15 in the text. It is    04
+    based on a paper by C.Frohlich.               05
+                                                  06
+       A discus is thrown with a sufficiently     07
+    large spin, parpendicular to its plane, so    08
+    that the spin vector remains constant and     09
+    its attitude does not change. It moves in a   10
+    vertical plane subject to the forces of       11
+    gravity, lift and drag. A wind, blowing       12
+    horizontally in the same plane, with vel-     13
+    ocity independent of altitude, is included    14
+    in the model.                                 15
+                                                  16
+       You can specify the initial height,        17
+    velocity and orientation of the discus, as    18
+    well as the velocity of the wind. Look for    19
+    conditions for optimal range. A feature of    20
+    the model is that range can increase when     21
+    the discus is thrown INTO the wind.           22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+
+
+
+
+DiscusHotKeyHelp
+               The Path of a Discus               01
+                   HotKey Help                    02
+                                                  03
+    F2-Throw. Throw the discus using the latest   04
+       input conditions. The scale of the axes    05
+       will not be changed, so not all of the     06
+       graph may be visible.                      07
+                                                  08
+    F3-Cleanup. This erases all current plots     09
+       and redraws the axes, scaled for the       10
+       current input conditions.                  11
+                                                  12
+    F4-Input. The full input screen is displayed, 13
+       prompting you for new values. If you want  14
+       to rescale the axes for this input, use    15
+       the F3 hotkey.                             16
+                                                  17
+    F5-Faster and F6-Slower. These will not       18
+       change the speed of plotting while the     19
+       animation is taking place. Use these keys  20
+       before or after the animation.             21
+                                                  22
+    F10-Menu returns you to the main menu.        23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+

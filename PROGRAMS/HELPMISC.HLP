@@ -1,0 +1,1112 @@
+ProdExchAboutProgram
+                                                  01
+        A Model for Production and Exchange       02
+                                                  03
+                 J.M.Anthony Danby                04
+          North Carolina State University         05
+                 Copyright (c) 1997               06
+                                                  07
+        Two individuals manufacture goods. Each   08
+     keeps a proportion of the goods produced     09
+     and gives the remainder to the other. Each   10
+     experiences pleasure from owning goods,      11
+     but 'negative' pleasure from producing       12
+     them.                                        13
+                                                  14
+        You will be prompted to enter parameters  15
+     measuring the proportions of goods that      16
+     work. You can also vary these parameters     18
+     while the program is running.                19
+                                                  20
+        Depending on the parameters, the model    21
+     may have an equilibrium that may be stable   22
+     or unstable.                                 23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+ProdExchAboutModelA
+                                                  01
+        A Model for Production and Exchange       02
+                                                  03
+       Two individuals produce goods; the         04
+    quantities of goods being measured, respec-   05
+    tively, by x and y. The first keeps the       06
+    fraction p1*x and gives away (1 - p1)*x.      07
+    For the second, the corresponding numbers     08
+    are p2*y and (1 - p2)*y.                      09
+                                                  10
+       The enjoyment at owning goods is given     11
+    by the parameters e1 and e2, where            12
+                0 < e1, e1, < 1.                  13
+    Also the dissatisfaction at working is given  14
+    by r1 and r2, where                           15
+               -1 < r1, r2, < 1.                  16
+    (We allow negative numbers in case an         17
+    individual LIKES to work!).                   18
+                                                  19
+    The final model is                            20
+       dx/dt = e1*p1/(p1*x+(1-p2)*y+1) - r1,      21
+       dy/dt = e2*p2/(p2*y+(1-p1)*x+1) - r2.      22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+ProdExchAboutModelB
+                                                  01
+        A Model for Production and Exchange       02
+                                                  03
+       The model is sensitive to the parameters.  04
+    In the simplest case,                         05
+          e1 = e2 = 1, p1 = p2 and r1 = r2.       06
+    Then, there is an equilibrium, provided that  07
+                       p1 > r1.                   08
+    You might start with such conditions and      09
+    then introduce small variations.              10
+                                                  11
+       In the principal graphics screen you can   12
+    use six sliders to vary the parameters and    13
+    see information about the equilibrium. For    14
+    precise changes in the parameters, use the    15
+    input screen <Enter parameters> from the      16
+    menu. Solutions are plotted in the x-y        17
+    plane.                                        18
+                                                  19
+       You have the option of seeing a direction  20
+    field diagram in the x-y plane, and plotting  21
+    solutions on this diagram.                    22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+
+
+
+
+ProdExchDFieldA
+                                                  01
+        A Model for Production and Exchange       02
+            The Direction Field Diagram           03
+                                                  04
+       The differential equations of the model    05
+    are                                           06
+       dx/dt = e1*p1/(p1*x+(1-p2)*y+1) - r1,      07
+       dy/dt = e2*p2/(p2*y+(1-p1)*x+1) - r2.      08
+                                                  09
+       If the second equation is divided by the   10
+    first, then the time, t, is eliminated  and   11
+                                                  12
+       dy/dx = (e2*p2/(p2*y+(1-p1)*x+1) - r2)     13
+               /(e1*p1/(p1*x+(1-p2)*y+1) - r1).   14
+                                                  15
+       If you choose the menu option <See the     16
+    direction field diagram> then you will see    17
+    the diagram for this equation in the x-y      18
+    plane. First, you will be prompted for values 19
+    of the parameters and the numbers of grid     20
+    points for the arrows. At each of the grid    21
+    points the slope dy/dx is calculated and an   22
+    arrow of that slope drawn through the point.  23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+ProdExchDFieldB
+                                                  01
+        A Model for Production and Exchange       02
+            The Direction Field Diagram           03
+                                                  04
+       The diagram enables you to get an idea     05
+    of all possible solutions for the current     06
+    values of the parameters.                     07
+                                                  08
+       You also will have the option of           09
+    selecting initial conditions and seeing       10
+    solutions plotted over this diagram.          11
+                                                  12
+                                                  13
+                                                  14
+    Click the mouse or hit any key to continue.   15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+YoYoAboutProgram
+                                                  01
+               The Motion of a Yoyo               02
+                                                  03
+                J.M.Anthony Danby                 04
+         North Carolina State University          05
+               Copyright (c) 1997                 06
+                                                  07
+        In this program you can design your       08
+     own yoyo, and operate it vertically,         09
+     choosing the starting speed.                 10
+                                                  11
+        Elements of the design consist of the     12
+     moment of inertia of the yoyo about the      13
+     central spindle, and two radii of that       14
+     spindle, first, when the string is fully     15
+     wound and second, when it is completely      16
+     unwound.                                     17
+                                                  18
+        You can play with the yoyo, seing its     19
+     animated motion, and plots of the            20
+     distance traveled, the speed and the         21
+     angular velocity with the time.              22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+
+YoYoAboutModelA
+                                                  01
+               The Motion of a Yoyo               02
+                                                  03
+      An object, when operating a yoyo is to      04
+   produce the greatest possible angular vel-     05
+   ocity at the lowest point. There are two       06
+   Principal considerations here.                 07
+                                                  08
+      During descent, the radius of the central   09
+   cylinder around which the string is unwinding  10
+   is diminishing, since this cylinder is made    11
+   up partly from a central spindle and partly    12
+   tfrom he string that remains wound. This       13
+   means that greater angular velocity is         14
+   acquired as the yoyo descends.                 15
+                                                  16
+      Another factor is the moment of inertia     17
+   about the central spindle; the higher it is,   18
+   the greater will be the kinetic energy due     19
+   to the rotation.                               20
+                                                  21
+                                                  22
+    Click the mouse or hit any key to continue.   23
+                                                  24
+                                                  25
+
+
+YoYoAboutModelB
+                                                  01
+               The Motion of a Yoyo               02
+                                                  03
+      As a yoyo descends, its energy is made up   04
+   of the kinetic energy of descent, the kinetic  05
+   energy of the rotation and its potential       06
+   energy. The more energy picked up by the rot-  07
+   ation, the more will the downward descent be   08
+   slowed down.                                   09
+                                                  10
+      The reverse is true when the yoyo is        11
+   rising.                                        12
+                                                  13
+      To design the yoyo you will be prompted     14
+   to enter the radiu of the inner spindle when   15
+   fully wound and when bare, the length of the   16
+   string and the moment of inertia about the     17
+   spindle. In this model the latter quantity     18
+   is determined by specifying the radius and     19
+   mass of the yoyo and its radius of gyration.   20
+                                                  21
+                                                  22
+    Click the mouse or hit any key to continue.   23
+                                                  24
+                                                  25
+
+YoYoAboutParameters
+         The Motion of a Yoyo: Parameters         01
+                                                  02
+      The unit of length is the inch.             03
+      Parameters of the model are:                04
+   R0, the radius of the inner spindle about      05
+      which the string is wound.                  06
+   R1, the radius of the inner cylinder when the  07
+      string is fully wound around it.            08
+   R2, the radius of the yoyo.                    09
+             (Clearly, R0 < R1 < R2.)             10
+   The length of the string that is wound around  11
+   the spindle at the start. (Exclude the small   12
+   amount of string between the spindle and the   13
+   hand.) The mass of the string is neglected.    14
+      If M is the mass of the yoyo and the moment 15
+   of inertia about the central spindle is        16
+   I, then the ratio (I/M) is used in the model.  17
+   Now I = M*k*R2^2, so k, the radius of gyration 18
+   is the final parameter. It is equal to 1/5 for 19
+   a homogeneous spheroid, but can increase to 1  20
+   as the mass is concentrated around the outer   21
+   rim. This concentration can be desirable when  22
+   the object is to maximize the spin at the end  23
+   of the descent.                                24
+     Click the mouse or hit any key to continue.  25
+
+
+YoYoHotKeysHelp
+                                                  01
+                  The Motion of a Yoyo            02
+                                                  03
+  HotKeys:                                        04
+    <F2-Parameters> will bring up the input       05
+       screen for the full parameters of the      06
+       model.                                     07
+    <F3-Start> will bring up the input screen     08
+       for the starting downward speed of the     09
+       yoyo.                                      10
+    <F4-Yoyo> will animate the motion of the      11
+       yoyo, once down and up.                    12
+                                                  13
+  Screens:                                        14
+       The graphs show changes in the fol-        15
+    lowing variables as the yoyo descends:        16
+                                                  17
+    x is the distance, in inches, through         18
+       which the yoyo has descended after time    19
+       t seconds.                                 20
+    xDot is the speed of descent in in/sec.       21
+    ThetaDot is the angular spin of the yoyo      22
+       in radians per second.                     23
+                                                  24
+   Click the mouse or hit any key to continue.    25
+
+
+
+
+
+BernoulliAboutProgram
+                                                  01
+               Bernoulli's Problem                02
+                                                  03
+                J.M.Anthony Danby                 04
+         North Carolina State University          05
+               Copyright (c) 1997                 06
+                                                  07
+       Bernoulli played with a balance, which,    08
+    in equilibrium, consisted of a horizontal     09
+    beam with two scales hanging from the ends.   10
+    He noticed that oscillatory motion would      11
+    then continue to be exchanged between the     12
+    two scales.                                   13
+                                                  14
+       This phenomenon became to be known as      15
+    'Bernoulli's problem.'                        16
+                                                  17
+       You can design your balance and confirm    18
+    Bernoulli's observation. If you start with    19
+    large oscillations, you will see that the     20
+    system is chaotic. A fact that Berboulli      21
+    unfortunately never observed.                 22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+BernoulliAboutModelA
+                                                  01
+               Bernoulli's Problem                02
+                                                  03
+     Bernoulli played with a balance, which, in   04
+  equilibrium, consisted of a horizontal beam     05
+  with two scales hanging from the ends. He not-  06
+  iced that if one scale were slightly displaced, 07
+  then its oscillations would diminish in ampli-  08
+  tude, while the other scale would start to      09
+  oscillate. The oscillatory motion would then    10
+  continue to be exchanged between the two.       11
+                                                  12
+     Several scientists of the day, including     13
+  Euler, tried but failed to account for this.    14
+  Satisfactory explanations had to wait until     15
+  the nineteenth century.                         16
+                                                  17
+     You can design your balance, and confirm     18
+  Bernoulli's observation. The system is          19
+  chaotic, as can be seen if the oscillations     20
+  become large. It is a shame that Bernoulli did  21
+  not observe large oscillations, or the science  22
+  of chaos might now be several hundred years old.23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+BernoulliAboutModelB
+                                                  01
+               Bernoulli's Problem                02
+                                                  03
+       For parameters, you can choose values      04
+    for the length and weight of the beam.        05
+    Also the weight of the scales (the two are    06
+    equal) and the length of the rod connecting   07
+    them with the beam.                           08
+                                                  09
+       The state of the system is described by    10
+    three angles; for initial conditions you      11
+    can inter their values and their rates of     12
+    change.                                       13
+                                                  14
+       The chaos is to be enjoyed. Since the      15
+    system has three degrees of freedom, the      16
+    method of Poincare maps cannot be used to     17
+    investigate it.                               18
+                                                  19
+                                                  20
+                                                  21
+    Click the mouse or hit any key to continue.   22
+                                                  23
+                                                  24
+                                                  25
+
+
+FishingAboutProgram
+       Model for the Economics of Fishing         01
+                                                  02
+              J.M.Anthony Danby                   03
+       North Carolina State University            04
+             Copyright (c) 1997                   05
+                                                  06
+      A fish population x, has a logistic growth  07
+   rate: dx/dt = ax - bx^2. It is harvested with  08
+   'effort' E, with the result that the actual    09
+   equation for x is                              10
+            dx/dt = ax - bx^2 - Ex.               11
+                                                  12
+      The effort varies, depending on the price   13
+   per unit catch p, and the cost per unit        14
+   effort, c. The equation for E is               15
+              dE/dt = kE(px - c).                 16
+                                                  17
+      You will have to option to make a and c     18
+   periodic functions of the time.                10
+                                                  20
+      Solutions are shown in the x-y plane.       21
+   During the running of the program you will     22
+   be able to change p and c.                     23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+FishingAboutModel
+                                                  01
+       Model for the Economics of Fishing         02
+                                                  03
+      A fish population x, has a logistic growth  04
+   rate: dx/dt = ax - bx^2. It is harvested with  05
+   'effort' E, with the result that the actual    06
+   equation for x is                              07
+            dx/dt = ax - bx^2 - Ex.               08
+                                                  09
+      The effort varies, depending on the price   10
+   per unit catch p, and the cost per unit        11
+   effort, c. The equation for E is               12
+              dE/dt = kE(px - c).                 13
+   In the program k is taken to be one.           14
+                                                  15
+      Equilibria are at (0, 0), ie x=0, y=0,      16
+   (a/b, 0) and perhaps (c/p, a - bc/p).          17
+                                                  18
+      You will have to option to make a and c     19
+   periodic functions of the time. See the        20
+   additional help screen for further details.    21
+                                                  22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+FishingPeriodicHelp
+                                                  01
+           Fishing: Periodic Changes.             02
+                                                  03
+       In practice the birthrate of the fish, a,  04
+    and the cost of fishing, c, are likely to     05
+    vary periodically. You have the option of     06
+    following the effects of this. Then           07
+                                                  08
+  dx/dt = a*(1+a1*Cos(a2*t+a3))*x - b*x^2 - E*x,  09
+    and                                           10
+  dE/dt = k*E*(p*x - c*(1+c1*Cos(c2*t+c3))).      11                                         21
+                                                  12
+    Having selected <Periodic> from the main      13
+    input screen you will be prompted to enter    14
+    the amplitudes, a1, c1 and phase constants,   15
+    a3, c3. You will also be promted to enter     16
+    the periods, in place of the frequencies,     17
+    a2, c2.                                       18
+                                                  19
+       Note that when these periodic changes are  20
+    activated, the direction field diagram        21
+    cannot be used.                               22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+FishingDFieldHelp
+                                                  01
+       Model for the Economics of Fishing         02
+                                                  03
+          The Direction Field Diagram.            04
+                                                  05
+      The differential equations of the model     06
+   are                                            07
+            dx/dt = ax - bx^2 - Ex                08
+   and        dE/dt = kE(px - c).                 09
+                                                  10
+      If the second equation is divided by the    11
+   first, then the time, t, is eliminated  and    12
+                                                  13
+       dE/dx = kE(px - c)/(ax - bx^2 - Ex).       14
+                                                  15
+      The menu option D-Field draws a direction   16
+   field diagram for this equation in the x-E     17
+   plane. You can get an idea of all possible     18
+   solutions for the current values of the        19
+   parameters.                                    20
+                                                  21
+      This option is not available if a or c      22
+   vary periodically.                             23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+SpinHoopAboutProgram
+                                                  01
+      The Motion of a Ball in a Spinning Hoop     02
+                                                  03
+                 J.M.Anthony Danby                04
+          North Carolina State University         05
+                Copyright (c) 1997                06
+                                                  07
+       A tube in the shape of a circular hoop     08
+    is spinning, with constant angular velocity   09
+    about a vertical axis. A small ball is in     10
+    the tube, and slides around inside it.        11
+                                                  12
+       If the angular velocity is zero, then      13
+    there is one stable equilibrium, with the     14
+    ball at its lowest point. But as the angular  15
+    velocity increases, this point becomes un-    16
+    stable, and two stable points appear, dis-    17
+    placed from the lowest point. This splitting  18
+    is called 'bifurcation.'                      19
+                                                  20
+       A resisting force, proportional to the     21
+    angular motion of the ball in the tube can    22
+    be included in the model.                     23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+SpinHoopAboutModelA
+                                                  01
+      The Motion of a Ball in a Spinning Hoop     02
+                                                  03
+       A tube in the shape of a circular hoop     04
+    of radius R, is spinning with constant ang-   05
+    ular velocity, w, about a vertical axis. A    06
+    small ball is in the tube, and slides around  07
+    inside it.  The ball is subject to a constant 08
+    downward acceleration, g, and the reaction    09
+    between it and the hoop. This consists of a   10
+    centrifugal term, due to the rotation, and    11
+    a frictional term proportional to the ang-    12
+    ular velocity of the ball relative to the     13
+    tube.                                         14
+                                                  15
+       If the line joining the center of the hoop 16
+    to the ring makes the angle x with the down-  17
+    ward vertical, the equation for the model is: 18
+                                                  19
+      d(dx/dt)/dt =                               20
+        - k(dx/dt) - sin(x) + w^2sin(x)cos(x).    21
+                                                  22
+    k is a parameter for the drag. g/R = 1.       23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+SpinHoopAboutModelB
+                                                  01
+      The Motion of a Ball in a Spinning Hoop     02
+                                                  03
+      If w is sufficiently small, then the        04
+   motion of the ball resembles that of a simple  05
+   pendulum, with the ball as the bob. There are  06
+   two equilibria, stable at the bottom and un-   07
+   stable at the top. But when w exceeds some     08
+   value, two stable equilibria appear. At first, 09
+   they are close to the old lower equilibrium,   10
+   but, with increasing w, they move upward to    11
+   positions level with the center of the hoop.   12
+   The old equilibria are now both unstable.      13
+                                                  14
+      The splitting of a stable equilibrium       15
+   into two stable equilibria, while it becomes   16
+   unstable is an example of "bifurcation."       17
+                                                  18
+      You can specify the angular rate, w, and    19
+   k, the parameter for the resistance. You can   20
+   then see the motion in animation, or in the    21
+   phase plane, with x and dx/dt as the horizon-  22
+   tal and vertical axes.                         23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+SpinHoopDFieldHelp
+                                                  01
+          The Direction Field Diagram.            02
+                                                  03
+       The differential equations of the model    04
+    can be written as                             05
+                                                  06
+                   dx/dt = v,                     07
+      dv/dt = - kv - sin(x) + w^2sin(x)cos(x).    08
+                                                  09
+    Then                                          10
+                                                  11
+    dv/dx = (- kv - sin(x) + w^2sin(x)cos(x))/v.  12
+                                                  13
+       The option D-Field causes a direction      14
+    field diagram to be drawn for this equation   15
+    in the x-v plane. You can get an idea of all  16
+    possible solutions for the current values of  17
+    the parameters.                               18
+                                                  19
+       The program plots arrows from a grid of    20
+    points in the x-v plane. You will be promp-   21
+    ted to enter the numbers of grid points       22
+    along the axes.                               23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+
+ViolinAboutProgram
+                                                  01
+    The Action Between a Violin Bow and String    02
+                                                  03
+                 J.M.Anthony Danby                04
+          North Carolina State University         05
+                Copyright (c) 1997                06
+                                                  07
+       A violin string is displaced subject to    08
+    an elastic restoring force, which tends to    09
+    straighten the string, and the frictional     10
+    force with the bow. For small displacements   11
+    it moves with the bow, but eventually the     12
+    restoring force becomes large enough to       13
+    counteract the friction, and the string       14
+    "flies back."  In this way the linear motion  15
+    of the bow sets up an oscillating motion of   16
+    the string.                                   17
+                                                  18
+       You an vary the speed of the bow, the      19
+    spring constant of the restoring force and    20
+    parameters for the dry friction between the   21
+    string and the bow. Then you can see the      22
+    motion in animation.                          23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+ViolinAboutModelA
+                                                  01
+    The Action Between a Violin Bow and String    02
+                                                  03
+       The variable that is followed in this      04
+    model is the displacement of a violin string  05
+    at the point where it is in contact with the  06
+    bow. This displacement is measured from the   07
+    straight, equilibrium position of the string. 08
+                                                  09
+       The string moves subject to two forces.    10
+    There is a restoring force, proportional to   11
+    the displacement, and a frictional force      12
+    between the string and the bow, caused by     13
+    the rosin on the bow. This is Coulomb, or     14
+    dry friction.                                 15
+                                                  16
+       There are two phases in the motion:        17
+                                                  18
+    STRETCHING takes place when the restoring     19
+    force is less than the maximum frictional     20
+    force, so the string moves with the bow. It   21
+    continues until the restoring force becomes   22
+    equal to the frictional force.                23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+ViolinAboutModelB
+                                                  01
+    The Action Between a Violin Bow and String    02
+                                                  03
+    FLYBACK involves the string moving inde-      04
+    pendtly of the bow. It moves back to the      05
+    equilibrium, with the restoring spring        06
+    force dominant, but also subject to           07
+    friction. This phase ends when the vel-       08
+    ocity of the displacement is equal to         09
+    that of the bow. Then stretching starts       10
+    once more.                                    11
+                                                  12
+       This action, by which linear motion        13
+    results in in periodic motion is found in     14
+    many mechanical systems, apart from the       15
+    model considered here. The screeching of      16
+    brakes, for instance, or the screeching of    17
+    a piece of chalk over chalk board.            18
+                                                  19
+       An essential ingredient is dry friction.   20
+    See the extra help file for more information  21
+    on this subject.                              22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+AircraftAboutProgram
+     Landing an Aircraft on an Aircraft Carrier   01
+                                                  02
+               J.M.Anthony Danby                  03
+        North Carolina State University           04
+              Copyright (c) 1997                  05
+                                                  06
+       An aircraft, landing on an aircraft        07
+    carrier, a very long time ago, is attached,   08
+    by an extensible cable, to a sandbag.         09
+                                                  10
+       The forces on the aircraft are drag, due   11
+    to air-resistanc,e and the tension in the     12
+    cable. The airspeed is a combination of the   13
+    speed of the wind and the speed of the        14
+    carrier.                                      15
+                                                  16
+       The forces on the sandbag are the tension  17
+    in the cable and dry friction between the     18
+    sandbag and the deck of the carrier.          19
+                                                  20
+       To see a description of the possible       21
+    types of motion select <Run demonstration>    22
+    from the menu.                                23
+                                                  24
+     Click the mouse or hit any key to continue.  25
+
+
+AircraftAboutModelA
+                                                  01
+     Landing an Aircraft on an Aircraft Carrier   02
+                                                  03
+       A very long time ago, an aircraft, on      04
+    landing on an aircraft carrier, was hooked    05
+    up to a cable attached to a sandbag. The      06
+    friction between the sandbag and the deck     07
+    of the carrier, together with air resis-      08
+    tance, would bring the aircraft to rest.      09
+                                                  10
+       In this model the air resistance is        11
+    proportional to the square of the speed of    12
+    the aircraft relative to the air. The air-    13
+    speed is compounded from the wind speed and   14
+    the speed of the craft. These two speeds,     15
+    and the coefficient for the resistance, are   16
+    input quantities for the model.               17
+                                                  18
+       The cable is elastic, with tension pro-    19
+    portional to the extension (and zero when     20
+    the cable is slack). The length of the        21
+    cable and the constant of proportionality     22
+    are input quantities.                         23
+                                                  24
+     Click the mouse or hit any key to continue.  25
+
+
+AircraftAboutModelB
+                                                  01
+     Landing an Aircraft on an Aircraft Carrier   02
+                                                  03
+       The most complicated part of the model     04
+    is the role of dry friction between the       05
+    sandbag and the deck. When moving, the sand-  06
+    bag experiences a constant resisting force,   07
+    R. But if the sandbag is at rest, it will     08
+    remain at rest provided that the tension is   09
+    less than R. The value of R, and the weights  10
+    of the aircraft and sandbag are input         11
+    quantities.                                   12
+                                                  13
+       When both bodies are moving, and the       14
+    cable is stretched, the acceleration of       15
+    the sandbag is greater, due to its smaller    16
+    mass. So there will be periods when the       17
+    cable is slack, and the bodies move indep-    18
+    endently.                                     19
+                                                  20
+       You need to be careful in choosing par-    21
+    ameters. For instance, it is possible to the  22
+    sandbag to overtake the aricraft!             23
+                                                  24
+     Click the mouse or hit any key to continue.  25
+
+
+AircraftAboutModelC
+                                                  01
+     Landing an Aircraft on an Aircraft Carrier   02
+                                                  03
+       Altogether, there are three possible       04
+    phases:                                       05
+       1. The sandbag at rest, with the cable     06
+    stretching.                                   07
+       2. The cable stretched and both bodies     08
+    moving.                                       09
+       3. The cable slack.                        10
+    For a demonstration, select                   11
+                  <Run demonstration>             12
+    from the menu.                                13
+                                                  14
+       The different phases are followed during   15
+    the animation. The timing of the animation    16
+    is unsatisfactory because of the junctions    17
+    between the phases and the need to stepsize   18
+    changes in the computation.                   19
+                                                  20
+       Enjoy it as you can!                       21
+                                                  22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+AtwoodAboutProgram
+                                                  01
+            The Swinging Atwood Machine           02
+                                                  03
+                 J.M.Anthony Danby                04
+          North Carolina State University         05
+                Copyright (c) 1997                06
+                                                  07
+        A light, flexible string passes over      08
+     two frictionless horizontal pulleys.         09
+     Masses M and m are attached to the ends.     10
+     The larger mass, M, can only move vertic-    11
+     ally, but the other is free to move in a     12
+     vertical plane.                              13
+                                                  14
+        The motion can be chaotic. You can see    15
+     it in animation, or you can see a plot of    16
+     the changing position of the mass m, or      17
+     you can generate Poincare maps.              18
+                                                  19
+                                                  20
+                                                  21
+     Click the mouse or hit any key to continue.  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+AtwoodAboutModelA
+                                                  01
+            The Swinging Atwood Machine           02
+                                                  03
+       The Atwood machine consists of two hor-    04
+    izontal pulleys. A light, flexible string     05
+    passes over them, and masses M and m are      06
+    attached to its ends. The masses move vert-   07
+    ically, up or down. There are no resisting    08
+    forces.                                       09
+                                                  10
+       In the swinging Atwood machine, one of     11
+    the masses, m, is free to move in a vert-     12
+    ical plane; M is still constrained to move    13
+    vertically. Provided that M > m, the motion   14
+    can be bounded. It can also be chaotic.       15
+                                                  16
+       You will be able to see the motion in      17
+    animation, or a plotted curve of the pos-     18
+    ition of m. You can also generate Poincare    19
+    maps. See the help file for more informat-    20
+    ion about these.                              21
+                                                  22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+AtwoodAboutModelB
+                                                  01
+            The Swinging Atwood Machine           02
+                                                  03
+       You will be prompted to enter:             04
+                                                  05
+       The mass ratio M/m. This must be greater   06
+    one for the motion to be bounded. The prog-   07
+    requires a value greater than 1.1.            08
+                                                  09
+       Initial values for the angle the string    10
+    attached to m makes with the downward vert-   11
+    ical, and the rate of change of this angle.   12
+                                                  13
+       The initial length of the string between   14
+    the pulley and m. The program will take the   15
+    value for the initial rate of change of this  16
+    length to be zero.                            17
+                                                  18
+       While the motion is bounded, there is      19
+    the possiblity that m will collide with the   20
+    pulley. In this case, the motion will be      21
+    terminated.                                   22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+AtwoodAboutPoincareMapsA
+                                                  01
+            The Swinging Atwood Machine           02
+                   Poincare Maps                  03
+                                                  04
+       The dynamical system has two dependent     05
+    variables. The mass m forms, with the nearer  06
+    pulley, a pendulum with varying length. The   07
+    variables are the angle, A, that this pend-   08
+    ulum makes with the downward vertical and R,  09
+    the length of the pendulum. There is no       10
+    friction in the model, so there is an int-    11
+    egral for the conservation of energy. This    12
+    takes the form                                13
+                 F(A, AV, R, RV) = E,             14
+    where AV and RV are the rates of change of    15
+    A and R.                                      16
+                                                  17
+       If E is specified, then only three out     18
+    of A, Av, R and RV need to be given in order  19
+    to define the state of the system. Let us     20
+    pick A, R and RV. Next, when following a      21
+    solution, find values of R and RV whenever    22
+    A = 0.                                        23
+                                                  24
+     Click the mouse or hit any key to continue.  25
+
+
+
+AtwoodAboutPoincareMapsB
+                                                  01
+            The Swinging Atwood Machine           02
+                   Poincare Maps                  03
+                                                  04
+       These points are plotted in the R-RV       05
+    plane. The sequences of points may appear     06
+    organized; they may lie on simple closed      07
+    curves. These are generated by non-chaotic    08
+    motion. As chaos developes, the organized     09
+    patterns start to break up. Eventually,       10
+    the points are scattered chaotically.         11
+                                                  12
+       The variables in the model can be scaled   13
+    so that E = 1. Then the parameter to follow   14
+    in the evolution of chaos is the mass ratio   15
+    M/m. Try gradually increasing it. It is of    16
+    interest that for M/m = 3, all motion is      17
+    non-chaotic.                                  18
+                                                  19
+       Remember that motion is terminated if m    20
+    collides with the pulley; this happens more   21
+    frequently as M/m is larger.                  22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+AtwoodAboutPoincareMapsC
+                                                  01
+            The Swinging Atwood Machine           02
+                   Poincare Maps                  03
+                                                  04
+       When you select <See Poincare maps> from   05
+    the menu you will see the R-RV plane with a   06
+    curve drawn. All points must lie inside       07
+    this curve. You can use the mouse or key-     08
+    board to select initial points (and also      09
+    the color of the points). Points selected     10
+    outside the bounding curve will be rejected.  11
+                                                  12
+       First, choose a value for M/m. Picking     13
+    successive starting points, try to build up   14
+    a picture of the complete structure of the    15
+    maps.  Most will contain chaotic as well as   16
+    non-chaotic structure. If you have dif-       17
+    ficulty in finding starting points that do    18
+    not quickly end in collision, try points      19
+    close to the boundary curve, so that the      20
+    initial angular velocity will be small.       21
+                                                  22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+
+SeasickAboutProgram
+                                                  01
+            Pitching and Rolling at Sea           02
+                                                  03
+                 J.M.Anthony Danby                04
+          North Carolina State University         05
+                Copyright (c) 1997                06
+                                                  07
+       A boat is pitching and rolling in a rough  08
+    sea.  The two types of motion are coupled     09
+    together, so that energy can be transferred   10
+    from one type of motion to the other.         11
+                                                  12
+       You can enter values for the natural       13
+    frequencies of pitching and rolling, the      14
+    frequency of the waves, the damping of the    15
+    ship''s motion, due to its stabilizers, and   16
+    the extent of the coupling.                   17
+                                                  18
+       You can see the motion in animation, or    19
+    plot the oscillations as functions of the     20
+    time.                                         21
+                                                  22
+       Bon Voyage!                                23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+SeasickAboutModelA
+                                                  01
+            Pitching and Rolling at Sea           02
+                                                  03
+       A boat is pitching and rolling; the two    04
+    types of motion are coupled together, so      05
+    that energy can be transferred from one type  06
+    of motion to the other.                       07
+                                                  08
+       Let x and y be the pitching and rolling    09
+    angles.  Each mode will have a natural fre-   10
+    quency of oscillation, and will experience a  11
+    resisting force proportional to the rate of   12
+    change of x or y. In addition there will be   13
+    forcing terms due tothe action of the sea.    14
+    Without coupling, the equations would be      15
+                                                  16
+         x" + rx' + a*Sin(x) = p*Cos(wt),         17
+         y" + sy' + b*Sin(y) = q*Cos(wt).         18
+                                                  19
+    a and b are the squares of the natural        20
+    frequencies of pitching and rolling.          21
+                                                  22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+
+SeasickAboutModelB
+                                                  01
+            Pitching and Rolling at Sea           02
+                                                  03
+       The equations are modified to include      04
+    coupling by adding the additional terms on    05
+    the right to give:                            06
+                                                  07
+      x" + rx' + a*Sin(x) = p*Cos(wt) + k*y^2,    08
+      y" + sy' + b*Sin(y) = q*Cos(wt) + l*x*y.    09
+                                                  10
+       This was initially done under the assump-  11
+    tion that x and y were small. In this prog-   12
+    ram, however, x and y can become as large as  13
+    Pi/2, when we abandon ship.                   14
+                                                  15
+       You will be prompted to enter values for   16
+    all nine parameters. Then you have the        17
+    choice of seeing the pitching and rolling in  18
+    animation, or plotting the angles as func-    19
+    tions of the time. For the animation, you     20
+    can select the starting values of the         21
+    angles; the intial angular rates are zero.    22
+                                                  23
+     Click the mouse or hit any key to continue.  24
+                                                  25
+
+
+
+SeasickAboutModelC
+                                                  01
+            Pitching and Rolling at Sea           02
+                                                  03
+       The motion becomes interesting when there  04
+    are resonances, or near resonances, between   05
+    the natural frequencies and the frequency of  06
+    the waves. No ship designer in his right      07
+    mind would construct a ship where this was    08
+    likely to occur. But it is OK to be a little  09
+    bit insane in private.                        10
+                                                  11
+       Try varying the frequency of the waves,    12
+    while keeping other parameters constant.      13
+    In particular, note the exchange of energy    14
+    between pitching and rolling.                 15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+     Click the mouse or hit any key to continue.  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+SeasickInputHelp
+       The equations of the model are:            01
+                                                  02
+      x" + rx' + a*Sin(x) = p*Cos(wt) + k*y^2,    03
+      y" + sy' + b*Sin(y) = q*Cos(wt) + l*x*y.    04
+                                                  05
+       x and y are the angles of pitching and     06
+    rolling.                                      07
+                                                  08
+       If w1 and w2 are the natural frequencies   09
+    of pitching and rolling, then                 10
+                 a = w1^2, b = w2^2.              11
+                                                  12
+       r and s are resisting terms to reduce the  13
+    motions of pitching and rolling; they might   14
+    be due to the ship''s stabilizers.            15
+                                                  16
+       w is the frequency of the waves.           17
+                                                  18
+       p and q control the extent to which the    19
+    waves influence pitching and rolling.         20
+                                                  21
+       k and l control the magnitude of the       22
+    coupling between pitching and rolling.        23
+                                                  24
+     Click the mouse or hit any key to continue.  25
+
+
+

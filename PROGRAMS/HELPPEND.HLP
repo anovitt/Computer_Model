@@ -1,0 +1,1220 @@
+
+
+
+
+
+AboutSimplePendProgram
+          The Motion of a Simple Pendulum           01
+                    J.M.A.Danby                     02
+         North Carolina State University            03
+                Copyright (c) 1997                  04
+                                                    05
+                 About the Program                  06
+                                                    07
+       The program follows the possible motion      08
+    of a simple pendulum. You can see the           09
+    effects of resistance proportional to the       10
+    angular velocity or of dry friction.            11
+                                                    12
+       You will be prompted to enter values         13
+    for the length of the pendulum and a            14
+    parameter for the strength of the force         15
+    due to friction.                                16
+                                                    17
+       The motion of the pendulum can be seen       18
+    in animation, or with variables plotted as      19
+    functions of the time, or as represented        20
+    in a phase-plane diagram.                       21
+                                                    22
+                                                    23
+    Click the mouse or hit any key to continue.     24
+                                                    25
+
+
+
+SimplePendModel1
+               The Simple Pendulum                  01
+                                                    02
+       A light inextensible rod of length L is      03
+    suspended from a fixed point; a mass M is       04
+    attached to the other end. The rod is free to   05
+    move in a vertical plane. The motion is         06
+    subject to a constant downward acceleraton, g.  07
+                                                    08
+       Let the rod make the angle x with the down-  09
+    vertical.  Resolving perpendular to the rod,    10
+    equation of motion is found to be               11
+                  MLx" = - MgSin(x).                12
+    Dividing by ML, we have                         13
+                   x" = - (g/L)Sin(x).              14
+                                                    15
+       In the program, g = 9.81 m/s^2, and L        16
+    is measured in meters.                          17
+                                                    18
+       There are two ways in which friction can     19
+    be introduced, resistance proportional to the   20
+    angular rate, x', and dry friction. See the     21
+    following screen for details.                   22
+                                                    23
+    Click the mouse or hit any key to continue.     24
+                                                    25
+
+
+SimplePendModel2
+               The Simple Pendulum                  01
+                                                    02
+    a: With resistance proportional to x'', we      03
+    have                                            04
+              MLx" = - fx'- MgSin(x)                05
+    or                                              06
+              x" = - kx' - (g/L)Sin(x).             07
+                                                    08
+    b: For dry friction,                            09
+           MLx" = - fSign(x') - MgSin(x)            10
+    or                                              11
+           x" = - kSign(x') - (g/L)Sin(x).          12
+                                                    13
+    Sign(x') = 1 if x' > 0 and -1 if x' < 0.        15
+    In the program the highest point of each        16
+    swing is found, in order to fix the time        17
+    when the sign of the friction is changed.       18
+                                                    19
+       In each case, k = f/(ML), so that the        20
+    value of the mass influences the effects of     21
+    the friction.                                   22
+                                                    23
+    Click the mouse or hit any key to continue.     24
+                                                    25
+
+
+SimplePendInputHelp
+               The Simple Pendulum                  01
+                                                    02
+    L is the length of the (massless) rod, and      03
+    M is the mass at its end.                       04
+    f is a parameter for the friction.              05
+    g = 9.81 m/s^2 is the acceleration due to       06
+       gravity.                                     07
+    a: With resistance proportional to x'',         08
+              MLx" = - fx''- MgSin(x)               09
+    or        x" = - kx - (g/L)Sin(x).              10
+    b: With dry friction,                           11
+           MLx" = - fSign(x'') - MgSin(x)           12
+    or     x" = - fSign(x'') - (g/L)Sin(x).         13
+    Sign(x'') = 1 if x'' > 0 and -1 if x'' < 0.     14
+    In the program the highest point of each        15
+    swing is found, in order to fix the time        16
+    when the sign of the friction is changed.       17
+       In each case, it is the second of the two    18
+    equations that is used in the program.          19
+    f = k/(ML), so that the value of the mass       20
+    influences the effects of the friction.         21
+                                                    22
+       Default values are L = 1, k = 0.             23
+                                                    24
+    Click the mouse or hit any key to continue.     25
+
+
+
+PendDFieldHelp
+          The Direction Field Diagram.            01
+                                                  02
+       The differential equations of the model,   03
+    with friction proportional to x', can be      04
+    written as                                    05
+     dx/dt = v and dv/dt = - kv - (g/L)Sin(x).    06
+    Then    dv/dx = (- kv - (g/L)Sin(x))/v.       07
+                                                  08
+    The equation with dry friction is similar.    09
+                                                  10
+       The option D-Field draws a direction       11
+    field diagram for this equation in the x-v    12
+    plane. You can get an idea of all possible    13
+    solutions for the current values of the       14
+    parameters.                                   15
+                                                  16
+       The program plots arrows from a grid of    17
+    points in the x-v plane. You will be promp-   18
+    ted to enter the numbers of grid points       19
+    along the axes.                               20
+                                                  21
+       To access this option, choose <Phase-      22
+    space> from the menu and then use the hotkey. 23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+HelpPendHK
+                                                    01
+                    HotKeys Help                    02
+                                                    03
+    F2 is used to start a plot. It can also be      04
+       used to stop it temporarily.                 05
+                                                    06
+    F3 is pressed when input for a new solution     07
+       is wanted. You will either see an input      08
+       screen or be prompted to use the mouse.      09
+       This will depend on you choice when enter-   10
+       ing parameters in the main input screen.     11
+                                                    12
+    F4 is pressed for a direction field diagram.    13
+                                                    14
+    F5 is pressed to clean up the screen for        15
+       further plotting. All existing plots are     16
+       lost. You will have the opportunity to       17
+       change the scale of the figure.              18
+                                                    19
+    F10 returns you to the menu.                    20
+                                                    21
+                                                    22
+     Click the mouse or hit any key to continue.    23
+                                                    24
+                                                    25
+
+
+AboutMag2PendProgram
+        The Motion of a Magnetic Pendulum           01
+                    J.M.A.Danby                     02
+           North Carolina State University          03
+                 Copyright (c) 1997                 04
+                                                    05
+                 About the Program                  06
+                                                    07
+       A magnet is attached to the end of a simple  08
+    pendulum. Two magnets are fixed on a hori-      09
+    zontal plane under the point of suspension of   10
+    the pendulum, so that all magnets and all       11
+    motion are in a vertical plane.                 12
+                                                    13
+       You will be prompted to enter values for     14
+    the locations and relative strengths of the     15
+    magnets. The numbers and natures of the equi-   16
+    librium positions depend on these parameters.   17
+                                                    18
+       The motion of the pendulum can be seen       19
+    in animation, or with variables plotted as      20
+    functions of the time, or as represented        21
+    in a phase-plane diagram.                       22
+                                                    23
+    Click the mouse or hit any key to continue.     24
+                                                    25
+
+
+
+Mag2PendModel1
+               The Magnetic Pendulum                01
+                                                    02
+       A light inextensible rod of length L is      03
+    suspended from a fixed point; a magnet with     04
+    mass M is attached to the other end. The rod    05
+    is free to move in a vertical plane. Two mag-   06
+    nets are fixed on a horizontal line distant     07
+    H below the point of suspension, and in the     08
+    vertical plane of the motion. The pendulum      09
+    moves subject to gravity, the magnetic forces   10
+    and a drag force proportional to the angular    11
+    velocity of the pendulum.                       12
+                                                    13
+       Each of the fixed magnets is distant D from  14
+    the vertical line through the point of sus-     15
+    pension, one on either side, but their mag-     16
+    netic strengths and polarities can differ.      17
+                                                    18
+       If x is the angle the pendulum makes with    19
+    the downward vertical then:                     20
+          x" = - kx' - (g/L)*Sin(x) + T/M,          21
+    where T is the torque about the point of sus-   22
+    pension due to the magnetic forces.             23
+                                                    24
+    Click the mouse or hit any key to continue.     25
+
+
+Mag2PendModel2
+              The Magnetic Pendulum               01
+                                                  02
+      In the program units have been normalized   03
+   so that L = 1 and M = 1; also g = 1, where g   04
+   is the acceleration due to gravity. A parame-  05
+   ter for the magnetic moment of the moving mag- 06
+   net is taken to equal M0 = 1; if M1 and M2 re- 07
+   fer to the fixed magnets, then M0*M1/D would   08
+   be the force of attraction between two magnets.09
+                                                  10
+      You will be prompted to enter:              11
+   The distance, H, of the line containing the    12
+   fixed magnets "below" the point of suspension. 13
+   -2 <= H <= 2. ("Above," for a negative value.) 14
+   The separations, A1 and A2, between the two    15
+   fixed magnets and the vertical line through    16
+   the point of suspension. 0 <= A1, A2 <= 10.    17
+   Magnetic strengths and polarities can differ.  18
+   Values for M1 and M2, lie between -10 and 10.  19
+   A positive value results in attraction of the  20
+   moving magnet, a negative value in repulsion   21
+   A value for the parameter k for the frictional 22
+   resistance.                                    23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+Mag2PendInputHelp
+               The Magnetic Pendulum                01
+                                                    02
+       The height of the point of suspendion above  03
+    the horizontal line containing the fixed mag-   04
+    nets is H. A negative value places the point    05
+    of suspension below this line.                  06
+                                                    07
+       If the vertical line through the point of    08
+    suspension intersects the line joining the      09
+    magnets at O, then the distances of the mag-    10
+    nets from O are A1 and A2; A1 refers to the     11
+    magnet on the left.                             12
+                                                    13
+       The parameters M1 and M2 for the magnetic    14
+    strengths of the magnets can be positive or     15
+    negative. A positive value causes attraction    16
+    of the swinging magnet and a negative value     17
+    causes repulsion.                               18
+                                                    19
+       The angular deceleration due to drag is      20
+    equal to the friction coefficient, k, times     21
+    the angular velocity. 0 <= k <= 10; small       22
+    values will give the best results.              23
+                                                    24
+    Click the mouse or hit any key to continue.     25
+
+
+
+Mag2PendDFieldHelp
+          The Direction Field Diagram.            01
+                                                  02
+       The differential equations of the model,   03
+    with friction proportional to x', can be      04
+    written as                                    05                                                  06
+     dx/dt = v and dv/dt = - kv - Sin(x) + M,     06                                                  08
+    where M is the acceleration due to the mag-   07
+    netic forces.                                 08                                                  11
+    Then    dv/dx = (- kv - Sin(x) + M)/v.        09
+                                                  10
+       The option D-Field draws a direction       11
+    field diagram for this equation in the x-v    12
+    plane. You can get an idea of all possible    13
+    solutions for the current values of the       14
+    parameters.                                   15
+                                                  16
+       The program plots arrows from a grid of    17
+    points in the x-v plane. You will be prompt-  18
+    ed to enter the numbers of grid points        19
+    along the axes.                               20
+                                                  21
+       To access this utility choose <Phase-      22
+    plane> from the menu and use the hotkey.      23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+
+Mag2PendEquilibria
+                                                  01
+         Magnetic Pendulum: Equilibria.           02
+                                                  03
+       The differential equations of the model    04
+    can be written as                             05
+                                                  06
+             x" = - kx' - Sin(x) + M,             07
+                                                  08
+    where M is the acceleration due to the mag-   09
+    netic forces. x is the angle that the pend-   10
+    ulum makes with the downward vertical.        11
+                                                  12
+       At an equilibrium position, x" = x' = 0.   13
+    so f(x) = - Sin(x) + M = 0. The utility       14
+    'See equilibria' plots f(x) for               15
+    -Pi <= x <= Pi, so that the zeros can be      16
+    immediately seen. These depend on the five    17
+    parameters:                                   18
+                H, A1, A2, M1, M2.                19
+    (See the help file on ''The model'' for       20
+    definitions.) You can use the sliders to      21
+    change their numerical values.                22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+Mag2PendEquHelp
+         Magnetic Pendulum: Equilibria.           01
+                                                  02
+      The length of the pendulum is one unit of   03
+   length. The magnet at the end of the pendul-   04
+   um has one unit of strength. The curve is a    05
+   plot of the torque acting on the pendulum      06
+   when it is at an angle theta from the down-    07
+   ward vertical.  For the sliders:               08
+                                                  09
+      H is the height of the point of suspens-    10
+   ion above the fixed magnets.                   11
+                                                  12
+      A1 is the horizontal distance of the mag-   13
+   net on the left from the point of suspension.  14
+                                                  15
+      A2 is the horizontal distance of the mag-   16
+   net on the right from the point of suspension. 17
+                                                  18
+      M1 is the magnetic strength of the magnet   19
+   on the left.                                   20
+                                                  21
+      M2 is the magnetic strength of the magnet   22
+   on the right.                                  23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+DBellAboutProgram
+        The Motion of a Dumbbell Satellite        01
+                J.M.Anthony Danby                 02
+          North Carolina State University         03
+                Copyright (c) 1997                04
+                                                  05
+      A Dumbbell satellite, consists of two       06
+   massive components connected by a light        07
+   rigid bar; it is a pendulum in orbit. If the   08
+   orbit is nearly circular, then the swinging    09
+   can be regular, like that of a normal pendu-   10
+   lum. But if the orbit is a sufficently eccen-  11
+   tric ellipse, then the satellite topples in an 12
+   irregular manner, and the motion is chaotic.   13
+                                                  14
+      You have the option of including a damp-    15
+   ing force proportional to the angular ve-      16
+   locity of the satellite.                       17
+                                                  18
+      Any method applicable to the forced pen-    19
+   dulum can be used to investigate this model.   20
+   In this program you can see the animated       21
+   motion, or motion in the phase-plane or by     22
+   making Poincare maps.                          23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+DBellAboutModelA
+                                                  01
+        The Motion of a Dumbbell Satellite        02
+                                                  03
+      A Dumbbell satellite, consists of two       04
+   equal massive components connected by a light  05
+   rigid bar. It is in orbit around a planet,     06
+   so that its center moves in an elliptic path.  07
+   The masses are very small compared with the    08
+   mass of the planet; their separation is also   09
+   very small compared with the distance from     10
+   the planet. So the masses and their separa-    11
+   iton are not parameters of the model.          12
+                                                  13
+      Units have been chosen so that the con-     14
+   stant of gravitation is equal to one, and the  15
+   semimajor axis of the orbit is one unit of     16
+   length. The period of the orbit is then 2*Pi   17
+   units of time.                                 18
+                                                  19
+      All calculations will begin with the sat-   20
+   ellite at pericenter (the orbital point clos-  21
+   est to the planet). The eccentricity of the    22
+   orbit is an input quantity.                    23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+DBellAboutModelB
+        The Motion of a Dumbbell Satellite        01
+                                                  02
+      Also input are the initial values of the    03
+   angle between the satellite and the major axis 04
+   of the orbit and the initial angular speed.    05
+                                                  06
+      Three angles are important:                 07
+   Theta is the angle between the line of the     08
+      masses and the major axis of the orbit.     09
+   V, the true anomaly, is the angle between a    10
+      line from the center of the planet to the   11
+      satellite and the major axis.               12
+   Phi is the difference Theta - V. It is the     13
+      variation in Phi that corresponds to the    14
+      angular swinging of a pendulum.             15
+                                                  16
+      An optional drag force can be included.     17
+   This is proportional to the rate of change     18
+   of Phi.                                        19
+                                                  20
+      The model is similar to that of the forced  21
+   pendulum, with the eccentricity playing the    22
+   role of the amplitude of the forcing term.     23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+DBellAboutModelC
+        The Motion of a Dumbbell Satellite        01
+                                                  02
+      For small eccentricity the motion of the    03
+   satellite is like that of a pendulum, with     04
+   oscillation depending on the period of the     05
+   orbital motion. But as the eccentricity in-    06
+   creases the motion becomes chaotic.            07
+                                                  08
+      But in the route of chaos, periodic motion  09
+   is possible with different periods. For exam-  10
+   ple, the satellite may rotate three times for  11
+   two revolutions around the planet.             12
+                                                  13
+      There is a parallel here with the rotation  14
+   of Mercury. Other astronomical parallels with  15
+   this model include the rotation of the Moon    16
+   and the chaotic rotation of Hyperion. In       17
+   these cases the resistance forces are tidal,   18
+   and so small that they cannot be modelled      19
+   here. However, with our model it is possible   20
+   to look at possible capture into resonance     21
+   that has certainly taken place many times in   22
+   the solar system.                              23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+DBellInputHelp
+                                                  01
+        The Motion of a Dumbbell Satellite        02
+                    Input Help                    03
+                                                  04
+      The eccentricity of an ellipse is a number  05
+   between 0 and 1. If  e = 0, the ellipse is a   06
+   circle. If e = 1, then the figure is a parab-  07
+   ola. In this program e must lie between 0      08
+   and 0.9. e gives the shape of the orbit. The   09
+   size is given by the semimajor axis, which is  10
+   here taken to be one unit of length. Ini-      11
+   tially, start with small e.                    12
+                                                  13
+      The period of the orbit is 2*Pi units of    14
+   time, so the angular rate is 1 radian per      15
+   unit time or 57.29578 degrees per unit time.   16
+   Start with this value for synchronous motion.  17
+   Or use rational multiples.                     18
+                                                  19
+      The resistance is proportional to the       20
+   angular rate. The constant must lie between    21
+   0 and 10.                                      22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+DBellPhasePlaneHelp
+                                                  01
+        The Motion of a Dumbbell Satellite        02
+                  The Phase-Plane                 03
+                                                  04
+      The angle between the line from the sat-    05
+   ellite to the center of the planet, and the    06
+   rod joining the masses of the dumbbell is      07
+   called Phi in the program. It is the oscil-    08
+   ations of this angle that parallel the oscil-  09
+   lations of a pendulum.                         10
+                                                  11
+      In the phase plane, the solution is fol-    12
+   lowed in a graph with horizontal axis Phi      13
+   and vertical axis PhiDot, or the time deriv-   14
+   ative of Phi. If the eccentricity of the       15
+   orbit is zero, then the phase-plane diagram    16
+   is that of the simple pendulum, with oscil-    17
+   lations between -Pi/2 and Pi/2 instead of      18
+   between -Pi and Pi.                            19
+                                                  20
+      If Phi goes outside the interval -Pi to Pi, 21
+   then it is changed, mod(2*Pi), back to this    22
+   interval.                                      23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+DBellPoincareHelpA
+                                                  01
+        The Motion of a Dumbbell Satellite        02
+                   Poincare Maps                  03
+                                                  04
+      In this context, similar to that of a per-  05
+   iodically forced pendulum, a "Poincare map"    06
+   is a sequence of points from the phase-plane   07
+   diagram, seen stroboscopically at equal in-    08
+   tervals of time.                               09
+                                                  10
+      If this time interval is I, then a solution 11
+   with period I would appear as a single point.  12
+   One with period 2I might appear as two points. 13
+   Chaotic solutions will appear as a jumble of   14
+   apparently disorganized points.                15
+                                                  16
+      In this model the non-chaotic solutions     17
+   are quasi-periodic in that they are subject    18
+   to more than one period. As they are formed    19
+   you will see them building up a curve, with    20
+   the progress around the curve showing a        21
+   second frequency.                              22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+DBellEccentricityDemoHelp
+                                                  01
+            The Effects of Eccentricity           02
+                on an Elliptic Orbit              03
+                                                  04
+      The purpose of this demonstration is to     05
+   show the effects of different eccentricities   06
+   on the shape of an ellipse and the orbital     07
+   motion.                                        08
+                                                  09
+      You may be suprised to see how ''circular'' 10
+   the ellipse may appear even for eccentricit-   11
+   ies as high as 0.5. But note how the attract-  12
+   ing focus is displaced from the center.        13
+                                                  14
+      The orbital motion follows Kepler''s sec-   15
+   ond law that states that a line joining the    16
+   focus to the orbiting body sweeps out equal    17
+   areas in equal intervals of time. So the       18
+   motion becomes faster as the body gets closer  19
+   to the focus.                                  20
+                                                  21
+                                                  22
+    Click the mouse or hit any key to continue.   23
+                                                  24
+                                                  25
+
+
+SprPendAboutProgram
+                                                  01
+         The Motion of a Spring Pendulum          02
+                                                  03
+               J.M.Anthony Danby                  04
+         North Carolina State University          05
+               Copyright (c) 1997                 06
+                                                  07
+         A mass is suspended from a fixed         08
+      point by a light spring. The system,        09
+      which has no resisting forces, is           10
+      free to move in a vertical plane.           11
+                                                  12
+         The model is chaotic. Its motion         13
+      can be seen in animation, or inves-         14
+      tigated by the construction of              15
+      Poincare maps.                              16
+                                                  17
+                                                  18
+                                                  19
+    Click the mouse or hit any key to continue.   20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+SprPendAboutModelA
+                                                  01
+         The Motion of a Spring Pendulum          02
+                                                  03
+       A mass is attached to a fixed point by a   04
+    light spring. It moves subject to its own     05
+    weight and the tension (or thrust) of the     06
+    spring. There is no resisting force. All      07
+    motion is in a fixed vertical plane.          08
+                                                  09
+       The parameters of this model are:          10
+       The unstretched length of the spring,      11
+    taken here to be one meter.                   12
+       The spring constant, k.                    13
+       The mass, m, of the swinging body.         14
+    In the model k and m only appear as the       15
+    ratio (k/m), and this is one of the input     16
+    quantities.                                   17
+                                                  18
+       There are two natural frequencies, w1 for  19
+    the pendulum without the spring and w2 for    20
+    vertical oscillations of the spring. Here     21
+    w1^2 = 9.81 and w2^2 = k/m.                   22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+SprPendAboutModelB
+                                                  01
+         The Motion of a Spring Pendulum          02
+                                                  03
+       The vibrations in length and the angle     04
+    between the pendulum and the vertical ex-     05
+    change energies during the motion. This may   06
+    be clearer if you choose k/m close to 9.81.   07
+                                                  08
+       The mathematical equations of motion do    09
+    not preclude the length of the spring be-     10
+    coming zero during the motion. This has been  11
+    allowed for artificially: if the length be-   12
+    comes less than 0.2 times the unstretched     13
+    length, then the sign of the rate of change   14
+    of the length is changed.                     15
+                                                  16
+       This expedient is essential for the ani-   17
+    mation. It may destroy the dynamics of the    18
+    Poincare maps. For those, you should try to   19
+    avoid extreme spring oscillations.            20
+                                                  21
+                                                  22
+    Click the mouse or hit any key to continue.   23
+                                                  24
+                                                  25
+
+
+SprPendPoincareHelpA
+                                                  01
+              About Poincare Maps                 02
+                                                  03
+       A conservative dynamical system with       04
+    two degrees of freedom has coordinates and    05
+    velocities                                    06
+                 x, y, vx, vy.                    07
+                                                  08
+      There is an energy integral of the form     09
+              F(x, y, vx, vy) = E.                10
+    If a value of E is prescribed, then one       11
+    variable, vy, say, can be found if the other  12
+    three are known. This means that while E      13
+    keeps this value, the motion can be regarded  14
+    as three-dimensional. In this (x, y, vx)      15
+    space a surface is defined; say y = 0. When   16
+    a solution crosses this plane, x and vx are   17
+    calculated, and the point with coordinates    18
+    (x, vx) is ploted in the x-vx plane.          10
+                                                  20
+                                                  21
+                                                  22
+    Click the mouse or hit any key to continue.   23
+                                                  24
+                                                  25
+
+
+
+SprPendPoincareHelpB
+                                                  01
+              About Poincare Maps                 02
+                                                  03
+       Let P be such a point, where vy > 0. At    04
+    the next crossing, Q, vy < 0. But at the      05
+    next crossing, R, vy > 0 again. R is called   06
+    the "Poincare map" of P.                      07
+                                                  08
+       Non-chaotic motion usually lies on a       09
+    torus in the (x, y, vx) space, so successive  10
+    maps in the x-vx plane lie on closed curves.  11
+                                                  12
+       For small E, all the motion appears to be  13
+    non-chaotic. As E increases, some curves      14
+    break up, often appearing like a chain of     15
+    "islands" during the process. So chaotic      16
+    and non-chaotic solutions can exist together. 17
+                                                  18
+       The non-chaotic regions shrink, until      19
+    essentially all of the solutions are chaotic. 20
+                                                  21
+                                                  22
+  Click the mouse, or press <ENTER> to continue.  23
+                                                  24
+                                                  25
+
+
+SprPendPoincareHelpC
+                                                  01
+              About Poincare Maps                 02
+                                                  03
+       In this program x is the length of the     04
+    pendulum and y is the angle between the       05
+    pendulum and the downward vertical.           06
+                                                  07
+       You will be prompted to select a value     08
+    for the energy. Depending on the parameters,  09
+    there is a minimum possible value that will   10
+    be displayed on the screen.                   11
+                                                  12
+       When selecting initial values for x and    13
+    vx, only those that permit a solution of vy   14
+    are allowed. The boundary of the region cont- 15
+    aining these permitted points is marked. The  16
+    choice is made using the mouse. If the mouse  17
+    moves outside the permitted region, then      18
+    warning beeps will sound.                     19
+                                                  20
+                                                  21
+  Click the mouse, or press <ENTER> to continue.  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+SwingAboutProgram
+                                                  01
+        The Motion of a Child on a Swing          02
+                                                  03
+              J.M.Anthony Danby                   04
+       North Carolina State University            05
+             Copyright (c) 1997                   06
+                                                  07
+       The child in the program operates the      08
+    swing by standing or crouching. He/she        09
+    crouches when the swing is rising, and        10
+    stands when it is falling.                    11
+                                                  12
+       You may specify the length of the swing    13
+    and the height and weight of the child. You   14
+    will also enter a parameter that controls     15
+    the resising force in the motion.             16
+                                                  17
+       You can see the animation with automatic   18
+    action by the child, or you can control it    19
+    yourself using hot keys.                      20
+                                                  21
+       You can also see a phase-plane plot of     22
+    the motion.                                   23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+
+SwingAboutModel1
+                                                  01
+        The Motion of a Child on a Swing          02
+                                                  03
+      A child pumps energy into the motion of a   04
+   swing by synchronizing body movements with     05
+   the motion of the swing. There are two rules:  06
+                                                  07
+   (a) The motion of the body should be perio-    08
+   dic, with period equal to one half the vary-   09
+   ing period of the swing. (This period will     10
+   increase with amplitude.                       11
+                                                  12
+   (b) At the lowest point of the swing the cen-  13
+   ter of mass should be lowered, and at the      14
+   highest point the center of mass should be     15
+   raised toward the point of suspension.         16
+                                                  17
+      In this program the change in the center    18
+   of mass is achieved by standing or crouch-     19
+   ing. It is assumed that by this means the      20
+   'height' changes by a factor of two.           21
+                                                  22
+  Click the mouse, or press <ENTER> to continue.  23
+                                                  24
+                                                  25
+
+
+SwingAboutModel2
+                                                  01
+        The Motion of a Child on a Swing          02
+                                                  03
+      Let L be the length of the swing, and h     04
+   the current height of the child. The mass of   05
+   the swing is neglected. Let the moment of      06
+   inertia of the child about the point of sus-   07
+   pension be I and the weight of the child be W. 08
+   The swing makes an angle x with the downward   09
+   vertical. The resistance is proportional to    10
+   (dx/dt) and h. So the torque due to resis-     11
+   tance is -kh(L-h/2)(dx/dt). Then the equation  12
+   for the motion is                              13
+                                                  14
+     Ix" = - kh(L-h/2)(dx/dt) - W(L-h/2)*Sin(x).  15
+                                                  16
+   I is calculated under the assumption that the  17
+   child is a uniform cylinder.                   18
+                                                  19
+      The quantities L, W, k and the full height  20
+   of the child are entered.                      21
+                                                  22
+  Click the mouse, or press <ENTER> to continue.  23
+                                                  24
+                                                  25
+
+
+SwingAboutModel3
+                                                  01
+        The Motion of a Child on a Swing          02
+                                                  03
+      For initial conditions, there must be an    04
+   initial displacement or angular velocity. If   05
+   the resistance parameter, k, is too great,     06
+   the motion may be damped out; too small, and   07
+   cirulation is possible. (But don't worry;      08
+   this kid is really good.) Try to balance       09
+   the parameters to produce a reasonable limit   10
+   cycle.                                         11
+                                                  12
+      You have the option of seeing the body      13
+   changing automatically, or you can manipulate  14
+   it using hot keys.                             15
+                                                  16
+      Another option is to see plots of the mot-  17
+   ion in the phase plane. This can be helpful    18
+   in following the progress toward a limit       19
+   cycle.                                         20
+                                                  21
+                                                  22
+   Click the mouse or hit any key to continue.    23
+                                                  24
+                                                  25
+
+
+DoubPendAboutProgram
+                                                  01
+           The Motion of a Double Pendulum        02
+                                                  03
+                  J.M.Anthony Danby               04
+           North Carolina State University        05
+                 Copyright (c) 1997               06
+                                                  07
+       A double pendulum is made up from two      08
+    simple pendulums. The point of suspension     09
+    of the first is fixed; that of the second     10
+    is at the end of the first. The entire        11
+    configuration is free to move in a vertical   12
+    plane. In this program there is no friction   13
+    included in the model.                        14
+                                                  15
+       This is a chaotic dynamical system. It     16
+    is entertaining just to watch it in ani-      17
+    mation. You can also see Poincare maps that   18
+    can help you follow the evolution from non-   19
+    chaotic to chaotic motion as the energy of    20
+    the system is increased.                      21
+                                                  22
+       Enjoy!                                     23
+                                                  24
+   Click the mouse or hit any key to continue.    25
+
+
+
+DoubPendAboutModel
+                                                  01
+           The Motion of a Double Pendulum        02
+                                                  03
+       A light inextensible rod of length L is    04
+    suspended from a fixed point; a mass M is     05
+    attached to the other end. A second rod of    06
+    the same length is attached to this end and   07
+    has an equal mass at its free end. The sys-   08
+    tem is free to move in a fixed vertical       09
+    plane. Frictional forces are neglected.       10
+                                                  11
+       In this model the quantity (g/L), where    12
+    g is the acceleration due to gravity, has     13
+    been set equal to one. If you choose <Run>    14
+    and then <Data> from the menu you will be     15
+    prompted to enter initial conditions. Then    16
+    you can enjoy seeing the system in ani-       17
+    mation.                                       18
+                                                  19
+       You can also choose to see Poincare        20
+    maps. See additional help files for furth-    21
+    er information.                               22
+                                                  23
+   Click the mouse or hit any key to continue.    24
+                                                  25
+
+DoubPendPoincareMapsA
+                   Poincare Maps                  01
+                                                  02
+      This dynamical system is "chaotic." That    03
+   is, if the initial conditions are changed      04
+   only slightly, the character of the motion     05
+   can be changed radically. For small oscilla-   06
+   tions, the motion will appear to be regular.   07
+   But for wilder initial conditions, the chaos   08
+   in the motion should become obvious.           09
+                                                  10
+      We are dealing with a conservative dynami-  11
+   cal system with two degrees of freedom. Let    12
+   the angles between the pendulums and the down- 13
+   ward vertical be x and y, and their rates of   14
+   change vx and vy. There is an energy integral  15
+   of the form                                    16
+                F(x, y, vx, vy) = E.              17
+                                                  18
+      If a value of E is prescribed, then one     19
+   variable, vy, say, can be found if the other   20
+   three are known. This means that while E keeps 21
+   this value, the motion can be regarded as      22
+   three-dimensional.                             23
+                                                  24
+   Click the mouse or hit any key to continue.    25
+
+
+DoubPendPoincareMapsB
+                                                  01
+                   Poincare Maps                  02
+                                                  03
+      In this (x, y, vx) space a surface is de-   04
+   fined. We shall follow instances where the     05
+   pendulums form a straight line of length 2L,   06
+   so that surface is the plane x - y = 0. When   07
+   a solution crosses this plane x and vx are     08
+   calculated, and the point with coordinates     09
+   (x, vx) is plotted in the x-vx plane. Such a   10
+   point is called the "map" of the preceding     11
+   point.                                         12
+                                                  13
+      Non-chaotic motion usually lies on a torus  14
+   in the (x, y, vx) space, so successive maps    15
+   in the x-vx plane lie on closed curves. For    16
+   given E, chaotic and non-chaotic motion can    17
+   occur. As E is incrased, you will see the      18
+   organization of curves breaking up.            19
+                                                  20
+                                                  21
+   Click the mouse or hit any key to continue.    22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+DoubPendPoincareMapsC
+                                                  01
+                   Poincare Maps                  02
+                                                  03
+      E must be greater than -3. For values       04
+   close to -3 the swings will be small and the   05
+   motion will appear to be regular and non-      06
+   chaotic. As the swings become bigger, the      07
+   motion will appear to become chaotic. A way    08
+   to judge this is to see the plotted points     09
+   becoming more randomly distributed.            10
+                                                  11
+      Look for circumstances where the motion     12
+   seems to be borderline between regular and     13
+   chaotic.                                       14
+                                                  15
+      In this program, you will actually see      16
+   plots of Cos(x) and xv; or, as labeled in the  17
+   screen, Cos(Theta) and ThetaDot.               18
+                                                  19
+                                                  20
+                                                  21
+    Click the mouse or hit any key to continue.   22
+                                                  23
+                                                  24
+                                                  25
+
+DoubPendHotKeysHelp
+                                                  01
+                  HotKeys Help                    02
+                                                  03
+       To start, select <F3-Input> then pick a    04
+    color, and enter <OK>. Now click on a start-  05
+    ing point for the map; this must be inside    06
+    the permitted region. (You will be beeped at  07
+    if you go outside.) Then select <F2-Run> to   08
+    begin the mapping. This can be stopped temp-  09
+    orarily by selecting <F2-Stop> and restarted  10
+    with <F2-Run>.                                11
+                                                  12
+       When you want to start a new map, select   13
+    <F3-Input>.                                   14
+                                                  15
+       If you select <F4-Clean-up> you will have  16
+    the option of changing the scale. You might   17
+    want to use this to see some region in more   18
+    detail. All preceding mapped points will be   19
+    erased.                                       20
+                                                  21
+                                                  22
+    Click the mouse or hit any key to continue.   23
+                                                  24
+                                                  25
+
+
+
+
+CenserAboutProgram
+                                                  01
+         The Motion of a Swinging Censer          02
+                                                  03
+                 J.M.Anthony Danby                04
+          North Carolina State University         05
+                Copyright (c) 1997                06
+                                                  07
+       A censer is a vessel containing incense    08
+    which is to be distributed in a church.       09
+    Sometimes this is a large container suspen-   10
+    ded from the vault; it is swung, like a       11
+    pendulum, in large arcs above the congreg-    12
+    ation. The cord attached to the censer pas-   13
+    es over a pulley, and the other end can be    14
+    pulled, so that the length of the pendulum    15
+    can be varied.                                16
+                                                  17
+       The censer is heavy, so that only a small  18
+    swing can be produced manually. To produce    19
+    large swings, the rope is pulled, and then    20
+    released in rhythm with the swings so that    21
+    the amplitude increases. You can see this     22
+    resonant effect in animation.                 23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+CenserAboutModelA
+                                                  01
+         The Motion of a Swinging Censer          02
+                                                  03
+       The model is that of a pendulum with       04
+    varying length. The length, L(t), is a known  05
+    function of the time. If the pendulum  makes  06
+    the angle x with the downward vertical, then  07
+                                                  08
+          L*L*x" = - 2L'x' - gSin(x) - kx'.       09
+                                                  10
+    g is the acceleration due to gravity and k    11
+    is a parameter for the resistance.            12
+                                                  13
+       In order to pump energy into the motion,   14
+    L must be increased when censer is rising     15
+    and decreased when it is descending. So       16
+    during each complete swing there will phases  17
+    during which L is changed. Each phase will    18
+    consist of an acceleration, a deceleration    19
+    and an interval with L help constant. The     20
+    magnitude of the acceleration will be         21
+    constant.                                     22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+CenserAboutModelB
+                                                  01
+         The Motion of a Swinging Censer          02
+                                                  03
+       The average length is L0, and the extreme  04
+    values of the length are L0*(1 + f) and       05
+    L0*(1 - f). You will be prompted to enter     06
+    values for L0 and f.                          07
+                                                  08
+       Let the natural period corresponding to    09
+    the length L0 be P0. The motion is divided    10
+    into four phases, each having duration        11
+    dP = P0/4. During this time, the accelerated  12
+    motion will last for a time c*dP. You will    13
+    be prompted to enter a value for c. From      14
+    this information, the program will calculate  15
+    the magnitude of the acceleration, a. Then    16
+    the actual acceleration will be +a for time   17
+    c*dP/2 and then -a for a time c*dP/2.         18
+                                                  19
+       Finally, you will be prompted to enter a   20
+    value of k, the parameter for the resistance. 21
+                                                  22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+CenserAboutModelC
+                                                  01
+         The Motion of a Swinging Censer          02
+                                                  03
+       The value of k is important. If it is      04
+    too small, the amplitudes of the swings       05
+    will increase until the censer makes comp-    06
+    lete revolutions. It is best to find a        07
+    value so that the swinging approaches a       08
+    limit cycle with an amplitude that is         09
+    good for scattering incense, but still        10
+    appropriate for the surroundings.             11
+                                                  12
+                                                  13
+                                                  14
+    Click the mouse or hit any key to continue.   15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+PitPendAboutProgram
+                                                  01
+             The Pit and the Pendulum             02                                                         ',
+                J.M.Anthony Danby                 03
+         North Carolina State University          04
+               Copyright (c) 1997                 05
+                                                  06
+       We are modelling Edgar Allen Poe's         07
+    story that involves a pendulum with in-       08
+    creasing length, with a blade at its end,     09
+    descending onto an unfortunate victim.        10
+                                                  11
+       You can choose the initial length of       12
+    the pendulum and its rate of increase.        13
+    You can also choose the starting con-         14
+    ditions for the pendulum''s swing.            15
+                                                  16
+       In the story the victim is rescued.        17
+    Do not depend on a happy ending here!         18
+                                                  19
+                                                  20
+                                                  21
+    Click the mouse or hit any key to continue.   22
+                                                  23
+                                                  24
+                                                  25
+
+
+PitPendAboutModel
+                                                  01
+             The Pit and the Pendulum             02
+                                                  03
+       The physical model for this program is     04
+    that of the pendulum with varying length.     05
+    Here the length will increase at a constant   06
+    prescribed rate.                              07
+                                                  08
+        The victim is 20 ft below the point of    09
+    suspension of the pendulum. You will be       10
+    prompted for values of the initial length     11
+    of the pendulum, the rate at which the        12
+    length increases, and the initial conditions  13
+    of the swing. You can also include a resis-   14
+    ting term proportional to the angular rate    15
+    of swinging.                                  16
+                                                  17
+       There is no deep physical significance in  18
+    this model. Enjoy it!                         19
+                                                  20
+                                                  21
+    Click the mouse or hit any key to continue.   22
+                                                  23
+                                                  24
+                                                  25

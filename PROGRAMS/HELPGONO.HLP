@@ -1,0 +1,774 @@
+GonoAboutProgram
+                                                  01
+        A Model for the Spread of Gonorrhea       02
+                                                  03
+                 J.M.Anthony Danby                04
+          North Carolina State University         05
+                 Copyright (c) 1997               06
+                                                  07
+        Having gonorrhea does not confer im-      08
+     munity. When cured, a patient is imme-       09
+     diately susceptible to catching the dis-     10
+     ease again.                                  11
+                                                  12
+        In the model there are males and fe-      13
+     males the numbers of which you may choose.   14
+     These are completely promiscuous, although   15
+     only heterosexual contacts are considered.   16
+                                                  17
+        The progress of the disease depends       18
+     on the degrees of infectiousness and the     19
+     cure rates for the sexes (which need not     20
+     be the same). These you may change even      21
+     while the program is running.                22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+GonoAboutModelA
+                                                  01
+        A Model for the Spread of Gonorrhea       02
+                                                  03
+       In the model there are m males and f fe-   04
+    ales. At any time x males and y females are   05
+    infected. The parameters a and c for the      06
+    males and females, depend on the effective-   07
+    ness of diagnosis and cure. So if there was   08
+    no infection, then                            09
+           dx/dt = - ax and dy/dt = -cy.          10
+    a is usually larger than c due to quicker     11
+    diagnosis.                                    12
+                                                  13
+       Infection is proportional to the numbers   14
+    of infected males and uninfected females, or  15
+    vice-versa. So if b and d are parameters for  16
+    the infection, the infection rates are        17
+    by(m - x) for the males and dx(f - y) for     18
+    the females. Then the complete model is,      19
+    then,                                         20
+              dx/dt = -ax + by(m-x),              21
+              dy/dt = -cy + dx(f-y).              22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+GonoAboutModelB
+                                                  01
+        A Model for the Spread of Gonorrhea       02
+                                                  03
+       The model obviously has an equilibrium     04
+    for x = 0 and y = 0. There is a second        05
+    equilibrium at                                06
+                                                  07
+           x = (bdmf - ac)/(bdf + ad),            08
+           y = (bdmf - ac)/(bdm + cb),            09
+                                                  10
+    provided that (bdmf - ac) > 0.                11
+                                                  12
+       If the second equilibrium does not         13
+    exist, then (0, 0) is stable and the dis-     14
+    ease dies out. Otherwise, the second equ-     15
+    ilibrium is stable and (0, 0) is unstable.    16
+                                                  17
+       Interpretation of (bdmf - ac) enables      18
+    you to see what factors may be important      19
+    in eradicating the disease in a community.    20
+                                                  21
+                                                  22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+GonoRunProgram
+        A Model for the Spread of Gonorrhea       01
+                                                  02
+      You have two options for seeing solutions.  03
+   If you choose the menu item <Plot solutions>   04
+   then you will see them plotted in a phase-     05
+   plane diagram with x (sick males) horizontal   06
+   and y (sick females) vertical.                 07
+      Initially, the default values for the pop-  08
+   ulations are 100 for both males and females.   09
+   The maximum values are 200.                    10
+      You will be prompted to enter initial con-  11
+   ditions for x and y, having the option of      12
+   using the keyboard or the mouse. Then, as the  13
+   solution is plotted, you can change all six    14
+   parameters as the solutions are plotted. So    15
+   you can see, for example the effects of chang- 16
+   ing the cure rates or introducing more or      17
+   fewer of either sex. All those newly intro-    18
+   duced are uninfected.                          19
+                                                  20
+      Alternatively, you can plot a direction-    21
+   field diagram and plot over the arrows. You    22
+   cannot change the parameters, in this case.    23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+GonoDFieldA
+                                                  01
+        A Model for the Spread of Gonorrhea       02
+            The Direction Field Diagram           03
+                                                  04
+       The differential equations of the model    05
+    are                                           06
+                dx/dt = -ax + by(m-x),            07
+    and         dy/dt = -cy + dx(f-y).            08
+                                                  09
+       If the second equation is divided by the   10
+    first, then the time, t, is eliminated  and   11
+                                                  12
+       dy/dx = (-ax + by(m-x))/(-cy + dx(f-y)).   13
+                                                  14
+       If you choose the menu option <See the     15
+    direction field diagram> then you will see    16
+    the diagram for this equation in the x-y      17
+    plane. First, you will be prompted for values 18
+    of the parameters and the numbers of grid     19
+    points for the arrows. At each of the grid    20
+    points the slope dy/dx is calculated and an   21
+    arrow of that slope drawn through the point.  22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+GonoDFieldB
+                                                  01
+        A Model for the Spread of Gonorrhea       02
+            The Direction Field Diagram           03
+                                                  04
+       The diagram enables you to get an idea     05
+    of all possible solutions for the current     06
+    values of the parameters.                     07
+                                                  08
+       You also will have the option of           09
+    selecting initial conditions and seeing       10
+    solutions plotted over this diagram.          11
+                                                  12
+                                                  13
+                                                  14
+    Click the mouse or hit any key to continue.   15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+HeartBeatAboutProgram
+                                                  01
+          Zeeman's Model for the Heartbeat        02
+                                                  03
+                J.M.Anthony Danby                 04
+         North Carolina State University          05
+               Copyright (c) 1997                 06
+                                                  07
+       Zeeman's model originated, in part, as     08
+    an illustration of "catastrophe" theory.      09
+    In this case, the catastrophe is a heart      10
+    attack.                                       11
+                                                  12
+       The variables of the model represent mus-  13
+    cle fiber length and electrochemical activ-   14
+    ity. The principal parameter is the overall   15
+    tension of the system.                        16
+                                                  17
+       A complete cycle consists of a contrac-    18
+    tion followed by a relaxation. You can fol-   19
+    low these in animation. You can also plot     20
+    an EKG by graphing the electrochemical        21
+    activity                                      22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+HeartBeatAboutModelA
+                                                  01
+          Zeeman's Model for the Heartbeat        02
+                                                  03
+      The heart has a relaxed equilibrium called  04
+   "diastole." From this state, an electrochem-   05
+   ical wave causes a slow contraction of the     06
+   muscle to push blood into the ventricles, fol- 07
+   lowed by a rapid contraction to pump blood     08
+   down the arteries. The fully contracted state  09
+   is called "systole." This is followed by a     10
+   relaxation back to diastole, and the cycle is  11
+   repeated.                                      12
+                                                  13
+      There are two dependent variables in the    14
+   model:                                         15
+       x refers to muscle fiber length.           16
+       b refers to electrochemical activity.      17
+   The principal parameter of the model is:       18
+                                                  19
+       T, the overall tension of the system.      20
+   Equilibria are at (b0, x0) for diastole, and   21
+   (b1, x1) for systole.                          22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+HeartBeatAboutModelB
+                                                  01
+          Zeeman's Model for the Heartbeat        02
+                                                  03
+       The equations for contraction to (b1, x1)  04
+    are:                                          05
+                x' = -(x^3 - Tx + b)/e,           06
+                b' = x - x1.                      07
+    (e is a small scale factor.) T is the         08
+    tension. Similarly, the equations for re-     09
+    laxation to (b0, x0) are:                     10
+                x' = -(x^3 - Tx + b)/e,           11
+                b' = x - x0.                      12
+    Note: in the graphics the b-axis is hori-     13
+    zontal and the x-axis is vertical.            14
+                                                  15
+       For systole and diastole to be equilibria, 16
+    it is necessary that they lie on the cubic    17
+                  x^3 - Tx + b = 0.               18
+    This cubic is important for the model, and    19
+    is plotted in most diagrams.                  20
+                                                  21
+       The program switches from one set of equa- 22
+    tions to the other close to an equilibrium.   23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+HeartBeatContraction
+                                                  01
+          Zeeman's Model for the Heartbeat        02
+                                                  03
+      Contraction follows the motion to systole,  04
+   the fully contracted state. The equations for  05
+   for contraction are:                           06
+        x' = -(x^3 - Tx + b)/e,  b' = x - x1.     07
+   T is the tension. Systole, at (b1, x1) is an   08
+   equilibrium of the model, so this point lies   09
+   on the cubic curve                             10
+                  x^3 - Tx + b = 0.               11
+      You will be able to vary T and x1, using    12
+   sliders. The cubic curve will be plotted.      13
+   This has an S-shape. The outer parts are "att- 14
+   ractors" and the inner part is a "repeller."   15
+   You can choose initial conditions, and see the 16
+   paths that may be taken to systole.            17
+                                                  18
+      If the second equation is divided into the  19
+   first, then a first order equation, for        20
+   db/dx, results. You can see the direction      21
+   field diagram for this, and plot solutions     22
+   superimposed onto it.                          23
+                                                  24
+     Click the mouse or hit any key to continue.  25
+
+
+
+HeartBeatCyclesA
+                                                  01
+          Zeeman's Model for the Heartbeat        02
+                                                  03
+       The complete pumping cycle (which is a     04
+    limit cycle for the model) should correspond  05
+    to a healthy heartbeat. When the solution     06
+    approaches sufficiently close to systole,     07
+    then the equation for b is switched so that   08
+    diastole becomes the equilibrium, with a      09
+    similar switch when diastole is approached.   10
+                                                  11
+       The demonstration starts with a graph of   12
+    the cubic curve                               13
+                   x^3 - Tx + b = 0.              14
+    You can change T using the slider, and the    15
+    curve will be redrawn. You can then select    16
+    the positions on this curve of systole and    17
+    diastole, and see the cycle.                  18
+                                                  19
+       If the top bend in the S-shape falls to    20
+    the right of the systole, then the contrac-   21
+    tion will never reach systole; this corre-    22
+     ponds to a heart attack.                     23
+                                                  24
+     Click the mouse or hit any key to continue.  25
+
+
+HeartBeatCyclesB
+                                                  01
+          Zeeman's Model for the Heartbeat        02
+                                                  03
+       While observing cycles, the tension can    04
+    be increased, using a hotkey, enabling you    05
+    to follow the sequence through healthy        06
+    beating to an eventual heart attack.          07
+                                                  08
+       If you select the menu <EKG> from the      09
+    menu, you will be able to see the animation   10
+    of cycles in the b-x plane and also a plot    11
+    of b, the electrochemical activity, plotted   12
+    against the time. This is equivalent (in      13
+    this model) to an EKG for the heartbeat.      14
+                                                  15
+                                                  16
+                                                  17
+    Click the mouse or hit any key to continue.   18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+DiseaseAboutProgram
+                                                  01
+              The Spread of Disease               02
+                                                  03
+                J.M.Anthony Danby                 04
+         North Carolina State University          05
+               Copyright (c) 1997                 06
+                                                  07
+       In this model we follow the progress of    08
+    a disease, such as measles, where someone     09
+    who has recovered becomes immune.             10
+                                                  11
+       Options include non-constant infection     12
+    rates, vaccination, and a period of in-       13
+    cubation, where an infected person is not     14
+    yet infectious.                               15
+                                                  16
+       You can also include birth and death,      17
+    where the rates of these can depend on the    18
+    status of the individuals: susceptible,       19
+    infected, cured, etc.                         20
+                                                  21
+                                                  22
+    Click the mouse or hit any key to continue.   23
+                                                  24
+                                                  25
+
+
+DiseaseVariables
+                                                  01
+               The Spread of Disease              02
+                                                  03
+   There are groups of individuals in the model:  04
+                                                  05
+   1: S: Susceptibles. Those who are liable to    06
+      catch the disease.                          07
+                                                  08
+   2: V: Vaccinated. Those who have been vacci-   09
+      nated and are immune.                       10
+                                                  11
+   3: D: Incubated. Those who have caught the     12
+      disease but are not yet infectious.         13
+                                                  14
+   4: I: Infectives. Those who are infectious.    15
+                                                  16
+   5: R: Removed. Those who are cured, and im-    17
+      mune from further infection.                18
+                                                  19
+      A sixth quantity, N, the total popu-        20
+   lation can be followed where birth and death   21
+   are included in the model.                     22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+DiseaseCategories
+                                                  01
+               The Spread of Disease              02
+                                                  03
+       If you select none, then you will run the  04
+    basic model with susceptibles and infectives  05
+    and constant rates of infection and cure.     06
+                                                  07
+       Select <Vaccination> to vaccinate the      08
+    susceptibles.                                 09
+                                                  10
+       Select <Incubation> to allow for a period  11
+    when some with the disease are not yet        12
+    infectious.                                   13
+                                                  14
+       Select <Periodic infection> to allow for   15
+    cyclical changes in the infectiousness of     16
+    the disease.                                  17
+                                                  18
+       Select <Birth and death> to have a model   19
+    that includes birth and death at rates that   20
+    can depend on the different types, suscep-    21
+    tibles, infectives, etc.                      22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+
+
+DiseaseBasicmodel
+                                                  01
+               The Spread of Disease              02
+                    Basic model                   03
+                                                  04
+       In the simplest case, the variables are    05
+    S, I and R, where                             06
+                  S + I + R = N,                  07
+    which is constant.                            08
+                                                  09
+       The equations are:                         10
+                                                  11
+               S' = - a*S*I,                      12
+               I' = a*S*I - b*I,                  13
+               R' = b*I.                          14
+                                                  15
+    a, the infection rate and b, the cure rate    16
+    are constants.                                17
+                                                  18
+       You will be prompted to enter numerical    18
+    values for a and b, and the initial values    20
+    of S and I. (R is assumed initially to be     21
+    zero.)                                        22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+DiseaseVaccination
+                                                  01
+               The Spread of Disease              02
+                    Vaccination                   03
+                                                  04
+       We consider three models for the rate at   05
+   which susceptibles are vaccinated:             06
+                                                  07
+                V' = c*S,                         08
+                V' = c*S*I                        09
+   or           V' = c*S*I*I.                     10
+                                                  11
+   The equation for S is then modified to be      12
+   one of                                         13
+                                                  14
+                S' = - a*S*I - c*S,               15
+                S' = - a*S*I - c*S*I              16
+   or           S' = - a*S*I - c*S*I*I.           17
+                                                  18
+      You will be prompted to enter a value       19
+   for c, and a parameter 0, 1 or 2 for the       20
+   power of I.                                    21
+                                                  22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+
+DiseaseIncubation
+                                                  01
+               The Spread of Disease              02
+                     Incubation                   03
+                                                  04
+       Normally there is a period of incubation   05
+    for a disease, when someone is infected but   06
+    not yet infectious. If D is the number of     07
+    individuals in this state, then we can        08
+    write                                         09
+                                                  10
+                  D' = a*S*I - d*D,               11
+                  I' = d*D - b*I.                 12
+                                                  13
+    Other equations are not affected.             14
+                                                  15
+       You will be prompted to enter a value      16
+    for d, and also an initial value for D.       17
+                                                  18
+                                                  19
+                                                  20
+    Click the mouse or hit any key to continue.   21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+DiseasePeriodicInfection
+                                                  01
+               The Spread of Disease              02
+             Periodic rate of infection           03
+                                                  04
+       Many diseases are seasonal. We allow       05
+    for this in the model by allowing the         06
+    parameter for the rate of infection so be     07
+                                                  08
+            a = a0 + a1*Sin((2*Pi/P)*t).          09
+                                                  10
+    Then the disease has a cycle of infec-        11
+    tiousness with period P.                      12
+                                                  13
+       a0 and a1 are positive, and a1 cannot      14
+    be greater than a0.                           15
+                                                  16
+       You will be prompted to enter values       17
+    for a0, a1 and P.                             18
+                                                  19
+       If this is combined with suitable param-   20
+    eters for birth and death, then chaotic       21
+    behavior may result.                          22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+
+
+DiseaseBirthDeath
+                                                  01
+               The Spread of Disease              02
+                  Birth and death                 03
+                                                  04
+       For each of the five catagories,           05
+                   S, V, D, I, R                  06
+    there can be associated a number for birth    07
+    and death rates. I.e., Sb, Sd, etc.           08
+                                                  09
+       To allow for births the equation for S'    10
+    is modified to include                        11
+        + S*Sb + V*Vb + D*Db + I*Ib + R*Rb.       12
+                                                  13
+       For deaths, each equation includes a       14
+    term:                                         15
+      - S*Sd, - V*Vd, - D*Dd, - I*Id, - R*Rd.     16
+                                                  17
+       You will be prompted to enter values for   18
+    all 10 parameters. These can have many        19
+    interpretations. For instance, the disease    20
+    might cause sterility.                        21
+                                                  22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+
+
+DisaeaseCategories
+                                                  01
+               The Spread of Disease              02
+                                                  03
+   For first four cases:                          04
+      Basic model with susceptibles, infectives   05
+      and constant infection rate.                06
+                                                  07
+   Vaccination:                                   08
+      This applies only to the susceptibles.      09
+      Those vaccinated cease to be susceptible.   10
+                                                  11
+   Incubation:                                    12
+      Having caught the disease, a person is not  13
+      immediately infectious.                     14
+                                                  15
+   Birth and death:                               16
+      Each category, susceptible, infective,      17
+      etc., can reproduce or die.                 18
+                                                  19
+   Periodic infection:                            20
+      The rate of infection varies cyclically.    21
+                                                  22
+    Click the mouse or hit any key to continue.   23
+                                                  24
+                                                  25
+
+
+MalariaAboutProgram
+                                                  01
+              The Spread of Malaria               02
+                                                  03
+                J.M.Anthony Danby                 04
+         North Carolina State University          05
+               Copyright (c) 1997                 06
+                                                  07
+       Malaria is a disease that is transmit-     08
+    ted between two species, humans and mos-      09
+    quitos. Only cross-infection takes place.     10
+    That is, humans don't infect other            11
+    humans, and mosquitos don't infect mos-       12
+    quitos.                                       13
+                                                  14
+       In this model parameters such as in-       15
+    fection, cure rates and death rates can be    16
+    varied, with different values for the two     17
+    species.  Population growth is logistic.      18
+                                                  19
+       The birth rate for the mosquitos can       20
+    vary periodically, to simulate seasonal       21
+    cycles of infection.                          22
+                                                  23
+    Click the mouse or hit any key to continue.   24
+                                                  25
+
+MalariaAboutModel1
+                                                  01
+              The Spread of Malaria               02
+                    The Model                     03
+                                                  04
+      The dependent variables in the model are:   05
+                                                  06
+        Ph,  the population of humans,            07
+        Pm,  the population of mosquitos,         08
+        Sh,  the number of infected humans,       09
+        Sm,  the number of infected mosquitos.    10
+                                                  11
+      Cross-infection takes place between the     12
+   two species through mosquito bites. The rate   13
+   of biting is given by the parameter Bite.      14
+                                                  15
+      The proportions of infected individuals     16
+   that are infectious are Fh and Fm. Then the    17
+   rates at which malaria spreads through bites   18
+   are                                            19
+                                                  20
+      Bite*Fm*Sm*(Ph - Sh)/Ph   for humans,       21
+                                                  22
+      Bite*Fh*Sh*(Pm - Sm)/Ph   for mosquitos.    23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+MalariaAboutModel2
+                                                  01
+              The Spread of Malaria               02
+                                                  03
+      The recovery rates for those infected are   04
+                                                  04
+                Rh   for humans,                  06
+                Rm   for mosquitos.               07
+                                                  08
+      Death rates for those with malaria are      09
+                                                  10
+                Dh   for humans,                  11
+                Dm   for mosquitos.               12
+                                                  13
+      Then the rates at which the numbers inf-    14
+   ected are reduced by recovery or death are     15
+                                                  16
+            -(Rh + Dh)*Ph   for humans,           17
+            -(Rm + Dm)*Pm   for mosquitos.        18
+                                                  19
+      So equations for those infected are         20
+                                                  21
+ dSh/dt = Bite*Fm*Sm*(Ph - Sh)/Ph - (Rh + Dh)*Sh  22
+ dSm/dt = Bite*Fh*Sh*(Pm - Sm)/Ph - (Rm + Dm)*Sm  23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+MalariaAboutModel3
+                                                  01
+              The Spread of Malaria               02
+                                                  03
+      To complete the model we need equations     04
+   for the rates of change of the populations,    05
+   Ph and Pm. The are due to birth-rates,         06
+   natural death-rates and death-rates due to     07
+   malaria. For details, see the help screens     08
+   on <Population growth>.                        09
+                                                  10
+                                                  11
+                                                  12
+                                                  13
+    Click the mouse or hit any key to continue.   14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+
+MalariaAboutPopulationGrowth1
+                                                  01
+              The Spread of Malaria               02
+                Population Growth                 03
+                                                  04
+      The population changes are logistic. For    05
+   humans, the maximum sustainable population is  06
+   Mh and the difference                          07
+                                                  08
+    (natural birth-rate) - (natural death-rate)   09
+                                                  10
+   is Bh. Then the rate of change of population   11
+   is                                             12
+         dPh/dt = Bh*(Mh - Ph)*Ph - Dh*Ph.        13
+                                                  14
+   For humans the net birth-rate Bh is taken to   15
+   be constant. (In this program it must be       16
+   positive.) Mh is also a positive constant.     17
+                                                  18
+      The corresponding equation for mosquitos is 19
+                                                  20
+         dPm/dt = Bm*(Mm - Pm)*Pm - Dm*Pm.        21
+                                                  22
+   Bm and Mm can vary periodically.               23
+                                                  24
+    Click the mouse or hit any key to continue.   25
+
+
+
+MalariaAboutPopulationGrowth2
+                                                  01
+              The Spread of Malaria               02
+                Population Growth                 03
+                                                  04
+      Formulas for Bm and Mm are:                 05
+                                                  06
+         Bm = B0 + B1*Cos((2*Pi/P)*t - B2),       07
+         Mm = M0 + M1*Cos((2*Pi/P)*t - M2).       08
+                                                  09
+   B2 and M2 are phase-constants that will us-    10
+   ually be equal to zero. The constants are      11
+   positive. M1 < M0, since the maximum popu-     12
+   lation must always be positive. B1 could be    13
+   negative, since Bm is the difference (birth-   14
+   rate - death-rate).                            15
+                                                  16
+                                                  17
+                                                  19
+    Click the mouse or hit any key to continue.   20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+
+
+
+
+
+
