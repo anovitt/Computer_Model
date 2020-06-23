@@ -1,0 +1,1498 @@
+Computer Modeling
+    From Sports to Spaceflight
+    From Order to Chaos
+
+Walk-through files.
+
+Chaos
+
+The Model of Henon and Heiles
+
+   The important parameter of this model is E, labelled 'energy;' it can
+take values between 0 and 1/6. At the start of the program, select
+<Run> and <Enter value for the energy> from the Menu. Start with E = 0.01.
+This will show non-chaotic motion.
+
+   A screen will now appear showing a set of axes, labelled y and y', and
+a closed curve. All plotted points must lie within this curve. Using the
+hotkeys you have the option of entering starting conditions using the mouse
+or the keyboard. Mostly you will find the mouse to be preferable; use the
+keyboard if you want to choose a point very accurately. Select <Mouse>,
+click on the color of your choice, click on <OK> then click on a starting
+point, and select <Start>. Points will appear lying on closed curves. When
+you have enough, select <Mouse> and choose another starting point.
+
+   Build as many curves as you want. Note that if you start at around
+(0, 0.06), then you see a different set of curves.
+The computer is following the solutions in three dimensions, y, y' and x.
+When x=0, a point is plotted. Plot a set of curves, with, say, starting
+point (0.06, 0). Then select <Menu> and then <Run> <See three-dimensional
+motion>. The default starting conditions will be those that you have just
+used. Select them and then <Start>. You will see a projection of the three-
+dimensional motion, with points plotted where x=0. The direction of viewing
+can be changed, using <View>, moving the sliders and then <Accept>. You
+will eventually see the points around the curves in the y-y' plane and a
+torus in the three dimensions.
+
+   Now select a higher value for the energy: maybe E=0.3. Repeat the maps.
+
+   Increase E gradually to 0.09, noting the changes in the patterns.
+For E=0.09 you should be able to find a small region of chaos: points
+will appear to fill the region randomly.
+
+   Now increase E further, but gradually. The chaotic regions will increase
+in size, and the boundaries between the chaotic and non-chaotic regions
+will contain interesting structure such as systems of 'islands.' Any time
+you want, have a look at the three-dimensional motion.
+
+   Eventually, chaos will reign almost everywhere. But you may still be
+able to find small pockets of locally 'non-chaotic' behavior.
+
+
+The Lorenz Equations
+
+   To start, select <Model>, <Lorenz> from the Menu, and use the default
+values of the parameters. Next, select <Run>, <Viewing parameters>. You
+have six options of how you can view the solutions. Select each one in turn,
+to appreciate the variety. Next, select <Run>, <Initial conditions>. The
+starting values of x, y and z are not too important, since many of the
+solutions approach 'attractors,' regardless of where the began. But you
+may want to experiment with different maximum times, if you feel that you
+are seeing too much or too little detail.
+
+   Now alternate between <Plot the solution> and <Viewing parameters>
+until you have seen all six options. Finally, select <See solution in
+three dimensions>. You will see a projection of the three-dimensional
+motion in x-y-z space. Use the sliders to vary the angle of viewing, and
+<Redraw> to see the new view.
+
+   Look at the help file under <Help>, <Lorenz maps>. Then select <Run>,
+<Plot Lorenz map>. You can plot points at which a coordinate has maxumum
+values; pick any of the three coordinates. In spite of the chaotic structure
+that you may have observed earlier, you will see points lying on a well
+defined locus.
+
+   Most solutions end up on an 'attractor.' If you only want to see this,
+then you can change the starting time for plotting using <Run>, <Initial
+conditions>. The calculation begins at time t=0; the plotting will begin
+at the time that you specify.
+
+   Most work on this model has been done with parameters s=10, b=8/3, and
+r varied. I suggest that you do the same. In particular, investigate the
+'windows,' in which the solutions are non-chaotic. See <Help>, <Lorenz's
+equations>.
+
+
+The Motion of a Periodically Forced Pendulum
+
+   I recommend that, before running this module, you run the program for
+the simple pendulum, and become familiar with phase-plane diagrams. Also
+don't experiment at random with this model; for many ranges of the
+parameters there is no chaos. Start with known chaotic values and build
+around them.
+
+   Start with <Run>, <Enter parameters>, from the menu. Use numbers:
+f = 1, k = 0.1, w = 1. Then try <Swing the pendulum>. Experiment with
+different starting conditions and enjoy the amination.
+
+   Next, select <Plot x versus time>. Start with the default values, but
+for initial conditions choose x = 0 and x-prime = 103. When that has been
+plotted, choose the hotkey <New start> and change x-prine to 103.05.
+Continue, increasing x-prime by small amounts.
+
+   You are observing one quality of chaos: sensitivity  to small changes
+in the starting conditions. Notice that, in most cases, the motion
+eventually settles down to regular oscillations, after initial transient
+motion.
+
+   If the motion involves many complete circulations of the pendulum
+it may be better to plot Sin(x) (which is always bounded) in place of x;
+or to plot x-prime as a function of the time. These options are available
+for experiment.
+
+   Choose starting conditions that lead to as much chaos as you can manage.
+Now select <PhasePlot>, <See phase-plane plot> from the menu. Use all
+default conditions, but on the following screen enter a value IDelay = 0,
+so that all motion from time t = 0 is plotted.
+
+   Next select <See Poincare map>. Here the curve that you saw in the
+phase-plane is sampled once during each cycle of the forcing term. You
+will see isolated dots which will approach a limiting dot corresponding
+to the limiting cycle at the finish of the transient terms. Often there
+is no purpose in showing the transient motion; then IDelay can be used
+to eliminate an initial time equal to IDelay*(the period of the forcing
+term). Find an appropriate value of IDelay so that in the phase-plane plot
+just one closed curve is shown, and only one point appears in the Poincare
+map.
+
+   Now repeat these steps using f = 1.2, k = 0.5 and w = 2/3. Everying
+remains chaotic. But the Poincare map appears to have a degree of
+organization.
+
+   Change f to f = 1.6. Repeat the steps. Now the motion is non-chaotic
+(after the transient terms have gone) and periodic. The Poincare map
+contains just three dots.
+
+   Results for the last two set of parameters can be predicted from a
+bifurcation diagram. In this program such a diagram follows changing
+values of f, followed on the horizontal axis. For each value, a Poincare
+map is found and all calculated values of x-prime are plotted on the
+vertical axis. So chaotic and non-chaotic regions appear clearly, and
+the transitions between the two an be observed.
+
+   Select <See bifurcation diagram>. Use the default options to replicate
+figure 5.16 on page 83 of the text. You can save time, and lose some
+detail, by sampling fewer values of c.
+
+
+One-Dimensional Maps
+
+   Some of the maps in this program can lead rapidly to very large
+numbers, causing overflow problems and meaningless-looking results.
+Please consult the help files, where numerical information is provided,
+and, initially, make use of the default parameters. Entering numbers
+more or less at randon, will only lead to frustration. Once you have a
+feel for the properties of the mappings you will be able to experiment.
+Utilities that may be especially useful are the cobweb diagram and the
+bifurcation diagram.
+
+   Here we shall select the Quadratic map, and use this to walk through
+some of the utilities.
+
+   To start, select <Model>, <Quadratic map> from the menu. Upon selection,
+an input screen will appear, requesting you to enter a value for a
+parameter, C. Each of the available maps contains this parameter, the
+variation of which will lead to different properties, chaotic and non-chaotic.
+
+   The input screen includes an interval for appropriate values of C and
+a <Help> utility. If you click on <Help> you will see a screen giving
+more detailed information. For a start, put C = 0.
+
+   Select <Maps>, <See cobwebs>. Use default values. You will see a
+screen including graphs of the functions x and f(x). Points where these
+intersect are solutions of x = f(x), and are called 'fixed points' of the
+mapping. With the hotkeys select <Seed> to enter the starting value of
+the map; enter 0.9. Then press <Next> to see the progress of the mapping:
+it will approach the lower of the fixed points. Repeat with 1.1 as the seed.
+
+   Now press <CleanUp> to clear the screen. Then follow maps with seeds
+-0.9 and -1.1. Experiment with others. One fixed point is 'attracting'
+and the other is 'repelling.'
+
+   Choose <New C>, and enter -1. Both fixed points are now repelling.
+Iterations can end in a 'limit cycle.' Next try C = -1.5. Try limits
+-2 < x < 3 for the display. Experiment with different seeds. Either
+the mapping will diverge, leaving the screen, or it will be bounded
+but chaotic.
+
+   This experiment shows some properties and characters of the mapping.
+A way to combine results for different values of C in some interval is
+to construct a bifurcation diagram. A single value of the seed is used.
+Values of C are taken on a horizontal axis. For each value of C the
+mapping is calculated and values are plotted on the vertical axis.
+
+   (In practice, the first few values are not plotted, to eliminate
+initial transient effects.) Convergence to a fixed point would result
+in just one point. The limit cycle that we have just seen would produce
+two points. Chaos would produce a scatter of points. So the diagram
+provides a lot of information on the evolution of the mapping with
+changing C.
+
+   Select <Maps>, <See bifurcation diagram>. In the input screen look
+at the <Help> file, noting some recommended numbers for different maps.
+Note that these appear as default values on the screen. You can control
+the number of mapped points to be ingored and the number that is then
+plotted. For now, accept all default values, and see the diagram. Study
+this closely. It will give you ideas for futher experiments.
+
+   The utility <Maps>, <See generating function> graphs the functions
+x, f(x), f(f(x)), and so on. The first two show the regular fixed points.
+If we were just to work with the mapping g(x) = f(f(x)), then there are
+four fixed points, as you can see. This can help illustrate the role of
+bifurcation.
+
+   The utility <Maps>, <See maps> graphs n on the horizontal axis and
+the nth iterate of the map on the vertical axis. For C = 0, you will see
+one horizontal line (after a few initial iterations) corresponding to
+the stable fixed point. For C = -1, you wil see two lines, corresponding
+to the limit cycle. For C = -1.5, you will see obvious chaos.
+
+   Let x(n+1) and x(n) be two successive iterations. These will generate
+successive points with coordinates (x(0), x(1)), (x(1), x(2)), ...
+(x(n), x(n+1)), etc. The utility <Maps>, <(x(n), x(n+1))> treats these
+as cartesian coordinates and plots them. Select this utility; keep
+C = -1.5. The plot that you see appears well defined, in sharp contrast
+to the chaos seen in the preceding example.
+
+   Next run <See histogram>, still with C = - 1.5. Accept other default
+parameters. The iteration has been run 10,000 times. The horizontal axis
+is divided into 400 intervals, and the height of the line above an interval
+is proportional to the number of iterates lying in the interval. This
+shows 'preferred' values of the iteration. It can be used to interpret
+the streaks that appear among the chaos of a bifurcation diagram.
+
+   In a chaotic system iterates starting close to one another separate,
+with the distance between them increasing exponentially. This continues
+until the distance is comparable to the size of the system. Run the
+utility <See exponential separation>, still with C = - 1.5. Accept other
+default values of the parameters. Two iterations with slightly different
+seeds have been calculated. What you see is the logarith of the
+difference between these (vertial axis) with the iterate number on the
+horizontal axis. While the increase is taking place, the plot of the
+logarith is approximately linear, showing that the increase is exponential.
+The slope of the line is related to the 'Lyapounov exponent.'
+
+   The final utility, <Vary seeds> is similar to a bifurcation diagram,
+but C is kept fixed and the seed is gradually changed. This utility was
+included principally for use with Newton's method. To run <Vary seeds>
+with the quadratic map, keep C = - 1.5. Take the range for the seeds
+to be between -1 and 1 (this can be important; if any mapping becomes
+large, the plotting will cease). Take the vertical range to be between
+-2 and 2. In this instance, the result is certainly chaotic in appearamce,
+but lacking any special features. As with the bifurcation diagram, you
+can zoom in an see small regions in fuller detail.
+
+   Now play with other mappings. In each case, learn their basic
+properties before experimenting.
+
+
+Two-dimensional Maps
+
+   In this program you can run one of four maps that are provided,
+or you can make up your own. Experimenting at random will lead to
+frustration since mappings can easily become unbounded. It is safest
+to find parameters that give results and then change them gradually.
+This walk-through will use the first of the models.
+
+   Select <Model>, <One> from the menu. In the input screen select
+<Help> and look at the help screen for general information about the
+model. Note that the default value of the parameter C = 1.5.
+
+   In the screen that follows, select <Help> from the hotkeys and examine
+that help screen. Then press <Input>. You have the choice of using the
+keyboard of mouse to enter starting conditions. Use the keyboard when
+you need to enter precise values.
+
+   For now, use either utility. Enter, successively, (0.1, 0.1),
+(0.2, 0.2), (0.25, 0.25) and (0.3, 0.3). In each case, press <Start>
+after the entry and allow time for sufficient detail to be plotted.
+The final run should yield chaos. Then try (0, 0.5). Experiment some
+more, building more detail.
+
+   To see a smaller region in more detail, select <CleanUp>, then choose
+options to change the scale and to use the mouse. Then click the mouse
+at the LOWER LEFT-hand corner of the region, and again at the UPPER RIGHT-
+hand corner. Repeat the input process in this region. (You can also use
+the keyboard to change the scale. Make sure that you know in advance the
+new limits for x and y.)
+
+   Once you have sufficiently investigated the case C = 1.5, you can
+decrease C to look at less chaotic cases, increase C to increase the chaos.
+
+   Try C = 1.6, 1.7,...  Continue (maybe with smaller increments) until
+all patterns have disappeared.
+
+   Model 2 can be investigated in the same ways. Start with the default
+C and then increase it gradually.
+
+   Models 3 and 4 are not so rewarding. 3 is related to the predator-prey
+model. You might vary this (changing birth or predation rates, for
+instance), by using the <Make your own> utility. Several of the two-species
+and disease models in this text can be modelled by difference equations.
+
+
+Newton's Method for Two Unknowns
+
+   In this program we use Newton's method to solve two equations
+            f(x,y) = 0   and   g(x,y) = 0.
+The process generates a sequence of pairs, (x,y) which may converge
+to a solution or may not converge. If the equations have several
+solutions, then the initial point of the iteration will decide whether
+the sequence converges, and, if it does converge, which of the
+solutions will be reached.
+
+   There are three systems of equations to choose from, or you can
+make up your own.
+
+   Enter <Model>, <One> in the menu to select the first. Use the
+default values on the input screen. Then enter <Run>, <Follow
+iterations>. You have the option of selecting starting conditions
+using the mouse or keyboard; the mouse is simpler, unless you want
+precise values.
+
+   The four solutions to the equations are marked by crosses. Press
+<Mouse> and click on a starting point. Points for successive iterations
+will be plotted. Usually these will converge quickly. The plotting will
+stop, anyway, after 20 iterations. (If you become impatient, press a key.)
+As you select different starting points, it can become a game to guess
+which solution will be chosen.
+
+   This randomness is used in the utilities for generating fractal
+patterns. Select <See fractal patterns. 1>. A picture will be drawn
+in which each pixel (or group of pixels) is colored according to the
+solution chosen, or, if there is no convergence, not colored, but
+left black.
+
+   Now you can observe the 'fractal' nature of the diagram. Mentally,
+pick a small region that you want to investigate. This should contain
+some chaotic appearing graphics. Using the mouse, click on the lower
+left corner and then the upper right corner of the region. You will
+see patterns similar in nature to what you observed before. Continue
+zooming in, in this way.
+
+   Next, select <See fractal patterns. 2>. Points on the diagram are
+now colorewd according to the number of iterations before convergence,
+without regard to the solution that was chosen. This provides a more
+colorful picture. Again, you can zoom in and see the continuation of
+the patterns in smaller and smaller regions.
+
+
+Predator-Prey Models
+
+   Select <Model>, <Volterra> from the menu. Accept the default values.
+You can choose to enter starting conditions using the keyboard or the
+mouse. Probably you will find the mouse to be more convenient.
+
+   Next, select <Run>, <Predator-prey plot>. This utility will generate
+plots with the prey population on the horizontal, and the predator
+population on the vertical axis. This model has an equilibrium (i.e.,
+values of the populations that remain constant) and this is marked by
+a small circle on the screen. For the default values the equilibirium
+is at (1, 1). Bear in mind that, for numerical work, the populations
+will be scaled. The number 1 might, for instance, designate an actual
+population of one million.
+
+   For a start, select a starting point close to the equilibrium. Follow
+the solution until you see a complete cycle.
+
+   Now look at solutions starting further from the equilibrium. As the
+range of variation increases, the populations can temporarily become
+very small; but a feature of this model is that neither species ever
+completely dies out.
+
+   The predator-prey plane is useful for viewing many solutions together.
+To appreciate the dependence on the time, select <Time plots>. Look at
+a solution starting close to the equilibrium and then one starting further
+away, noting the sharp peaks for the larger cycles.
+
+   The utility <Three-D plots> enables you to see the two populations
+and the time plotted together.
+
+   For many species the birthrate of the prey varies cyclically, perhaps
+with the seasons. To investigate this select <Model>, <Cyclical growth rate>.
+
+   The birthrate for the prey is given by an expression
+              (A0 + A1*Sin(p*t))x,
+where x is the prey population and t is the time. You can enter numbers
+for A0, A1 and the frequency p. (Remember that the period of change is
+P = (2.Pi)/(frequency).) For a start, take A0 = 1, A1 = 0.2 and p = 1.
+Select <Predator-prey plot>. You will be given the choice: 'See continuous
+curve' or 'See Poincare map.' Choose the first, and pick a starting point
+close to (1, 2). You will see little apparent organization. (Note that
+the <Cleanup> option allows you to start a new solution or to remove the
+current mess and continue the current solution.
+
+   Now select <Time plots>. Select a value 60 for the length of time
+and (1, 2) for the start. Now a degree of organization is much clearer.
+
+   A better way to view results in the predator-prey plane is to plot
+isolated points at intervals of the period P of the growth rate cycle.
+The form a 'Poincare map.' Accordingly, select <Predator-prey plot> and
+then select <See Poincare maps>. Pick a starting point close to (1, 2).
+You will see a system of 'islands.' Now experiment with different
+starting points and look for different sorts of structure and for chaos.
+
+   To see how chaos can vary, change the parameter A1 in the input screen
+for cyclical growth. If you increase it, the onset of chaos will be more
+rapid.
+
+
+Sickness and Health
+
+
+The Spread of Disease
+
+   With the many different options and parameters in this program
+it is best to develop it gradually.
+
+   To start select <Parameters>, <Enter options> from the menu. Make
+sure that none of the options is selected and press OK. Use the default
+values for the infection and cure rates. Now select <Display>, <Graph
+parameters>, again accepting the default values. You will see a graph
+of the numbers susceptible, the numbers infected and the numbers
+'removed' (either dead or cured).
+
+   Experiment with changing the values of the infection and cure rates,
+and see what effects this may have on the progress of the disease.
+If you select <Phase-plane S-I plots > then you will see a graph with
+S horizontal and I vertical.
+
+   Next, using <Parameters>, <Enter options>, select vaccination. In
+the input screen for the vaccination parameters, select c = 1. Then
+investigate the cases k = 0, 1, 2 in turn. Compare results with no
+vaccination.
+
+   Next, select incubation only. In the incubation input screen, start
+with d = 10. This results in a figure that is almost the same as that
+for no incubation. But repeat with b = 5, 2, 1, 0.2. Notice the degree
+to which the rate of progress of the disease is slowed.
+
+   Next, include vaccination and incubation.
+
+   If the disease is to be followed over a long period of time, birth
+and death need to be included. In <Enter options> select ONLY <Birth
+and death>. The birth and death rates can vary for those susceptible,
+infected or removed. Use the default values:
+
+      Susceptibles: birth, 3; death, 2.4.
+      Infectives:   birth, 0; death, 3.
+      Immune:       birth, 0; death, 1.
+
+   Now use <Time plots>, with the time extended to t = 10. You will
+observe a periodic behavior in the spread of the disease. If you use
+the S-I plots, you will see a family of closed curves.
+
+   Finally, include a periodic rate of infection. Use the formula:
+                          1 + 0.2*Sin(t);
+then in the 'infection' input screen a0 = 1, a1 = 0.2 and p = 1.
+Go to the S-I display. Use a horizontal range of 1 to 10 and a vertical
+range of 0 to 3. Select Poincare maps. Use the mouse for starting
+conditions. You will see both non-chaotic and chaotic structure.
+
+
+
+The Spread of Malaria
+
+   This is a program having a lot of parameters. Random experimentation
+will only lead to results that cannot be interpreted.
+
+   For a start, I suggest that you have mosquitos that do not spread
+malaria, so that the two species do not interact -- any bites will
+be harmless. However, start with some who are infected, so that you
+can invetigate recovery rates.
+
+   Select <Parameters>, <Parameters for the model> from the menu. In
+the first input screen you will see a column for humans, on the left,
+and a column for mosquitos. Not all those infected will also be
+infectious. To start with, the proportion of those who are infectious
+will be zero; so enter 0 in each case.
+
+   In the model the recovery and death rates are proportional to the
+numbers infected. For recovery rates, try 0.1 and 1, and for death
+rates, 1 and 0.1. (Humans have better doctors!) The parameters
+controlling the rate at which mosquitos bite is important; for the
+present, enter 0.
+
+   The natural growth of the human population, Ph, is logistic:
+            d(Ph)/dt = a0*Ph*(Pm - Ph),
+where Pm is the maximum sustainable population and a0 is a constant
+that you must enter. I suggest a0 = 0.01. If the time, t, is measured
+in years, this allows reasonable growth in a period of ten years.
+
+   The second input screen is concerned with the growth rate of the
+mosquitos. This is logistic, but the parameters corresponding to
+a0 and Pm, above, can vary cyclically.
+
+   For now, avoid cyclical changes. Enter B0 = 1, (mosqitos propagate
+more rapidly than humans) and B1 = 0. Then M0 = 50, M1 = 0. For the
+phase constants, B2 = M2 = 0. For the period of variation leave P = 1.
+
+   In the third input screen, enter the maximum sustainable human
+population, Pm, to be 50, the initial populations to be 20, each,
+and the initial numbers infected to be 10 each. Finally, enter 10 as
+the time span for the plots.
+
+   You will see that the mosquitos reach their maximum population
+very rapidly. You may want to experiment with the growth parameters to
+very this.
+
+   Now its time for malaria. For the proportions of those infected
+that are infectious, enter 1 and 1. For the bite rate enter 1. Keep
+other parameters the same. Next enter 2 for the bite rate, and note
+the significant change. Now experiment with quantities such as the
+death and cure rates.
+
+   To experiment with cyclical variation, first try B1 nonzero. B1
+can be larger than B0, so that at times the natural growth is negative;
+but be careful here. Then take M1 to be nonzero.
+
+   Continue experimenting; but it is best to change one parameter at a
+time, and to do so gradually.
+
+
+Zeeman's Model for the HeartBeat
+
+   To start select <Run>, <Follow contraction to systole> from the
+menu. You will see an S-shaped curve on the screen. Learning the role
+of this curve will help in the understanding of the model. The
+horizontal axis, b, represents electrochemical activity. The vertical
+axis, x, represents heart muscle fiber length. The parameter for the
+model is T, which represents the overall tension.
+
+   In one half of the cycle of a heartbeat there is a contraction of
+the muscles to push blood into the ventricles and then down the
+arteries. The fully contracted state is called systole. The position
+of this state in the figure is the star lying on the curve to the right.
+
+   Select the hotkey <Tension>. Then move the sliders to vary the tension
+and the position of systole.
+
+   Experiment with different values. Then press <Solution>, select
+the mouse, and then click at some point to select a starting position.
+The path to systole will be plotted. The plotting will become slow,
+since the path is approaching an equilibrium. Stop the plotting by
+pressing <Stop> and then enter another starting point. You will notice
+that paths are attracted toward the ends of the S-shaped curve but
+are repelled from points in the middle.
+
+   When you have several paths, press <DField> to see a direction
+field diagram in which the arrows point along the directions of the
+curves.
+
+   Experiment further with different values of the tension and
+different positions of the systole.
+
+   Now select <Run>, <See complete cycles>. Follow the prompts to
+select a value for the tension and then to locate the systole and
+diastole positions. (I strongly advise using the mouse. The points
+must lie on the S-shaped curve.) You will see the complete cycle.
+Plotting will slow down close to the equilibrium points because of
+the computations, not because of any physical cause.
+
+   If you press <Tension> during the plotting, then you can select
+a new value for the tension, and the cycle is started without need
+for reselecting systole of diastole. Press <Input> for a complete
+reselection.
+
+   If the S-shaped curve bulges further to the right than the systole,
+then the cycle cannot be completed and there is a heart attack
+
+   Finally, select <Run>, <Plot and EKG>. The selection of tension,
+systole and diastole is similar to that just used. Now you will see
+the cycle, as before, but also a plot of b, the electrochemical
+activity as a function of the time, the equivalent of an EKG.
+
+
+Sports
+
+
+Pitching a Baseball
+
+   To start, select <Run>, <Enter parameters> from the menu. You
+will be prompted to enter values for the drag and lift coefficients.
+Accept the default values. You might change them if, for instance, you
+wanted to follow the motion of a softball.  You can also select a
+regular pitch or a knuckleball. Select the regular pitch.
+
+   The following screen (which you can access also by <Select display>)
+allows you to choose which projections of the motion you want to
+see. Read the definitions of the axes. For now, select to see only
+the x-z plane.
+
+   The next screen (directly accessed through <See pitches>) prompts
+for initial conditions. First, have no spin, vx = 125, vy = 0 and
+vz = -5ft/sec. Pitch from a height of 6 ft. Press the hotkey <Pitch> to
+see the motion.
+
+   Now press <NewPitch>. To see the effect of topspin, enter 100 rad/sec
+for wy. Leave other parameters the same. Repeat with backspin, wy = -100.
+
+   Next change the display so that you see all three projections. Add
+a spin component wz = 200. Use <NewPitch> to modify the starting
+conditions so that the pitch will finish on the x-axis; you will need
+to introduce an initial y-component of velocity, vy.
+
+   Once again, select <Enter parameters>. This time select <KnuckleBall>.
+Select all three views. The ball should rotate slowly, and should be
+pitched at a moderate speed. Choose 4 rad/sec for the rotation, and
+initial deflection 1.5 rad. Start with vx = 100, vy = 0, vz = 5 ft/sec.
+Observe the pitch. Then change the pitch parameters, one at a time to
+follow their effects.
+
+
+
+Driving a Golf Ball
+
+   The forces of drag and lift are crucial for the motion of a driven
+golf ball. Start by selecting <Run>, <See Demonstration>. The object
+is to show motion (a) without drag or lift (so gravity is the only
+force), (b) drag but no lift, and (c) drag and lift. Use the default
+values of the drag and lift coefficients. First, use values: velocity,
+200 ft/sec making 10 deg with the horizontal, backspin wy = - 300 rad/sec.
+
+   Notice how drag diminishes the range, but backspin increases it.
+Also notice the shape of the final drive; rising in almost a straight
+line, with the backspin countering the force of gravity, and falling
+abruptly, with the velocity reduced by drag.
+
+   Repeat the demonstration with backspin wy = - 400 rad/sec.
+
+   Now use <Select display> to see all three views of the motion,
+and select <See drives>. Use the conditions from the demonstration,
+but now introduce sidespin, with, for instance, wz = 100 rad/sec.
+
+   It can be entertaining to change the parameters for lift and drag.
+If you increase the parameter for the lift by a factor of ten, you
+may be surprised at the resulting motion. It would also cause comment
+on a golf course.
+
+
+Serving at Tennis
+
+   The items under <Run> in the menu consist of: <Enter parameters>,
+where you can enter values for the drag and lift coefficients; <Bounce
+parameters>, where you can enter the parameter controlling the height
+of a bounce and the extent to which spin will influence its direction;
+<Select display>, where you can choose any or all of three views for
+observing the motion; <See serves>, for entering starting conditions
+and actually serving.
+
+   If you start with <Run>, <Enter parameters>, then the remaining
+prompts will automatically follow. Do this. Accept default values;
+but in designing the actual serve, you can make your own values.
+Start with no spin. Pick a height and location for the serve, a speed
+and a horizontal direction. Then vary the angle that the serve makes
+with the vertical.
+
+   If you pick all the default values, you should see a serve that
+clears the net easily and just lands in court. That serve started
+with velocity making - 1 deg with the horizontal. Reduce this starting
+angle until the serve just clears the net. The difference between the
+two angle shows the narrow margin of error available to the server.
+Design your own serve and find the corresponding margin. Find the
+effects on this margin when the speed of the serve is increased.
+
+   Now introduce topspin, wy = 50 rad/sec, say. This should increase
+the margin of error.
+
+   Also investigate the effects of spin on bounce of the ball.
+Experiment with the bounce parameters and the speed of the serve, as well
+as the spin.
+
+
+
+Bowling a Cricket Ball
+
+   Under the menu item <Run>, <Enter Parameters> enables you to
+enter perameters for drag and lift; you can also select a bowl
+with its trajectory and bounce dominated by spin, or a 'swinging'
+bowl where there is no spin. <Bounce parameters> enables you to
+control the height of the bounce and the extent to which the spinning
+ball 'grips' the ground. <Select display> enables you to select any
+or all of three views for seeing the motion. <See bowls> enables you
+to enter the starting conditions, and to see the motion.
+
+   To start, select <Run>, <Enter parameters> from the menu. Select
+<Regular> for the bowl. Use default values for the first three input
+screens. For the starting conditions take vx = 60, vy = vz = 0 ft/sec;
+wx = -50, wy = wz = 0 rad/sec. Initial height 8 ft. This is a
+slow ball with the spin causing a deviation in the direction at the bounce.
+
+   You will probably find it best to select <HideBall> with the hotkeys.
+In the display the yellow line is the wicket. This is a target for the
+bowler.
+
+   Now press <NewBall> and change vy to -1 ft/sec. Note the result.
+Experiment by changing input numbers one by one. For, instance, try
+the initial vz = 5 ft/sec. Increase the starting speed.
+
+   A fast ball might have vx = 120 ft/sec, or higher. If this has
+an initial negative value of vz, then the bounce may occur early and
+the ball may rise to imperil the batsman; this is a 'bouncer.' Spin
+is not important here; the key is intimidation!
+
+   Now in <Enter Parameters> select <Swing>. There is no spin, but
+a sideways force results from an asymmetric orientation of the ball's
+seam (raised stiches round the 'equator' of the ball). This orientation
+is controlled by the parameter F as explained in the input screen
+for the starting conditions.
+
+   Enter vx = 100, vy = -4.5, vz = - 5 ft/sec. Use the default value
+F = 0.4. Observe the motion. Now vary the conditions to see the
+variety that can be introduced.
+
+
+Shuttlecock Trajectories in Badminton:
+
+   The program opens with an input screen for the starting conditions.
+Choose the default values, with the hit at height 8 ft, -15 ft from
+the net, with speed 100 ft/sec making the angle 20 degrees with the
+horizontal. Note the extreme effects of drag on the trajectory.
+
+   Now change the initial angle from 20 to 30 degrees and notice that
+the range is hardly affected.
+
+   Repeat, starting at a height of 6 ft.
+
+   Use this as a basis for experimentation. You can execute a variety
+of different shots, and services. For some details of this variey
+see the text for a partial classification.
+
+
+The Motion of a Discus
+
+   One of the interesting features of this model is that the range
+of a discus can be increased if it is thrown into the wind. To
+confirm this, start by selecting <Run>, <Enter parameters> from
+the menu. Accept the default values with the exception of the
+wind speed: enter 20 m/sec. Then select <Throw the discus> and
+see the trajectory noting the range. Next press the hotkey <Input>.
+Change the  wind speed to 10. Finally, repeat with wind speed zero.
+(You must start with the greatest range in order to have all
+trajectories fully visible.)
+
+   Now vary other parameters. Experiment with different angles for
+the throw. What might you do to maximize range if the wind is behind you?
+
+
+The Motion of a Javelin
+
+   Select <Run>, <Enter parameters> from the menu to enter the
+starting conditions for a throw. For a start, use the default values.
+Look at the trajectory.
+
+   Next, press the hotkey <Input> and experiment with the starting
+conditions, changing them by small amounts, one at a time. In particular,
+find the effect of the starting angle on the range.
+
+   The parameter concerning the javelin itself is the distance of the
+center of pressure from the center of mass. Look at the effects of
+small changes in this quantity.
+
+
+
+Space Flight and Astronomy
+
+
+A Trip to the Moon
+
+   The menu item <Run>, <Starting conditions> prompts you to enter
+the conditions for launch from a parking orbit around the Earth. <See
+the animation> shows the animated orbital motion. The second usually
+follows automatically after the entry of the starting conditions.
+
+   In the starting screen note the interpretation of the start. Accept
+all the default values and then see the motion: it should result in a
+direct hit on the Moon. Become familiar with the options  for marking
+the positions in the orbits of the spacecraft and the Moon.
+
+   Make the position at launch from the parking orbit the parameter
+to vary. Initially it is -40 deg. Try - 39 deg. You should miss the
+Moon and return to the Earth. Next try -41, -42 and then -43 deg.
+Ultimately, you should escape from the Earth-Moon system.
+
+   If you start with conditions chosen at random, you are very
+unlikely to approach anywhere near to the Moon. So change things
+gradually. Experiment with changes in the speed at launch, or the
+size of the parking orbit.
+
+   You will find situations when the orbit of the spacecraft undergoes
+big changes before, maybe, hitting the Moon. Note that you can
+change the scale to enable you to follow motion of this sort.
+
+
+The Descent of Skylab
+
+   The model is very sensitive to the starting conditions. You may
+find yourself circling the Earth endlessly without apparent change
+in the shape of the path, or you may crash at once. Try to find
+situations where you have six to ten revolutions before landing.
+
+   The menu item <Run>, <Paraneters and initial conditions> is used
+for starting any orbit. It is simplest to start, as suggested,
+on the x-axis, moving perpendicular to the x-axis; then just two
+numbers are needed for the initial conditions. Take the default value
+for x, and put vy = 7.85. Keep all other default values, but note the
+interpretations.
+
+   Before starting the animation, press the hotkey <Notrail> so that
+<Trail> appears. Then press <Run>. You should see several revolutions
+before landing.
+
+   Look at the way the orbit changed. The closest point (perigee)
+remained about the same distance from the Earth, but the furthest
+point (apogee) approached the Earth. Most of the drag is near perigee,
+where the atmospheric density is greatest. Eventually, the orbit is
+nearly circular, drag is strong all the way around, and the decay is rapid.
+
+   Another way to see this effect is to plot the altitude (the distance
+from the surface of the Earth) as a function of the time.
+
+   Now diminish the intitial vy by small amounts until skylab has just
+one revolution before landing. Then increase it to see many revolutions.
+
+   Try starting with smaller initial altitude (so the initial drag is
+much greater).
+
+   You can vary three quantities: the crosssectional area and the mass
+of Skylab and the value of the drag coefficient. The actual effect of
+drag on the acceleration is proportional to
+
+           (drag coefficient)*(Area)/Mass
+
+so you can effectively changed the drag by altering just one of these
+three quantities.
+
+
+The Range of an ICBM
+
+   Select <Run>, <Parameters> from the Menu. Note the choices. These
+include the altitude of launch and a factor for exaggerating the
+scale of the latitude. Also take note of the geometry of launch that
+is shown to the left. Keep the default values for now.
+
+   On the main graph you will see sliders that can be used to vary
+the speed at launch and the launch angle. With the default values,
+press <Fire>. Now press <Aim> and change only the angle; try to
+maximize the range.
+
+   Change the launch speed. Again find the angle that maximizes the range.
+
+   In experiments, vary the launch height and the cross-sectional area
+and mass of the ICBM. Increasing these will diminish (mass) or increase
+(area) the drag on the ICBM.
+
+
+Jupiter and a Comet
+
+   Select <Run>, <Parameters for Jupiter> from the menu. These are
+set for the actual values. Later, you may find it interesting to vary
+them. (You might pick values for Saturn, for instance.)
+
+   <Initial conditions for the comet> enables you to start the motion.
+Study the geometry and the definitions of the units. The initial default
+value of the speed is that that IF you accept the default values, the
+closest distance of the comet from the Sun in the initial revolution
+will equal the radius of Jupiter's orbit. If you change the initial
+distance, and still want the same closest distance, use the button to
+make that selection. For now, keep the default values, but take the
+speed to be 0.0308 units.
+
+   In the graphics screen press the hotkey <Run>. (You may want to
+slow down the animation.) The comet will be 'captured' into a much
+smaller orbit, with aphelion distance (the furthest distance from
+the Sun) close to the radius of Jupiter's orbit. Any close encounter
+between Jupiter and the comet is shown in a window to the right.
+
+   I recommend that you let the motion keep running. There are many
+further close encounters, and many changes in the shape of the orbit.
+If part of the orbit leaves the screen, use the <Rescale> option, and
+choose to continue the present orbit.
+
+   Next, return to the menu and the input screen for initial conditions.
+Change the starting angle of Jupiter to 186 deg. This will result is the
+immediate expulsion of the comet from the solar system.
+
+
+
+Motion Close to L4
+
+   It is easy in the program to produce nonsense and to get lost,
+especially when dealing with Poincare maps. For a start, avoid these.
+
+   It is convenient to have names for the two attracting bodies;
+they are called the Earth and Moon, although the mass parameter need not
+apply to them. This parameter is:
+
+      (Mass of Moon)/(Sum of the two masses).
+
+The input screen for this will appear when the program starts; it can
+also be accessed by selecting <Run>, <Enter mass parameter> from
+the menu. Choose the default value 0.01.
+
+   You will need to get used to the units of the model. The constant
+distance between the Earth and the Moon is one unit of length. The
+period of the Moon's orbit around the Earth is 2*Pi units of time.
+
+   There are two ways to view the orbit of the third body. In a
+fixed reference system we see the Earth at the center, the Moon, M,
+moving around  the Earth, the point L4 (one unit of length from the
+Earth and the Moon) also moving around the Earth, and, finally, the
+third body, hopefully, moving around L4. Let's view this first.
+
+   Select <See orbits with fixed axes>. You are prompted for initial
+conditions relative to L4. Use the default values: (0.02, 0) and (0, 0).
+
+   The resulting animation can be confusing when it is the motion
+relative to L4 which is of concern. The other option is to view motion
+from a rotating reference system in which the Earth, the Moon and L4
+are all fixed. Select <See orbits with rotating axes>. Now the motion
+appears more simply.
+
+   Now repeat, changing only the initial value of the dx, the
+x-displacement from L4. 0.01 and 0.02 result in motion that remains close
+to L4; 0.03 results in escape. Try 0.025, 0.026,... You should find that
+the borderline between bounded motion and escape is between 0.028 and 0.029.
+
+   Repeat the experiment using different values of the mass parameter.
+Some special values are given on the input screen. Confirm the
+properties of these values, as stated.
+
+   Now prepare to see some Poincare maps. Take 0.01 for the mass
+parameter and see the orbit with start (0.01, 0), (0,0). You will see at
+the top of the screen the statement:
+
+    Energy for these conditions: C = 3.0000759.
+
+C is a constant for this orbit.
+
+   The Poincare maps are to compute different oribts having this same
+value. Select <See Poincare maps>. Accept the value of C. Choose to see
+the orbits in addition to the maps. Choose to enter initial conditions
+from the keyboard. The first orbit should have the same conditions used
+just before. Let this run until you are seeing a definite pattern.
+
+   Press <NewMap>. Replace dx = 0.01 by dx = 0.011. Continue, gradually
+increasing dx until the orbit becomes unbounded. If the pattern of the
+map extends beyond the screen, use the <ReScale> option.
+
+   For a Poincare map C is given, and initial conditions dx, vx are
+input. Initially dy = 0 and vy is found, consistent with the value of
+C. Motion is followed in the three dimensional space dx - dy - vx.
+Whenever dy = 0, the point (dx, vx) is plotted in the dx - vx plane.
+
+   Continuing the experiment, see the map with starting conditions
+(0.014, 0). Note the shape built up by the points. Now select <See
+Poincare maps in 3-D>. Accept default values, which will refer to
+the computation just made. You will see the motion in three
+dimensions, with points marked where the orbit crosses the x - vx
+plane. In three dimensions the orbit lies on a torus. This can be
+hard to view. Try changing the direction of viewing so that you can
+see the hole in the torus.
+
+
+
+Aerobraking a Space-craft
+
+   The parameters of the model are those that define the target
+planet and its atmosphere, and the incoming spacecraft. For a start,
+accept the default values for these and for the initial conditions.
+The graphics screen will show a non-circular planet; this is due to
+the scale. See the orbit, which will result in atmospheric braking.
+Press <CleanUp> and change the minimum value of y to -100000. Try again!
+
+   Small changes in the starting conditions make a big difference.
+So it is best to use the keyboard for experimenting. Find ranges
+of values for the start that will lead to capture.
+
+   Change parameters one at a time. For instance, you might start by
+   varying the planetary atmosphere.
+
+
+Pendulums
+
+
+The Simple Pendulum
+
+   The menu item <Data>, <Enter parameters> will appear automatically
+at the start of the program. To start, accept the default input, so
+that there will be no friction.
+
+   Next select <Animate>, <Swing the pendulum>. Follow the prompts to
+use the sliders to choose initial conditions, and observe the animation.
+Then select <Time plots> to see the angular displacement and angular
+velocity plotted as functions of the time.
+
+   Finally, select <Phase-plane>, in which the axes are angular displacement
+(horizontal) and angular velocity (vertical). Accept the default quantities
+on the input screen. Use the mouse to choose initial conditions, and
+follow the animation to interpret the closed and open curves in terms of
+oscillation and circulation of the pendulum.
+
+   Note that the phase-plane axes are set so that circulatory motion
+(which would normally continue indefinitely in the horizontal sense)
+leaves the screen, but is then continued from the opposite end.
+
+   Now return to <Data>, <Enter parameters> and enter a small number,
+say, 0.1, for the friction parameter, choosing regular friction. Repeat
+observations, using each of the three utilities. Then increase the
+friction parameter.
+
+   Finally, select dry friction, and see if that differs significantly
+from regular friction in the phase-plane.
+
+
+
+A Magnetic Pendulum
+
+   The menu item <Data>, <Enter parameters> will appear automatically
+at the start of the program. To start, accept most default input numbers,
+but set the friction parameter equal to zero.
+
+   Next, select <Animate>, <Swing the pendulum>. Follow the prompts to
+use the sliders to choose initial conditions, and observe the animation.
+
+   Next, select <Time plots> to see the angular displacement and angular
+velocity plotted as functions of the time.
+
+   Finally, select <Phase-plane>, in which the axes are angular displacement
+(horizontal) and angular velocity (vertical). Accept the default quantities
+on the input screen. Use the mouse to choose initial conditions, and
+follow the animation to interpret the closed and open curves in terms of
+oscillation and circulation of the pendulum.
+
+   Return to <Data>, <Enter parameters>. Enter a small number, say 0.1,
+for the friction parameter. Now follow the motion as before. See if you
+can guess in advance which of the two stationary magnets will finally
+hold the swinging magnet. in <Time plots> select  time interval large
+enough for the motion to followed until one of the stationary magnets
+holds the pendulum.
+
+   In the cases just run the system had four equilibria, two stable
+(pointing, approximately at a fixed magnet) and two unstable (vertical,
+up or down). This can be demonstrated in the utility <Data>, <See
+equilibria>. Select this. You will see a plot of the torque acting on the
+pendulum as a function of angular displacement. At an equilibrium this
+torque is zero. The pendulum is plotted in the positions of equilibrium.
+
+   You can now use sliders to experiment with different values of the
+parameters, looking for values that can lead to more interesting motion.
+For instance, change H to be -1, so that the point of suspension of the
+pendulum is below the fixed magnets. You have 3 stable and 3 unstable
+equilibria. Have a look at the resulting motion.
+
+   Now experiment with changing the strengths and polarities of the
+fixed magnets, (C1 and C2) as well as their displacements from the
+center (A1 and A2).
+
+
+
+A Child on a Swing
+
+   The menu item <Run>, <Parameters> will appear at the start of the
+program. You can specify dimensions of the swing and the child, the mass
+of the child and a parameter for the frictional resistance. (The resisting
+acceleration is proportional to this parameter divided by the mass.) You
+can also specify how to control the animation: let the program (or the
+child) decide, or do it yourself, with a hotkey.
+
+   For a start, accept default values, and let the motion be controlled
+automatically. Also accept the default starting conditions (i.e., give
+the kid a push, at the lowest point) and watch the animation.
+
+   You may find it helpful to select <Phase-plane> from the menu or in
+the initial input screen. Try it.
+
+   Next, if you have followed the technique of the child, select
+<Parameters> and manual control. Any good?
+
+   With the default values of the parameters the motion has increasing
+amplitude until circulation starts. If the friction is inreased (or
+the mass decreased) you should be able to establish limit cycles. Look
+for values of the parameters that will achieve this.
+
+
+
+A Spring Pendulum: Walk-through
+
+   A the start of this program an input screen appears. (This can
+later be accessed through <Run>, <Parameters> in the menu.) The
+quantities to be entered include the initial conditions and the
+spring constant. Accept all default values. Then you will see
+the motion in animation. Enjoy it.
+
+   Next select <See Poincare maps>. First, accept all default values
+in the input screen. Follow the prompts in choosing a color and then a
+starting point. Then press <Start>. You will see the pendulum in
+animation. Whenever it is vertical, the values of its length, L, and
+the rate of change of this length, Ldot, are calculated and a point
+plotted on the screen, which is the L-Ldot plane.
+
+   Let the program run until you see a pattern forming. Then press
+<Input> and choose an initial position further from the center.
+Continue experimenting. You should eventually see chaotic structure
+and animation.
+
+   Seeing the animation slows down the computation of the maps. So
+select <See Poicare maps> once more, but choose not to see the animation.
+Follow the same procedures as before. Build up a detailed picture of the
+chaotic and non-chaotic structures.
+
+   In the dynamical model there is a relation of the form
+          f(L, Ldot, Theta, Thetadot) = h.
+h is a constant for any solution. All solutions followed in the L-Ldot
+plane have the same h. The value of h is specified in the input screen
+for the Poincare maps.
+
+   Experiment further using different values of h.
+
+
+
+The Double Pendulum
+
+   At the start of this program an input screen appears. (This can
+later be accessed through <Run>, <Enter initial conditions> in the menu.)
+The quantities to be entered are the initial conditions for the two
+pendulums. Accept all default values. Then select <Animate the pendulums>.
+You will see the motion in animation. Enjoy it.
+
+   Next select <See Poincare maps>. First, accept all default values in
+the input screen. Follow the prompts in choosing a color and then a
+starting point. Then press <Start>. You will see the pendulums in
+animation. Whenever they form a straight line the values of Theta and
+Thetadot are plotted as a point in the cos(Theta)-Thetadot plane. (Theta is
+the angular displacement of the upper pendulum.) Let the program run
+until you see a pattern forming. Then press <Input> and choose another
+initial position. Continue experimenting. You should eventually see
+chaotic structure and animation.
+
+   Seeing the animation slows down the computation of the maps. So
+select <See Poicare maps> once more, but choose not to see the
+animation. Follow the same procedures as before. Build up a detailed
+picture of the chaotic and non-chaotic structures.
+
+   In the dynamical model there is a relation of the form                                    14
+            f(Theta, Thetadot, Phi, Phidot) = Energy.
+Energy is a constant for any solution. All solutions followed in the
+cos(Theta)-Thetadot plane have the same Energy. The value of h is specified
+in the input screen for the Poincare maps.
+
+   Experiment further using different values of Energy.
+
+
+
+The Dumbbell Satellite
+
+   The satellite moves in an elliptic orbit in accordance with Kepler's
+laws. For a start, I suggest that you follow the demonstration in <Help>,
+<Elliptic orbit demo> from the menu. Become familiar with the way the
+eccentricity affects the shape of the orbit and the kinematics.
+
+   The principal input screen will appear automatically at the start
+of the program. It can be accessed through <Run>, <Enter parameters>.
+The default eccentricity is 0; leave it. The motion will start at
+pericenter. For initial conditions you can enter the initial angular
+deflection of the line of masses from the major axis (Theta) and the
+rate of change of this angle (ThetaDot). The period of the elliptic
+orbit is 2*Pi units of time; so if you enter 360/2*Pi = 57.29578 for
+ThetaDot, the initial rotation rate of the pendulum will be equal to
+the average angular orbital rate.
+
+   Accept all intial default values. You will then automatically see
+the animated motion of the satellite.
+
+   The satellite is a 'pendulum' in orbit; the lowest point of the
+pendulum being equivalent to the line of masses pointing to the center
+of the Earth. The angle the line makes with this direction is called
+Phi in the program. Select <Run>, <Enter parameters>. Enter 40 degrees
+for the initial displacement, and look at the animation. The pendulum
+analogy may be clearer.
+
+   Phi and its derivative, PhiDot, are the coordinates in the phase-plane.
+Select <Phase-Plane>. Press <Input> to enter starting conditions. Use
+the mouse. Click on a position close to the center and see the plot in the
+phase-plane and the animated oscillations. Now pick starting points
+further away, until you observe circulation. The parallel with the
+simple pendulum should be clear.
+
+   Select <Run>, <Enter parameters>. Enter 0.1 for the eccentricity and
+0 for the initial deflection. The animated motion is more interesting;
+but on average, the pendulum seems to be pointing toward the Earth.
+Next change the initial deflection to 40. Observe the motion. Now change
+it to 50; the motion has now become chaotic.
+
+   Let's follow this in the phase-plane. This time, use the keyboard to
+enter starting conditions. Enter (40, 0) for the the initial (Phi, PhiDot).
+(PhiDot = 0 is equivalent to ThetaDot = 360/2*Pi.) The plot is tangled and
+hard to interpret. Look also at motion with starting conditions (0, 150)
+and (50, 0). Interpretation becomes simpler if Poincare maps are followed.
+
+   Select <Poincare map>. Choose to see the animation. Use the keyboard
+for starting conditions. Make three runs with conditions (40, 0), (0, 150)
+and (50, 0). Follow each run until you see a pattern forming. The program
+is following the calculation for the phase-plane plot, but only plots
+points at times 0, 2*Pi, 4*Pi, 6*Pi,..., when the satellite completes
+an orbital revolution.
+
+   Press <CleanUp>. This time, choose not to see the animation. Repeat
+the runs. You will see better plots, more quickly.
+
+   Now try runs successively with conditions (0, 140), (0, 139),
+(0, 138), (0, 137). Having seen the figures, press <CleanUp> and choose
+to see the animation. Repeat the last run, noting what is taking place
+in the animation. The satellite completes two rotations of Phi
+for every orbital revolution.
+
+   Select <Plot Phi vs time>. Change the range of time to the plot to 50.
+Keep the starting conditions (0, 137). Go to the following input screen.
+Interpretation becomes harder! In inertial space, the satellite rotates
+three times for every single revolution. Then the angle (V - 3*Theta)
+will oscillate. Enter the numbers 1 and 3. Now see the plot.
+
+   This is an introduction to the utilities. If you increase the
+eccentricity the chaos will become more pronounced. Two parameters
+have been ignored. You can include a coefficient for a resisting term.
+This might apply to a satellite with a de-spinning torque.
+
+   The equations for the model can be modified to apply to a non-spherical
+satellite if the term for the acceleration of Theta is multiplied by a
+factor less than one. See the second input screen for further details.
+
+
+
+Miscellaneous
+
+
+Production and Exchange
+
+
+   Select <Run>, <Enter parameters> from the menu. There are six
+parameters; read and remember their interpretation. Accept the default
+values. The dependent variables are x and y, representing the goods
+owned by the two men in the model. Accept the default values for the
+scale of the plot.
+
+   You will see a graphics screen, with coordinates x and y and an
+equilibrium position at the point (1,1). There are six sliders that
+enable you to change the values of the parameters. Experiment with
+these, making small changes, with interpretation, and see the effects
+on the equilibrium. Then press <Input>, choose the mouse, and click on a
+starting point. As the solution procedes, you can change the parameters.
+Try to keep the equilibrium on the screen. If it disappears, one man will
+cease to work, becoming a parasite.
+
+
+
+The Economics of Fishing
+
+   Select <Run>, <Enter parameters> from the menu. There are four
+parameters. a and b deal with the logistic growth of the fish; the
+maximum sustainable population is (a/b). Remember that numbers are
+scaled: a population of '2' might stand for 2 million. C represents the
+cost of fishing and P the price the catch will fetch at the market.
+Accept the default values. Select the mouse for choosing starting
+values. Do not choose periodic variation in the fish and cost parameters.
+
+   Now select <Plot solutions>. You will see a graphics screen with the
+fish population as the horizontal variable and E, the effort put
+into fishing, as the vertical variable. Equilibrium positions are marked.
+(The origin is always an equilibrium; this is not marked.) You can use
+the sliders to vary the equilibrium that is not on the horizontal axis.
+Experiment with this, interpreting the changes.
+
+   Press <Input>. Choose a starting point. (Don't start at an
+equilibrium!) While the motion is taking place, experiment with
+changes of the parameters.
+
+   You can allow the fish birth rate, a, or cost of fishing, C to vary
+periodically. In this case there are no equilibria. Experiment
+first with small changes.
+
+      Try not to wipe out the fish.
+
+
+The Motion of a Yoyo
+
+   The main input screen will appear at the start of the program.
+This can also be accessed by selecting <Run>, <Enter parameters>
+from the menu. Become familiar with the interpretation of these
+parameters, in the design of the yoyo. Accept the default values.
+Then accept the starting speed. Watch the animation. This can be
+repeated by pressing <Yoyo>.
+
+   You can change the parameters and the starting speed by pressing
+hotkeys. The object is to maximize the angular velocity at the
+lowest point. Work principally on the outer radius of the central
+sprindle (around which the string is wound), the radius of the yoyo
+and its moment of inertia.
+
+
+
+The Action Between a Violin Bow and String
+
+   The input screen for parameters and initial conditions appears at
+the start. This can also be accessed by selecting <Action>, <Enter
+Parameters> from the menu. Accept the default values. In the graphics
+screen press <Start> and watch the animation. If you want to change
+the length of time for the action, press <Re-scale>.
+
+   Now increase the friction by raising the value of A; this is the
+maximum frictional force when there is no relative velocity between
+the surfaces. (B is the maximum when this velocity is nonzero.) Follow
+the effects. Then investigate the effects of changing B.
+
+   Next experiment with changes in the speed. Finally, make adjustments
+to the spring constant.
+
+
+
+Landing an Aircraft on an Aircraft Carrier
+
+   Select <Help>, <Run demonstration> from the menu. You will learn
+about the different types of motion that are possible.
+
+   Next select <Run>, <Enter parameters>. Look through the list; each
+one can be varied in experiments. Accept the default values. Then
+in the graphics screen press <Land>.
+
+   The different types of motion are shown. The animation is not true
+since the numerical calculations are greater for some phases. The
+aircraft should land safely.
+
+   Press <Input> and change the landing speed. See if you can just land
+the aricraft on the edge of the deck!
+
+   Now return to the input screen and experiment. Change one parameter
+at a time.
+
+
+Pitching and Rolling at Sea
+
+   Start by selecting <Help>, <About the model> from the menu.
+Become familiar with the parameters. Then select <Run>, <Enter
+parameters>. Look at the numerical values; accept the default values.
+
+   Select <Animate>. Notice the initial deflections marked on the
+sliders. (The initial rates of change are zero.) Press <Run>.
+Although there is no initial rolling, notice the way that rolling starts.
+
+Another way to see the motion is to plot the angles as functions of
+the time. Select <Time plots>. The default angles should be those just
+used; make sure that the angular rates are zero.
+
+   See how great you can make the initial values of pitching and
+rolling without disaster.
+
+   Parameters of importance are the natural frequencies of pitching
+and rolling, and the frequency of the sea. The default values are,
+approximately, 1, 0.5 and 0.5; so there are possible resonances
+between them, leading to large transfers of energy between the the
+modes of oscillation. See what happens if you use numbers such as
+1, 0.7, 0.6.
+
+   There are two parameters that control the coupling between pitching
+and rolling. Experiment with increasing these.
+
+   Also experiment with the resisting terms. Suppose that the ship's
+stabilizers fail, so that these become zero. Increase the forcing
+amplitudes, so that the sea becomes rougher.
+
+
+
+Motion of a Ball in a Rotating Circular Ring
+
+   The menu item <Run>, <Enter parameters> enables you to enter
+values for the angular rate of the spinning hoop and a parameter for
+the friction between the ball and the hoop. This must be used before s
+electing <See phase-plane>. If you select <Animate>, then these
+two parameters, together with the initial conditions for the ball,
+can be controlled using sliders.
+
+Select <Animate>. Start with default values. Then increase the initial
+displacement of the ball. You will observe pendulum-like motion.
+
+   Increase the rotation rate of the hoop. When it is large enough,
+the lowest point of the ball will become unstable, and two points
+of stability will appear to the sides. This is and example of 'bifurcation.'
+
+   Repeat this experiment introducing nonzero values for k, the
+friction coefficient.
+
+   Choose values of the spin rate for which the lowest point of the ball
+is stable, and set the friction coefficient equal to zero. Then select
+<See phase-plane>. Build the phase-plane plot, showing different types of
+motion.
+
+   Now increase the spin rate until the  bifurcation occurs.
+
+   Repeat, with nonzero values for the friction coefficient.
+
+
+
+The Swinging Atwood Machine
+
+   The main input screen will appear at the start of the program.
+This can also be accessed by selecting <Run>, <Enter parameters>
+from the menu. Accept the default values. Then select <Animate the
+machine>, and follow animated motion. When you get tired of that,
+select <Plot path of pendulum> to see the pattern made by the end
+of the swinging pendulum.
+
+   Repeat with more adventurous initial conditions; try an initial
+displacement of 90 deg.
+
+   Now select <See Poincare maps>. To start, choose to see the animation
+along with the plotting of the maps. Follow the prompts, and choose a
+sufficient variety of starting conditions to establish the patterns of
+the maps. Any time you become impatient with the slow progress, due to
+the animation, press <CleanUp> and choose not to see the animation.
+If you see some interesting map and would like to see the animation,
+then select <Animate the machine>. The starting conditions will be the
+continuation of the motion that you were following.
+
+   The default value of 3 for the ratio of the masses leads to non-chaotic
+motion. Try 1.1. When you play with Poincare maps, you will see some
+organization in the central part of the screen and some toward the edge
+of the parabolic region where the mapping takes place. You will also
+find that there are conditions leading to the length of the swinging
+pendulum becoming zero. When this happens, the calculation stops.
+
+   Change the mass ratio by small amounts, to see how this affects the
+non-chaotic and chaotic behavior.
+
+
+
+A Chaotically Driven Wheel
+
+   This program has many similarities to that of the Forced Pendulum.
+
+   Start by selecting <Run>, <Enter parameters> from the menu. Look at
+them and note their interpretations, but accept the default values.
+Similarly, select <Enter initial conditions>, and accept the default
+values. Then select <Animate>.
+
+   For the animation you can change the values of the parameters and
+initial conditions, using the hotkeys. But for now, stay with the
+default set.
+
+   When you have tired of the animation, look at the time plots.
+Plotting Phi (the angle for the orientation of the forced wheel) will
+not be effective here, since Phi is increasing indefinitely. Have a
+look at a plot of sin(Phi). Select <Plot Sin(Phi) versus time>.
+
+   Now select <Run>, <Plot Phi-prime versus time>. Using the default
+values for the scale, you will get a good idea of the nature of the
+motion.
+
+   Next, select <PhasePlot>, <See phase-plane plot>. For the lower l
+imit of Phi-prime enter 0, and for the upper limit enter 1000. You may
+want to see the plot only after an initial period of transient motion.
+For the moment, enter 0 for the time delay. Next, press <Keyboard> to
+enter the starting conditions from the keyboard. Accept the default values.
+Enjoy the plot and the animation.
+
+   If the plot becomes too messy, press <CleanUp> and choose the option
+to continue the present plot. The existing plot will be erased, and you
+can continue to plot where the motion left off.
+
+   For another way to avoid the plot of the early transient motion
+press <Time delay>, enter 10 and then press <CleanUp>. This time,
+choose a new plot. Use the keyboard once more to enter the starting
+conditions. You will see the early animation, but not the phase-plane
+plot. If this becomes too boring, press a key to stop.
+
+   The delay option is principally for use in plotting Poincare maps:
+i.e., sampling the phase-plane plot once in every period of the
+forcing term. Select <See Poincare map>. Use the same scale as before,
+and enter a delay parameter of 15. Use the keyboard to enter the default
+starting conditions. The points that appear, show the final transient
+motion that approaches the final periodic state. This final state is
+represented by a dot. The output on the screen will becme more
+concentrated if the delay parameter is increased.
+
+   Finally, look at a bifurcation diagram. Select <See bifurcation
+diagram> and examine the first input screen. The parameter that is
+changed on the horizontal axis is k/I, where k is the spring constant
+and I is the moment of inertial of the driven wheel. You are
+prompted to enter the extreme values and the number of sample values
+to be used. Few values will produce a faster plot, but with less detail.
+
+   Values of Phi-prime are plotted on the vertical scale. For a sharper
+diagram, the initial, transient motion should be ignored. The first p
+periods of the forcing term will be ignored. After that, q points are
+plotted. Higher values of p and q may give better plots, but the plotting
+will take longer.
+
+   Finally, you can enter the starting value of Phi. This will
+affect the diagram.
+
